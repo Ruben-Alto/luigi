@@ -331,9 +331,9 @@ export const Header: React.FC<HeaderProps> = ({
 
           {/* Pie del menú móvil */}
           <div className="mt-auto pt-6 border-t border-[#E3D9CC] text-xs text-[#6B6B6B] space-y-1">
-            <p className="font-semibold text-[#343434]">Lacados Arribas Martín S.L.</p>
-            <p>Calle Olite 45, Tetuán, 28020 Madrid</p>
-            <p>Horario: L-V 8:30 a 18:30 h</p>
+            <p className="font-semibold text-[#343434]">{BUSINESS_INFO.name} S.L.</p>
+            <p>{BUSINESS_INFO.address}</p>
+            <p>Horario: {BUSINESS_INFO.schedule}</p>
           </div>
         </div>
       )}

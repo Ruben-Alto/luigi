@@ -109,7 +109,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   <Check className="w-3 h-3 stroke-[3]" />
                 </span>
                 <span>
-                  <strong>Taller ebanista en Tetuán (Calle Olite 45):</strong> con barnices ecológicos certificados pensados para el interior de tu hogar.
+                  <strong>Taller ebanista en Tetuán ({BUSINESS_INFO.street}):</strong> con barnices ecológicos certificados pensados para el interior de tu hogar.
                 </span>
               </li>
             </ul>
@@ -337,7 +337,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   Preparación minuciosa y lijados sucesivos en cabina
                 </h3>
                 <p className="text-sm text-[#343434]/90 leading-relaxed">
-                  En cabina cerrada en nuestro taller de la calle Olite, preparamos la base con lijados por fases, corregimos golpes y defectos de la madera, aplicamos imprimaciones selladoras y varias manos de laca satinada a pistola aerográfica.
+                  En cabina cerrada en nuestro taller de {BUSINESS_INFO.street}, preparamos la base con lijados por fases, corregimos golpes y defectos de la madera, aplicamos imprimaciones selladoras y varias manos de laca satinada a pistola aerográfica.
                 </p>
               </div>
             </div>
@@ -507,7 +507,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="https://maps.google.com/?q=Calle+Olite+45+Madrid"
+              href={BUSINESS_INFO.mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm font-semibold text-[#2F4F3A] hover:underline flex items-center space-x-1"
@@ -540,7 +540,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 Fundado en 1969
               </h3>
               <p className="text-xs font-semibold text-[#2F4F3A] uppercase tracking-wider mb-4">
-                Calle Olite 45 · Tetuán, Madrid
+                {BUSINESS_INFO.shortAddress}
               </p>
               <div className="w-12 h-0.5 bg-[#B08C4F] mx-auto md:mx-0"></div>
             </div>
@@ -629,17 +629,17 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   Taller Lacados Arribas Martín
                 </h4>
                 <p className="text-sm text-[#2F4F3A] font-semibold mb-2">
-                  Calle Olite 45, 28020 Tetuán, Madrid
+                  {BUSINESS_INFO.address}
                 </p>
                 <p className="text-xs text-[#6B6B6B] max-w-md">
-                  A escasos minutos de la calle Bravo Murillo y la glorieta de Cuatro Caminos. Visitas con cita previa o envíanos fotos por WhatsApp para ahorrar tiempo.
+                  En el distrito de Tetuán. Visitas con cita previa o envíanos fotos por WhatsApp para ahorrar tiempo.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2 justify-center">
                   <span className="text-[11px] bg-[#F5F1EA] px-2.5 py-1 rounded-md border border-[#E3D9CC] text-[#343434]">
-                    🚇 Metro Cuatro Caminos / Alvarado
+                    🚇 {BUSINESS_INFO.metro}
                   </span>
                   <span className="text-[11px] bg-[#F5F1EA] px-2.5 py-1 rounded-md border border-[#E3D9CC] text-[#343434]">
-                    🚌 Buses 3, 45, 64, 127
+                    🚌 Autobuses {BUSINESS_INFO.buses}
                   </span>
                 </div>
               </div>
@@ -650,10 +650,10 @@ export const HomeView: React.FC<HomeViewProps> = ({
                     Horario de Atención
                   </h4>
                   <p className="text-xs text-[#343434] mb-1">
-                    <strong>Lunes a Viernes:</strong> 8:30 a 18:30 h
+                    {BUSINESS_INFO.scheduleWeekdays}
                   </p>
                   <p className="text-xs text-[#343434] mb-4">
-                    <strong>Sábados:</strong> Con cita previa concertada
+                    {BUSINESS_INFO.scheduleSaturdays}
                   </p>
                   <h4 className="font-sans font-bold text-sm text-[#2F4F3A] uppercase tracking-wider mb-2">
                     Contacto Directo
@@ -668,7 +668,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
 
                 <div className="pt-4 border-t border-[#E3D9CC] mt-4">
                   <a
-                    href="https://maps.google.com/?q=Calle+Olite+45+Madrid"
+                    href={BUSINESS_INFO.mapsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full inline-block text-center py-2 px-3 text-xs font-semibold rounded-lg bg-[#E3D9CC] text-[#343434] hover:bg-[#C2B39A] transition-colors"

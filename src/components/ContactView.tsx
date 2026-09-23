@@ -48,7 +48,7 @@ export const ContactView: React.FC<ContactViewProps> = ({ onOpenWhatsApp }) => {
     },
     {
       q: '¿Puedo ir directamente al taller de Tetuán sin cita previa?',
-      a: 'Trabajamos con cita previa para asegurar que el maestro ebanista o técnico esté en taller y pueda atenderte sin prisas. Llámanos antes al 915 70 82 14 o escríbenos por WhatsApp para fijar hora.'
+      a: `Trabajamos con cita previa para asegurar que el maestro ebanista o técnico esté en taller y pueda atenderte sin prisas. Llámanos antes al ${BUSINESS_INFO.phoneDisplay} o escríbenos por WhatsApp para fijar hora.`
     },
     {
       q: '¿Hacéis presupuestos a domicilio en mi piso?',
@@ -270,23 +270,23 @@ export const ContactView: React.FC<ContactViewProps> = ({ onOpenWhatsApp }) => {
                 <div className="space-y-3 text-xs text-[#343434] border-t border-[#E3D9CC] pt-4">
                   <p>
                     <strong className="block text-[#2F4F3A]">Dirección:</strong>
-                    Calle Olite 45, 28020 Tetuán, Madrid
+                    {BUSINESS_INFO.address}
                   </p>
                   <p>
                     <strong className="block text-[#2F4F3A]">Transporte Público:</strong>
-                    Metro Cuatro Caminos (L1, L2, L6) o Alvarado (L1).<br />
-                    Autobuses líneas 3, 45, 64, 124, 127.
+                    {BUSINESS_INFO.metro}.<br />
+                    Autobuses {BUSINESS_INFO.buses}.
                   </p>
                   <p>
                     <strong className="block text-[#2F4F3A]">Horario de Taller:</strong>
-                    Lunes a Viernes: 8:30 - 18:30 h (Ininterrumpido).<br />
-                    Sábados: Con cita previa confirmada.
+                    {BUSINESS_INFO.scheduleWeekdays}.<br />
+                    {BUSINESS_INFO.scheduleSaturdays}.
                   </p>
                 </div>
 
                 <div className="mt-6 pt-4 border-t border-[#E3D9CC] flex flex-col sm:flex-row gap-2">
                   <a
-                    href="https://maps.google.com/?q=Calle+Olite+45+Madrid"
+                    href={BUSINESS_INFO.mapsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1 text-center py-2.5 px-3 bg-[#E3D9CC] hover:bg-[#C2B39A] text-[#343434] font-semibold text-xs rounded-lg transition-colors"

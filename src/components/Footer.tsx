@@ -80,8 +80,8 @@ export const Footer: React.FC<FooterProps> = ({
               <li className="flex items-start space-x-2">
                 <MapPin className="w-4 h-4 text-[#2F4F3A] shrink-0 mt-0.5" />
                 <span>
-                  <strong className="block text-[#343434]">Calle Olite 45</strong>
-                  <span className="text-xs text-[#343434]/80">28020 Tetuán, Madrid</span>
+                  <strong className="block text-[#343434]">{BUSINESS_INFO.street}</strong>
+                  <span className="text-xs text-[#343434]/80">{BUSINESS_INFO.postalCode} {BUSINESS_INFO.district}, {BUSINESS_INFO.city}</span>
                 </span>
               </li>
               <li className="flex items-center space-x-2">
@@ -104,7 +104,7 @@ export const Footer: React.FC<FooterProps> = ({
               </li>
               <li className="flex items-start space-x-2 text-xs text-[#343434]/80 pt-1">
                 <Clock className="w-3.5 h-3.5 text-[#2F4F3A] shrink-0 mt-0.5" />
-                <span>Lunes a Viernes 8:30 - 18:30 h (Cita previa recomendada)</span>
+                <span>{BUSINESS_INFO.schedule}</span>
               </li>
             </ul>
           </div>
@@ -147,7 +147,7 @@ export const Footer: React.FC<FooterProps> = ({
             © {new Date().getFullYear()} Lacados Arribas Martín S.L. Todos los derechos reservados.
           </p>
           <div className="flex items-center space-x-4">
-            <span className="hover:text-[#2F4F3A] cursor-pointer" onClick={() => alert('Aviso Legal: Lacados Arribas Martín S.L. - Calle Olite 45, 28020 Madrid. Registro Mercantil de Madrid.')}>
+            <span className="hover:text-[#2F4F3A] cursor-pointer" onClick={() => alert(`Aviso Legal: ${BUSINESS_INFO.name} S.L. - ${BUSINESS_INFO.address}. Registro Mercantil de Madrid.`)}>
               Aviso Legal
             </span>
             <span>·</span>

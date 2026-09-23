@@ -3,14 +3,23 @@ import { BlogPost, ProjectItem, ReviewItem, ServiceDetail, ServiceId } from '../
 export const BUSINESS_INFO = {
   name: 'Lacados Arribas Martín',
   founderYear: 1969,
-  address: 'Calle Olite 45, Tetuán, 28020 Madrid',
-  phone: '+34 915 70 82 14',
-  phoneRaw: '+34915708214',
-  whatsappNumber: '34644893215',
-  whatsappDisplay: '+34 644 89 32 15',
-  schedule: 'Lunes a Viernes: 8:30 - 18:30 (Sábados con cita previa)',
-  metro: 'Metro Cuatro Caminos (Líneas 1, 2 y 6) o Alvarado (L1)',
-  buses: 'Líneas 3, 45, 64, 124, 127',
+  address: 'Calle de los Voluntarios Catalanes 20B, Tetuán, 28039 Madrid',
+  street: 'Calle de los Voluntarios Catalanes 20B',
+  postalCode: '28039',
+  district: 'Tetuán',
+  city: 'Madrid',
+  shortAddress: 'Calle de los Voluntarios Catalanes 20B · Tetuán, Madrid',
+  mapsUrl: 'https://maps.google.com/?q=Calle+de+los+Voluntarios+Catalanes+20B+28039+Madrid',
+  phone: '+34 609 89 25 14',
+  phoneRaw: '+34609892514',
+  phoneDisplay: '609 89 25 14',
+  whatsappNumber: '34609892514',
+  whatsappDisplay: '+34 609 89 25 14',
+  schedule: 'Lunes a Viernes: 9:00 - 14:00 y 17:00 - 20:00 (Sábados con cita previa)',
+  scheduleWeekdays: 'Lunes a Viernes: 9:00 - 14:00 y 17:00 - 20:00',
+  scheduleSaturdays: 'Sábados con cita previa',
+  metro: 'Metro Estrecho (Línea 1) o Francos Rodríguez (Línea 7)',
+  buses: 'Líneas 64, 124, 126, 128, 3, 44',
   zones: ['Tetuán', 'Chamberí', 'Barrio del Pilar', 'Chamartín', 'Moncloa', 'Madrid Norte y Centro']
 };
 
@@ -382,7 +391,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt: 'Crónica del rescate de un mueble aparador y 4 puertas de salón en Bravo Murillo: de madera pasada de moda a una atmósfera contemporánea y serena.',
     image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80',
     content: [
-      'En lugar de tirar un mueble de 1990 hecho con maderas que hoy costarían miles de euros, los propietarios decidieron invertir una fracción de su coste en un lacado satinado en nuestro taller de la calle Olite.',
+      'En lugar de tirar un mueble de 1990 hecho con maderas que hoy costarían miles de euros, los propietarios decidieron invertir una fracción de su coste en un lacado satinado en nuestro taller de la calle de los Voluntarios Catalanes en Tetuán.',
       'Se aplicó una paleta sobria en blanco roto y detalles en verde botella satinado en tiradores y remates de moldura.',
       'Las puertas del salón se integraron con el mismo grado de brillo (15% gloss mate satinado), logrando que la estancia parezca el doble de amplia.'
     ]

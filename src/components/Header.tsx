@@ -83,7 +83,7 @@ export const Header: React.FC<HeaderProps> = ({
                 Arribas Martín
               </span>
               <span className="hidden sm:block text-[11px] uppercase tracking-wider text-[#6B6B6B] font-medium">
-                Taller ebanista en Tetuán · Desde 1969
+                Taller de lacado en Tetuán · Desde 1969
               </span>
             </button>
           </div>

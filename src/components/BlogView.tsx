@@ -138,7 +138,7 @@ export const BlogView: React.FC<BlogViewProps> = ({ onOpenWhatsApp }) => {
                   onClick={() => onOpenWhatsApp(`Hola, he leído vuestro artículo '${post.title}' y quiero consultar un caso similar para mi piso.`)}
                   className="text-xs text-[#6B6B6B] hover:text-[#2F4F3A]"
                 >
-                  Preguntar al ebanista
+                  Preguntar al especialista en lacado
                 </button>
               </div>
             </article>

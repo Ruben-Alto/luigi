@@ -490,7 +490,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenWhatsApp }) =>
               <div className="mt-4 flex items-start space-x-2 text-[11px] text-[#6B6B6B] bg-[#E3D9CC]/40 p-3 rounded-lg">
                 <Info className="w-4 h-4 text-[#B08C4F] shrink-0 mt-0.5" />
                 <span>
-                  <strong>Nota del ebanista:</strong> Esta previsualización digital es orientativa. En el taller aplicamos muestras físicas sobre madera real para que compruebes el tono exacto bajo la luz de tu casa antes de iniciar el lacado definitivo.
+                  <strong>Nota del maestro lacador:</strong> Esta previsualización digital es orientativa. En el taller aplicamos muestras físicas sobre madera real para que compruebes el tono exacto bajo la luz de tu casa antes de iniciar el lacado definitivo.
                 </span>
               </div>
 
@@ -639,7 +639,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenWhatsApp }) =>
                   {estimate.min.toLocaleString('es-ES')} € - {estimate.max.toLocaleString('es-ES')} €
                 </div>
                 <p className="text-xs text-white/80 leading-relaxed mb-4">
-                  Estimación basada en desmontaje, preparación, lijado, lacado a pistola en cabina de Tetuán y montaje final.
+                  Estimación basada en desmontaje, preparación, lijado, lacado artesanal a pistola en nuestro taller de Tetuán y montaje final.
                 </p>
 
                 <div className="space-y-2 border-t border-white/20 pt-4 text-xs text-white/90">

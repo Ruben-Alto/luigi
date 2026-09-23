@@ -27,10 +27,10 @@ export const Footer: React.FC<FooterProps> = ({
               </span>
             </div>
             <p className="text-xs uppercase tracking-wider text-[#2F4F3A] font-semibold">
-              Taller ebanista familiar desde 1969
+              Taller de lacado familiar desde 1969
             </p>
             <p className="text-sm text-[#343434]/90 leading-relaxed">
-              Especialistas en lacado satinado y mate a pistola en cabina tradicional para armarios empotrados, puertas de paso y muebles de salón en Tetuán, Chamberí y Barrio del Pilar.
+              Especialistas en lacado artesanal satinado y mate a pistola para armarios empotrados, puertas de paso y muebles de salón en Tetuán, Chamberí y Barrio del Pilar.
             </p>
             <div className="flex items-center space-x-2 text-xs text-[#343434] bg-[#E3D9CC]/70 p-2.5 rounded-lg border border-[#B08C4F]/30">
               <Award className="w-4 h-4 text-[#2F4F3A] shrink-0" />

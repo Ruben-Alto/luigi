@@ -110,7 +110,7 @@ export const ServicesView: React.FC<ServicesViewProps> = ({
           {/* Cabecera del servicio */}
           <div className="max-w-3xl mb-8">
             <span className="inline-block text-xs uppercase tracking-wider text-[#2F4F3A] font-bold bg-[#E3D9CC]/40 px-3 py-1 rounded-full mb-3">
-              Taller Ebanista Tetuán · Madrid Norte y Centro
+              Taller de Lacado Tetuán · Madrid Norte y Centro
             </span>
             <h1 className="font-editorial text-2xl sm:text-3xl lg:text-4xl font-semibold text-[#343434] leading-tight mb-4">
               {service.h1}

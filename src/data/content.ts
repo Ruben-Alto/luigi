@@ -30,19 +30,19 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
     subtitle: 'Acabado sedoso y duradero sin obras',
     shortDesc: 'Actualizamos armarios empotrados de dormitorios y pasillos en tonos blanco roto, grises cálidos y colores piedra con lacado satinado uniforme a pistola.',
     h1: 'Lacado satinado y mate de armarios empotrados en Madrid norte y centro',
-    heroText: 'Sustituimos el barniz anaranjado o la madera oscura de los armarios de tu vivienda por un acabado satinado sedoso y resistente al uso diario, desmontando las hojas y lacando en cabina de taller.',
+    heroText: 'Sustituimos el barniz anaranjado o la madera oscura de los armarios de tu vivienda por un acabado satinado sedoso y resistente al uso diario, desmontando las hojas y con lacado artesanal en taller.',
     iconName: 'DoorClosed',
     sampleImageBefore: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=900&q=80',
     sampleImageAfter: 'https://images.unsplash.com/photo-1558997519-83ea9252def8?auto=format&fit=crop&w=900&q=80',
     features: [
-      'Sin obras en casa: desmontamos frentes y puertas numeradas para lacar en cabina cerrada de Tetuán',
+      'Sin obras en casa: desmontamos frentes y puertas numeradas para un lacado artesanal en nuestro taller de Tetuán',
       'Lijados sucesivos y corrección de holguras para una base ultraestable sin piel de naranja',
       'Barnices ecológicos al agua certificados para interiores de dormitorios infantiles y adultos',
       'Tonos a medida: Blancos rotos luminosos, gris piedra Chamberí, arena y topo satinado'
     ],
     processSteps: [
       { title: '1. Desmontaje y numeración', desc: 'Acudimos a tu piso en Chamberí, Tetuán o Barrio del Pilar, retiramos las puertas y frentes de armario y los protegemos para su traslado seguro al taller.' },
-      { title: '2. Lijado y cabina en Tetuán', desc: 'Decapado minucioso de barnices antiguos, corrección de golpes, imprimación selladora y 3 manos cruzadas de laca satinada a pistola.' },
+      { title: '2. Lijado y lacado artesanal en Tetuán', desc: 'Decapado minucioso de barnices antiguos, corrección de golpes, imprimación selladora y 3 manos cruzadas de laca satinada a pistola.' },
       { title: '3. Montaje y ajuste de bisagras', desc: 'Volvemos con las puertas curadas al 100%, las instalamos, ajustamos los cierres y enrasamos con los tapajuntas.' }
     ],
     palette: [
@@ -53,7 +53,7 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
     faqs: [
       {
         question: '¿Se desprenden olores fuertes o polvo en mi vivienda?',
-        answer: 'No. El 95% del trabajo sucio de lijado y aplicación a pistola se realiza en nuestra cabina de Tetuán. En tu casa solo desmontamos y volvemos a montar las piezas ya curadas e inodoras.'
+        answer: 'No. El 95% del trabajo sucio de lijado y aplicación a pistola se realiza con lacado artesanal en nuestro taller de Tetuán. En tu casa solo desmontamos y volvemos a montar las piezas ya curadas e inodoras.'
       },
       {
         question: '¿Cuánto tiempo dura el proceso completo de unos armarios?',
@@ -61,7 +61,7 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
       },
       {
         question: '¿Aguanta el roce diario de niños o aspiradoras?',
-        answer: 'Absolutamente. No es pintura plástica ni chalk paint decorativa: utilizamos lacas poliuretánicas y acrílicas de dureza ebanista concebidas para soportar golpes moderados y limpieza recurrente.'
+        answer: 'Absolutamente. No es pintura plástica ni chalk paint decorativa: utilizamos lacas poliuretánicas y acrílicas de alta dureza profesional concebidas para soportar golpes moderados y limpieza recurrente.'
       }
     ]
   },
@@ -83,7 +83,7 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
     ],
     processSteps: [
       { title: '1. Descolgado y desherraje', desc: 'Retiramos las hojas de las puertas marcando su posición exacta y retiramos manillas y pernios.' },
-      { title: '2. Tratamiento en cabina', desc: 'Lijado mecánico de desbaste, fondeo aislante contra taninos de madera vieja y lacado a pistola en horizontal para máxima planitud.' },
+      { title: '2. Tratamiento y lacado artesanal', desc: 'Lijado mecánico de desbaste, fondeo aislante contra taninos de madera vieja y lacado a pistola en horizontal para máxima planitud.' },
       { title: '3. Lacado de marcos in situ', desc: 'Protegemos suelo y paredes con plástico electrostático para lacar cercos y tapajuntas con micro-turbina sin manchar nada.' }
     ],
     palette: [
@@ -94,7 +94,7 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
     faqs: [
       {
         question: '¿Es mejor lacar mis puertas viejas o comprar unas nuevas baratas de block?',
-        answer: 'Las puertas de pisos construidos en Madrid entre 1960 y 2000 suelen tener almas macizas o chapas de madera noble de gran peso y aislamiento acústico. Comprar puertas huecas actuales cuesta más y aísla mucho menos que actualizar las tuyas con laca ebanista.'
+        answer: 'Las puertas de pisos construidos en Madrid entre 1960 y 2000 suelen tener almas macizas o chapas de madera noble de gran peso y aislamiento acústico. Comprar puertas huecas actuales cuesta más y aísla mucho menos que actualizar las tuyas con un lacado profesional.'
       },
       {
         question: '¿Qué se hace con los marcos fijos en la pared?',
@@ -120,7 +120,7 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
     ],
     processSteps: [
       { title: '1. Recogida en planta', desc: 'Retiramos el mueble con personal propio cualificado y mantas de mudanza acolchadas.' },
-      { title: '2. Decapado ebanista', desc: 'Eliminamos barnices antiguos de nitrocelulosa o poliuretano respetando las aristas y perfiles de moldura.' },
+      { title: '2. Decapado y preparación artesanal', desc: 'Eliminamos barnices antiguos de nitrocelulosa o poliuretano respetando las aristas y perfiles de moldura.' },
       { title: '3. Lacado sedoso y curado', desc: 'Aplicación en capas de laca satinada táctil con alta resistencia al calor de platos y roce de vasos.' }
     ],
     palette: [
@@ -145,13 +145,13 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
     subtitle: 'Oficio artesano, valor sentimental y economía circular',
     shortDesc: 'Si tienes un aparador, cómoda o mesa antigua con valor sentimental, la restauramos y la llevamos a un satinado suave que respeta la pieza y la integra en interiores actuales.',
     h1: 'Restauración de muebles antiguos en acabado satinado en Madrid',
-    heroText: 'Desde 1969 aplicamos el oficio tradicional de ebanistería: desinsectación de carcoma, consolidación estructural, sustitución de barnices quemados por lacas sedosas y pulido de bronces.',
+    heroText: 'Desde 1969 aplicamos el oficio tradicional de lacado: desinsectación de carcoma, consolidación estructural, sustitución de barnices quemados por lacas sedosas y pulido de bronces.',
     iconName: 'Sparkles',
     sampleImageBefore: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=80',
     sampleImageAfter: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=900&q=80',
     features: [
       'Tratamiento curativo y preventivo antitermitas y anticarcoma con cámara de reposo',
-      'Encolado con adhesivos reversibles de ebanistería y reposición de chapas nobles despegadas',
+      'Encolado con adhesivos reversibles de taller y reposición de chapas nobles despegadas',
       'Limpieza y abrillantado de tiradores, cerraduras y bocallaves en latón de época',
       'Acabados en muñequilla con goma laca, cera de abejas o lacado satinado mate sobrio'
     ],
@@ -168,7 +168,7 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
     faqs: [
       {
         question: '¿Pierde valor un mueble antiguo al lacarlo?',
-        answer: 'En piezas de ebanistería popular de principios o mediados del siglo XX que tienen barnices de poliéster gruesos o deteriorados, un buen decapado y lacado satinado en cabina aumenta su valor decorativo y de uso diario.'
+        answer: 'En piezas de mobiliario de principios o mediados del siglo XX que tienen barnices de poliéster gruesos o deteriorados, un buen decapado y lacado artesanal aumenta su valor decorativo y de uso diario.'
       },
       {
         question: '¿Qué hacéis si la madera tiene carcoma activa?',
@@ -182,7 +182,7 @@ export const COMPARISON_TABLE = [
   {
     criterion: 'Método de aplicación',
     chalkPaint: 'Brocha o rodillo en casa o taller decorativo',
-    arribasMartin: 'Pistola aerográfica calibrada en cabina de taller con extracción',
+    arribasMartin: 'Pistola aerográfica calibrada para lacado artesanal en taller',
     advantage: 'Acabado perfectamente plano y liso sin surcos'
   },
   {
@@ -212,7 +212,7 @@ export const COMPARISON_TABLE = [
   {
     criterion: 'Desglose de carpintería',
     chalkPaint: 'Solo pintura superficial, no ajustan cierres ni holguras',
-    arribasMartin: 'Ajuste ebanista: bisagras, cantos, enrases y cepillados',
+    arribasMartin: 'Ajuste artesanal: bisagras, cantos, enrases y cepillados',
     advantage: 'Cierres suaves y puertas perfectamente aplomadas'
   }
 ];
@@ -227,7 +227,7 @@ export const REAL_PROJECTS: ProjectItem[] = [
     description: 'Piso señorial en calle Alonso Cano. 8 hojas de armario empotrado con moldura clásica barnizadas en sapelly oscuro de 1982, actualizadas a blanco roto satinado luminoso.',
     beforeImg: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=800&q=80',
     afterImg: 'https://images.unsplash.com/photo-1558997519-83ea9252def8?auto=format&fit=crop&w=800&q=80',
-    details: ['8 puertas en cabina', 'Ajuste de pernios y tiradores latón', 'Blanco roto cálido (#F5F1EA)'],
+    details: ['8 puertas con lacado artesanal', 'Ajuste de pernios y tiradores latón', 'Blanco roto cálido (#F5F1EA)'],
     days: 9
   },
   {
@@ -263,7 +263,7 @@ export const REAL_PROJECTS: ProjectItem[] = [
     description: 'Cómoda francesa de herencia familiar con barniz cuarteado. Desparasitada, saneada y acabada en satinado sutil marfil respetando los herrajes cincelados originales.',
     beforeImg: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80',
     afterImg: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80',
-    details: ['Tratamiento antitermita', 'Pulido de bronces con cera', 'Acabado ebanista marfil'],
+    details: ['Tratamiento antitermita', 'Pulido de bronces con cera', 'Acabado lacado marfil'],
     days: 12
   },
   {
@@ -302,7 +302,7 @@ export const REVIEWS_DATA: ReviewItem[] = [
     date: 'Hace 3 semanas',
     highlightedItem: 'Armarios empotrados y puertas de paso',
     finishType: 'Blanco roto satinado',
-    text: 'Lacaron todos los armarios empotrados y puertas de paso de nuestro piso en Tetuán en un blanco roto satinado. El cambio de luz en la casa ha sido brutal, sin parecer una cocina de alto brillo. Se nota que vienen del oficio ebanista de toda la vida.'
+    text: 'Lacaron todos los armarios empotrados y puertas de paso de nuestro piso en Tetuán en un blanco roto satinado. El cambio de luz en la casa ha sido brutal, sin parecer una cocina de alto brillo. Se nota que vienen del oficio del lacado de toda la vida.'
   },
   {
     id: 'rev-2',
@@ -313,7 +313,7 @@ export const REVIEWS_DATA: ReviewItem[] = [
     date: 'Hace 1 mes',
     highlightedItem: 'Boiserie, aparador y librería de salón',
     finishType: 'Mate sedoso gris piedra',
-    text: 'En Chamberí nos actualizaron el salón completo: boiserie, aparador y librería en mate sedoso. Se nota que trabajan como ebanistas, no como pintura rápida a rodillo. Desmontaron todo, nos mantuvieron informados por WhatsApp con fotos del taller y montaron en 1 día.'
+    text: 'En Chamberí nos actualizaron el salón completo: boiserie, aparador y librería en mate sedoso. Se nota que son auténticos profesionales del lacado, no como pintura rápida a rodillo. Desmontaron todo, nos mantuvieron informados por WhatsApp con fotos del taller y montaron en 1 día.'
   },
   {
     id: 'rev-3',
@@ -354,7 +354,7 @@ export const BLOG_POSTS: BlogPost[] = [
     content: [
       'En los pisos clásicos de Chamberí es muy habitual encontrar armarios empotrados de madera maciza o chapada de extraordinaria calidad constructiva, pero con barnices anaranjados que oscurecen los dormitorios.',
       'En este proyecto de la calle Alonso Cano desmontamos 8 hojas y sus altillos correspondientes, numerando cada bisagra y cerradura.',
-      'En nuestro taller de Tetuán eliminamos la vieja película brillante mediante lijado calibrado y aplicamos un fondo sellador acrílico. El acabado final se ejecutó a pistola en cabina con laca satinada en tono #F5F1EA.',
+      'En nuestro taller de Tetuán eliminamos la vieja película brillante mediante lijado calibrado y aplicamos un fondo sellador acrílico. El acabado final se ejecutó mediante lacado artesanal a pistola con laca satinada en tono #F5F1EA.',
       'El resultado: un incremento notable de luz natural en la vivienda y una superficie de tacto sedoso que resiste el uso diario sin amarillear.'
     ],
     faqs: [
@@ -370,12 +370,12 @@ export const BLOG_POSTS: BlogPost[] = [
     categoryLabel: 'Guía técnica',
     date: '28 de Enero, 2026',
     readTime: '6 min de lectura',
-    excerpt: 'Análisis honesto de un taller ebanista: por qué la pintura decorativa a tiza sirve para un jarrón o mesilla rústica, pero fracasa en armarios y puertas de uso diario.',
+    excerpt: 'Análisis honesto de un taller de lacado: por qué la pintura decorativa a tiza sirve para un jarrón o mesilla rústica, pero fracasa en armarios y puertas de uso diario.',
     image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80',
     content: [
       'La moda de la pintura chalk paint ha despertado el interés por recuperar muebles antiguos, lo cual aplaudimos desde la perspectiva de la economía circular.',
       'Sin embargo, recibimos con frecuencia clientes en Tetuán y Chamberí cuyos armarios pintados a tiza se han manchado con el roce de la ropa o cuyas puertas se han desconchado al poco tiempo.',
-      'La chalk paint no tiene adherencia química profunda ni elasticidad mecánica. El lacado profesional de ebanistería a pistola utiliza resinas poliméricas que penetran en el poro y crean una capa continua, sedosa y lavable.',
+      'La chalk paint no tiene adherencia química profunda ni elasticidad mecánica. El lacado profesional y artesanal a pistola utiliza resinas poliméricas que penetran en el poro y crean una capa continua, sedosa y lavable.',
       'Si buscas un acabado rústico en una mesilla auxiliar, el chalk paint es entretenido. Para armarios, puertas y aparadores que vas a abrir miles de veces al año, el lacado a pistola en taller es la única solución definitiva.'
     ]
   },

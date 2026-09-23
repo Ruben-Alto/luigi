@@ -41,11 +41,11 @@ export const HomeView: React.FC<HomeViewProps> = ({
   const faqsList = [
     {
       q: '¿Se desprenden olores o se genera polvo en mi casa durante el lacado?',
-      a: 'No. El 95% del trabajo pesado de lijado, imprimación y aplicación a pistola se realiza en nuestra cabina cerrada con extracción en el taller de Tetuán. En tu vivienda solo desmontamos las hojas y, tras el secado y curado completo, volvemos a montarlas e instalarlas limpias y sin olores residuales.'
+      a: 'No. El 95% del trabajo de lijado, imprimación y aplicación a pistola se realiza mediante lacado artesanal en nuestro taller de Tetuán. En tu vivienda solo desmontamos las hojas y, tras el secado y curado completo, volvemos a montarlas e instalarlas limpias y sin olores residuales.'
     },
     {
-      q: '¿Por qué el lacado satinado en cabina dura mucho más que la chalk paint decorativa?',
-      a: 'La pintura de tiza o chalk paint se aplica con brocha o rodillo sin penetración polimérica, rayándose y perdiendo color con el roce diario de ropa o aspiradoras. Nuestro lacado satinado emplea barnices poliuretánicos y acrílicos en cabina cerrada, creando una película elástica, uniforme, sedosa al tacto y 100% lavable con un paño húmedo.'
+      q: '¿Por qué el lacado artesanal satinado dura mucho más que la chalk paint decorativa?',
+      a: 'La pintura de tiza o chalk paint se aplica con brocha o rodillo sin penetración polimérica, rayándose y perdiendo color con el roce diario de ropa o aspiradoras. Nuestro lacado satinado emplea un proceso de lacado artesanal con barnices poliuretánicos y acrílicos, creando una película elástica, uniforme, sedosa al tacto y 100% lavable con un paño húmedo.'
     },
     {
       q: '¿Hacéis presupuesto con fotos por WhatsApp antes de venir?',
@@ -57,7 +57,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
     },
     {
       q: '¿Hacéis cocinas de alto brillo industrial?',
-      a: 'No, lo excluimos de forma clara y transparente. No somos una fábrica industrial de cocinas en serie. Somos un taller artesanal ebanista especializado exclusivamente en lacados satinados y mates para estructuras del hogar (armarios, puertas, boiseries) y mobiliario de salón o dormitorio.'
+      a: 'No, lo excluimos de forma clara y transparente. No somos una fábrica industrial de cocinas en serie. Somos un taller de lacado artesanal especializado exclusivamente en lacados satinados y mates para estructuras del hogar (armarios, puertas, boiseries) y mobiliario de salón o dormitorio.'
     }
   ];
 
@@ -109,7 +109,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   <Check className="w-3 h-3 stroke-[3]" />
                 </span>
                 <span>
-                  <strong>Taller ebanista en Tetuán ({BUSINESS_INFO.street}):</strong> con barnices ecológicos certificados pensados para el interior de tu hogar.
+                  <strong>Taller de lacado en Tetuán ({BUSINESS_INFO.street}):</strong> con barnices ecológicos certificados pensados para el interior de tu hogar.
                 </span>
               </li>
             </ul>
@@ -181,7 +181,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 Acabado sedoso que aguanta el día a día
               </h3>
               <p className="text-sm text-[#343434]/90 leading-relaxed">
-                Lacado satinado y mate aplicado a pistola en cabina tradicional, pensado para soportar golpes, roces y limpieza frecuente mejor que la chalk paint decorativa.
+                Lacado artesanal satinado y mate aplicado a pistola, pensado para soportar golpes, roces y limpieza frecuente mejor que la chalk paint decorativa.
               </p>
             </div>
 
@@ -307,7 +307,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               Cómo trabajamos tus armarios, puertas y muebles en nuestro taller de Tetuán
             </h2>
             <p className="text-sm text-[#6B6B6B]">
-              Nuestro taller familiar lleva décadas especializado en lacado satinado y mate con un enfoque ebanista y control de cada capa para evitar piel de naranja, marcas de rodillo o brillos industriales.
+              Nuestro taller familiar lleva décadas especializado en lacado artesanal satinado y mate con control de cada capa para evitar piel de naranja, marcas de rodillo o brillos industriales.
             </p>
           </div>
 
@@ -334,10 +334,10 @@ export const HomeView: React.FC<HomeViewProps> = ({
               </div>
               <div>
                 <h3 className="font-sans font-bold text-lg text-[#343434] mb-2">
-                  Preparación minuciosa y lijados sucesivos en cabina
+                  Preparación minuciosa y lacado artesanal a pistola
                 </h3>
                 <p className="text-sm text-[#343434]/90 leading-relaxed">
-                  En cabina cerrada en nuestro taller de {BUSINESS_INFO.street}, preparamos la base con lijados por fases, corregimos golpes y defectos de la madera, aplicamos imprimaciones selladoras y varias manos de laca satinada a pistola aerográfica.
+                  Con un proceso de lacado artesanal en nuestro taller de {BUSINESS_INFO.street}, preparamos la base con lijados por fases, corregimos golpes y defectos de la madera, aplicamos imprimaciones selladoras y varias manos de laca satinada a pistola aerográfica.
                 </p>
               </div>
             </div>
@@ -371,7 +371,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
       </section>
 
       {/* =========================================================================
-          BLOQUE 5: TABLA COMPARATIVA CHALK PAINT VS LACADO SATINADO EBANISTA
+          BLOQUE 5: TABLA COMPARATIVA CHALK PAINT VS LACADO ARTESANAL SATINADO
           ========================================================================= */}
       <section className="bg-[#F5F1EA] py-16 md:py-24 border-b border-[#E3D9CC]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -381,7 +381,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               <span>Comparativa Técnica y Objetiva</span>
             </div>
             <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl font-semibold text-[#343434] mb-3">
-              Chalk paint decorativa vs Lacado satinado ebanista
+              Chalk paint decorativa vs Lacado artesanal satinado
             </h2>
             <p className="text-sm sm:text-base text-[#6B6B6B]">
               Muchos clientes acuden a nosotros tras frustrarse con la pintura a tiza. Te explicamos las diferencias reales de durabilidad y tacto en armarios y puertas sometidos al uso diario.
@@ -428,7 +428,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
 
           <div className="bg-[#E3D9CC]/30 border border-[#B08C4F]/30 rounded-xl p-5 text-center max-w-2xl mx-auto text-xs text-[#343434]">
             <p>
-              <strong>Conclusión ebanista:</strong> La pintura de tiza es divertida para una pieza decorativa auxiliar sin uso. Para armarios empotrados y puertas de paso que se abren 20 veces al día, el lacado poliuretánico en cabina es la única garantía duradera.
+              <strong>Conclusión del taller de lacado:</strong> La pintura de tiza es divertida para una pieza decorativa auxiliar sin uso. Para armarios empotrados y puertas de paso que se abren 20 veces al día, el lacado artesanal poliuretánico es la única garantía duradera.
             </p>
           </div>
         </div>
@@ -534,7 +534,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
           <div className="bg-[#FFFFFF] rounded-2xl p-8 sm:p-12 border border-[#B08C4F]/30 shadow-xs flex flex-col md:flex-row items-center gap-8">
             <div className="w-full md:w-1/3 text-center md:text-left">
               <span className="text-xs uppercase tracking-widest text-[#B08C4F] font-bold block mb-1">
-                Ebanistería Tradicional
+                Lacado Tradicional
               </span>
               <h3 className="font-editorial text-3xl sm:text-4xl font-semibold text-[#343434] mb-2">
                 Fundado en 1969
@@ -547,7 +547,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
 
             <div className="w-full md:w-2/3 space-y-4 text-sm sm:text-base text-[#343434]/90 leading-relaxed">
               <p>
-                Durante más de 50 años, la familia Arribas Martín ha mantenido vivo el saber hacer ebanista en el corazón de Tetuán. No hemos querido convertirnos en una planta robotizada de cocinas de melamina ni en una gran fábrica de alto brillo.
+                Durante más de 50 años, la familia Arribas Martín ha mantenido vivo el saber hacer del lacado tradicional en el corazón de Tetuán. No hemos querido convertirnos en una planta robotizada de cocinas de melamina ni en una gran fábrica de alto brillo.
               </p>
               <p>
                 Nuestra vocación es el <strong className="text-[#2F4F3A]">lacado satinado y mate de alta escuela</strong>: ajustar la pistola según la porosidad de la madera, respetar el reposo entre manos y devolver el esplendor a las carpinterías que visten los hogares de Chamberí, Tetuán y Barrio del Pilar.

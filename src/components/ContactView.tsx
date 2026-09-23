@@ -48,7 +48,7 @@ export const ContactView: React.FC<ContactViewProps> = ({ onOpenWhatsApp }) => {
     },
     {
       q: '¿Puedo ir directamente al taller de Tetuán sin cita previa?',
-      a: `Trabajamos con cita previa para asegurar que el maestro ebanista o técnico esté en taller y pueda atenderte sin prisas. Llámanos antes al ${BUSINESS_INFO.phoneDisplay} o escríbenos por WhatsApp para fijar hora.`
+      a: `Trabajamos con cita previa para asegurar que el maestro lacador o técnico esté en taller y pueda atenderte sin prisas. Llámanos antes al ${BUSINESS_INFO.phoneDisplay} o escríbenos por WhatsApp para fijar hora.`
     },
     {
       q: '¿Hacéis presupuestos a domicilio en mi piso?',
@@ -128,7 +128,7 @@ export const ContactView: React.FC<ContactViewProps> = ({ onOpenWhatsApp }) => {
                     ¡Consulta recibida con éxito!
                   </h4>
                   <p className="text-sm text-[#343434]">
-                    Gracias <strong>{formData.name}</strong>. Un ebanista de nuestro taller de Tetuán revisará tu solicitud para <strong>{formData.neighborhood}</strong> y te llamará al {formData.phone} en menos de 24 horas laborables.
+                    Gracias <strong>{formData.name}</strong>. Un especialista en lacado de nuestro taller de Tetuán revisará tu solicitud para <strong>{formData.neighborhood}</strong> y te llamará al {formData.phone} en menos de 24 horas laborables.
                   </p>
                   <button
                     onClick={() => {

@@ -143,7 +143,7 @@ export const ServicesView: React.FC<ServicesViewProps> = ({
               <span>Resultado fotográfico del acabado sedoso</span>
             </h3>
             <p className="text-xs text-[#6B6B6B] mb-5">
-              Sin reflejos deslumbrantes ni efecto plástico: brillo mate controlado (10-15% gloss) que armoniza con la luz natural de pisos de Madrid.
+              Sin reflejos deslumbrantes ni efecto plástico: brillo satinado controlado (10-15% gloss) que armoniza con la luz natural de pisos de Madrid.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

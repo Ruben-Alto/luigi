@@ -30,7 +30,7 @@ export const Footer: React.FC<FooterProps> = ({
               Taller de lacado familiar desde 1969
             </p>
             <p className="text-sm text-[#343434]/90 leading-relaxed">
-              Especialistas en lacado artesanal satinado y mate a pistola para armarios empotrados, puertas de paso y muebles de salón en Tetuán, Chamberí y Barrio del Pilar.
+              Especialistas en lacado artesanal satinado a pistola para armarios empotrados, puertas de paso y muebles de salón en Tetuán, Chamberí y Barrio del Pilar.
             </p>
             <div className="flex items-center space-x-2 text-xs text-[#343434] bg-[#E3D9CC]/70 p-2.5 rounded-lg border border-[#B08C4F]/30">
               <Award className="w-4 h-4 text-[#2F4F3A] shrink-0" />
@@ -123,7 +123,7 @@ export const Footer: React.FC<FooterProps> = ({
                 No realizamos alto brillo industrial de cocina ni producciones en masa de carpintería en serie.
               </p>
               <p className="text-[#6B6B6B]">
-                Nos centramos al 100% en el lacado satinado y mate de alta resistencia para interiores de viviendas vividas.
+                Nos diferenciamos tanto del alto brillo industrial como del mate de manualidades, posicionándonos firmemente en el lacado tradicional y el acabado satinado profesional.
               </p>
             </div>
             <div className="mt-3">

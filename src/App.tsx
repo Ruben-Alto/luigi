@@ -15,7 +15,7 @@ export default function App() {
   const [selectedServiceId, setSelectedServiceId] = useState<ServiceId | null>(null);
 
   const handleOpenWhatsApp = (customMessage?: string) => {
-    const defaultMsg = 'Hola, he visto vuestra web de Lacados Arribas Martín. Me gustaría pedir orientación y presupuesto para lacar en satinado/mate mis armarios, puertas o muebles en Madrid. Os envío fotos.';
+    const defaultMsg = 'Hola, he visto vuestra web de Lacados Arribas Martín. Me gustaría pedir orientación y presupuesto para lacar en satinado mis armarios, puertas o muebles en Madrid. Os envío fotos.';
     const textToEncode = customMessage || defaultMsg;
     const url = `https://wa.me/${BUSINESS_INFO.whatsappNumber}?text=${encodeURIComponent(textToEncode)}`;
     window.open(url, '_blank');

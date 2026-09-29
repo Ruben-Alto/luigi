@@ -34,7 +34,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenWhatsApp }) =>
     hex: '#F5F1EA',
     desc: 'Luminosidad neutra sin deslumbramientos.'
   });
-  const [simulatorFinish, setSimulatorFinish] = useState<'satinado' | 'mate'>('satinado');
+  const [simulatorFinish, setSimulatorFinish] = useState<'satinado sedoso' | 'satinado suave'>('satinado sedoso');
   const [uploadedImagePreview, setUploadedImagePreview] = useState<string | null>(null);
 
   // Estados de la Calculadora de Presupuesto
@@ -76,8 +76,8 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenWhatsApp }) =>
     { name: 'Gris Piedra Chamberí', hex: '#E3D9CC', desc: 'Neutro contemporáneo suave.' },
     { name: 'Gris Topo Suave', hex: '#C2B39A', desc: 'Calidez envolvente similar al lino.' },
     { name: 'Verde Botella Satinado', hex: '#2F4F3A', desc: 'Distinción señorial británica.' },
-    { name: 'Verde Salvia Sedoso', hex: '#A4B3A0', desc: 'Tendencia botánica mate anti-huellas.' },
-    { name: 'Negro Carbón Mate', hex: '#343434', desc: 'Elegancia sobria para piezas singulares.' }
+    { name: 'Verde Salvia Sedoso', hex: '#A4B3A0', desc: 'Tendencia botánica en satinado anti-huellas.' },
+    { name: 'Negro Carbón Satinado', hex: '#343434', desc: 'Elegancia sobria y sedosa para piezas singulares.' }
   ];
 
   // Cálculo de presupuesto orientativo
@@ -403,30 +403,30 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenWhatsApp }) =>
                 </label>
                 <div className="grid grid-cols-2 gap-2">
                   <button
-                    onClick={() => setSimulatorFinish('satinado')}
+                    onClick={() => setSimulatorFinish('satinado sedoso')}
                     className={`p-3 rounded-lg border text-left cursor-pointer transition-all ${
-                      simulatorFinish === 'satinado'
+                      simulatorFinish === 'satinado sedoso'
                         ? 'bg-[#2F4F3A] text-white border-[#2F4F3A]'
                         : 'bg-[#F5F1EA] text-[#343434] border-[#E3D9CC]'
                     }`}
                   >
                     <span className="block text-xs font-bold">Satinado Sedoso (15% gloss)</span>
-                    <span className={`block text-[10px] mt-0.5 ${simulatorFinish === 'satinado' ? 'text-white/80' : 'text-[#6B6B6B]'}`}>
+                    <span className={`block text-[10px] mt-0.5 ${simulatorFinish === 'satinado sedoso' ? 'text-white/80' : 'text-[#6B6B6B]'}`}>
                       Tacto agradable y fácil limpieza. El más solicitado.
                     </span>
                   </button>
 
                   <button
-                    onClick={() => setSimulatorFinish('mate')}
+                    onClick={() => setSimulatorFinish('satinado suave')}
                     className={`p-3 rounded-lg border text-left cursor-pointer transition-all ${
-                      simulatorFinish === 'mate'
+                      simulatorFinish === 'satinado suave'
                         ? 'bg-[#2F4F3A] text-white border-[#2F4F3A]'
                         : 'bg-[#F5F1EA] text-[#343434] border-[#E3D9CC]'
                     }`}
                   >
-                    <span className="block text-xs font-bold">Mate Profundo (5% gloss)</span>
-                    <span className={`block text-[10px] mt-0.5 ${simulatorFinish === 'mate' ? 'text-white/80' : 'text-[#6B6B6B]'}`}>
-                      Cero reflejos, ideal para salones con luz directa.
+                    <span className="block text-xs font-bold">Satinado Suave (10% gloss)</span>
+                    <span className={`block text-[10px] mt-0.5 ${simulatorFinish === 'satinado suave' ? 'text-white/80' : 'text-[#6B6B6B]'}`}>
+                      Reflejo muy atenuado y discreto para estancias luminosas.
                     </span>
                   </button>
                 </div>
@@ -459,15 +459,13 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenWhatsApp }) =>
                   className="absolute inset-0 transition-all duration-500 pointer-events-none"
                   style={{
                     backgroundColor: simulatorColor.hex,
-                    opacity: simulatorFinish === 'satinado' ? 0.78 : 0.85,
+                    opacity: simulatorFinish === 'satinado sedoso' ? 0.78 : 0.82,
                     mixBlendMode: 'multiply'
                   }}
                 ></div>
 
                 {/* Reflejo sedoso simulado */}
-                {simulatorFinish === 'satinado' && (
-                  <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent pointer-events-none"></div>
-                )}
+                <div className={`absolute inset-0 bg-gradient-to-tr from-transparent via-white/${simulatorFinish === 'satinado sedoso' ? '10' : '5'} to-transparent pointer-events-none`}></div>
 
                 {/* Badge superpuesto en la simulación */}
                 <div className="absolute bottom-3 left-3 bg-white/95 backdrop-blur-xs p-3 rounded-lg shadow-lg border border-[#B08C4F]/40 max-w-xs">

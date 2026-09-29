@@ -29,7 +29,7 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
     title: 'Armarios Empotrados y Frentes',
     subtitle: 'Acabado sedoso y duradero sin obras',
     shortDesc: 'Actualizamos armarios empotrados de dormitorios y pasillos en tonos blanco roto, grises cálidos y colores piedra con lacado satinado uniforme a pistola.',
-    h1: 'Lacado satinado y mate de armarios empotrados en Madrid norte y centro',
+    h1: 'Lacado satinado de armarios empotrados en Madrid norte y centro',
     heroText: 'Sustituimos el barniz anaranjado o la madera oscura de los armarios de tu vivienda por un acabado satinado sedoso y resistente al uso diario, desmontando las hojas y con lacado artesanal en taller.',
     iconName: 'DoorClosed',
     sampleImageBefore: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=900&q=80',
@@ -48,7 +48,7 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
     palette: [
       { name: 'Blanco Roto Cálido', hex: '#F5F1EA', desc: 'Aporta hasta un 40% más de luminosidad natural en dormitorios y pasillos.' },
       { name: 'Gris Piedra Chamberí', hex: '#E3D9CC', desc: 'Contemporáneo, neutro y acogedor para carpinterías con moldura fina.' },
-      { name: 'Verde Salvia Sedoso', hex: '#A4B3A0', desc: 'Inspiración clásica inglesa en satinado mate anti-huellas.' }
+      { name: 'Verde Salvia Sedoso', hex: '#A4B3A0', desc: 'Inspiración clásica inglesa en acabado satinado anti-huellas.' }
     ],
     faqs: [
       {
@@ -61,7 +61,7 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
       },
       {
         question: '¿Aguanta el roce diario de niños o aspiradoras?',
-        answer: 'Absolutamente. No es pintura plástica ni chalk paint decorativa: utilizamos lacas poliuretánicas y acrílicas de alta dureza profesional concebidas para soportar golpes moderados y limpieza recurrente.'
+        answer: 'Absolutamente. No es pintura plástica ni acabados mate de bricolaje: en Lacados Arribas Martín nos posicionamos firmemente en el lacado tradicional y el acabado satinado profesional, utilizando lacas poliuretánicas y acrílicas de alta dureza concebidas para soportar golpes moderados y limpieza recurrente.'
       }
     ]
   },
@@ -69,7 +69,7 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
     id: 'lacado-puertas-paso-madrid',
     title: 'Puertas de Paso y Tapajuntas',
     subtitle: 'Unificamos la arquitectura de tu vivienda',
-    shortDesc: 'Lacamos puertas interiores, marcos y tapajuntas para unificar el conjunto del piso y llevarlo a un efecto mate sedoso contemporáneo y limpio.',
+    shortDesc: 'Lacamos puertas interiores, marcos y tapajuntas para unificar el conjunto del piso y llevarlo a un efecto satinado sedoso contemporáneo y limpio.',
     h1: 'Lacado satinado de puertas de paso y marcos en Madrid norte y centro',
     heroText: 'Renueva todas las puertas interiores de tu casa sin cambiarlas. Conservamos la calidad de la madera maciza original aplicando un tratamiento sedoso que transforma la luz de pasillos y salones.',
     iconName: 'DoorOpen',
@@ -106,7 +106,7 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
     id: 'lacado-muebles-salon-madrid',
     title: 'Muebles de Salón y Comedor',
     subtitle: 'Segunda vida de diseño para tus mejores piezas',
-    shortDesc: 'Rescatamos aparadores, vitrinas, librerías, mesas de comedor y muebles de TV en Chamberí, Tetuán y Barrio del Pilar con un acabado mate sedoso de alta resistencia.',
+    shortDesc: 'Rescatamos aparadores, vitrinas, librerías, mesas de comedor y muebles de TV en Chamberí, Tetuán y Barrio del Pilar con un acabado satinado sedoso de alta resistencia.',
     h1: 'Lacado satinado de muebles de salón (aparadores, librerías, mesas) en Madrid',
     heroText: 'Tu aparador o mesa de madera maciza merece seguir en casa. Transformamos muebles oscuros o desfasados en piezas protagonistas de revista de interiorismo, sin brillos plásticos.',
     iconName: 'Armchair',
@@ -125,7 +125,7 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
     ],
     palette: [
       { name: 'Gris Topo Suave', hex: '#C2B39A', desc: 'Evoca maderas nórdicas lavadas con una calidez envolvente.' },
-      { name: 'Negro Carbón Mate', hex: '#343434', desc: 'Contraste arquitectónico sofisticado para vitrinas y librerías.' },
+      { name: 'Negro Carbón Satinado', hex: '#343434', desc: 'Contraste arquitectónico sofisticado para vitrinas y librerías.' },
       { name: 'Blanco Roto Lino', hex: '#F5F1EA', desc: 'El estándar de oro para dar amplitud sin frialdad hospitalaria.' }
     ],
     faqs: [
@@ -135,7 +135,7 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
       },
       {
         question: '¿Podéis lacar el mueble manteniendo la tapa en madera original?',
-        answer: 'Sí, es una de las soluciones más demandadas en Chamberí: decapamos y protegemos la tapa en madera natural con aceite cera mate y lacamos la estructura en blanco roto satinado.'
+        answer: 'Sí, es una de las soluciones más demandadas en Chamberí: decapamos y protegemos la tapa en madera natural con aceite cera protector y lacamos la estructura en blanco roto satinado.'
       }
     ]
   },
@@ -153,7 +153,7 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
       'Tratamiento curativo y preventivo antitermitas y anticarcoma con cámara de reposo',
       'Encolado con adhesivos reversibles de taller y reposición de chapas nobles despegadas',
       'Limpieza y abrillantado de tiradores, cerraduras y bocallaves en latón de época',
-      'Acabados en muñequilla con goma laca, cera de abejas o lacado satinado mate sobrio'
+      'Acabados en muñequilla con goma laca, cera de abejas o lacado satinado sobrio'
     ],
     processSteps: [
       { title: '1. Diagnóstico de la madera', desc: 'Evaluamos la especie (nogal, caoba, cerezo, castaño), el estado de los ensambles y posibles xilófagos.' },
@@ -181,38 +181,38 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
 export const COMPARISON_TABLE = [
   {
     criterion: 'Método de aplicación',
-    chalkPaint: 'Brocha o rodillo en casa o taller decorativo',
-    arribasMartin: 'Pistola aerográfica calibrada para lacado artesanal en taller',
-    advantage: 'Acabado perfectamente plano y liso sin surcos'
+    diyMatte: 'Brocha, rodillo o sprays caseros sin cabina de ventilación',
+    arribasMartin: 'Pistola aerográfica calibrada para lacado tradicional en taller',
+    advantage: 'Acabado perfectamente plano y liso sin surcos ni sombras'
   },
   {
     criterion: 'Textura al tacto',
-    chalkPaint: 'Rugosa, porosa, tipo tiza o áspera',
+    diyMatte: 'Porosa, rugosa, áspera o efecto tiza que acumula suciedad',
     arribasMartin: 'Tacto sedoso continuo, uniforme y agradable al tacto diario',
-    advantage: 'Placer táctil sin asperezas ni acumulación de polvo'
+    advantage: 'Placer táctil sin asperezas ni absorción de polvo o grasa'
   },
   {
     criterion: 'Resistencia a roces y golpes',
-    chalkPaint: 'Baja: se desconcha con facilidad y absorbe suciedad',
-    arribasMartin: 'Alta: laca poliuretánica elástica formulada para interiores',
-    advantage: 'Soporta el trote de niños, aspiradoras y mascotas'
+    diyMatte: 'Baja: se marca con la uña, se desconcha con facilidad y absorbe suciedad',
+    arribasMartin: 'Alta durabilidad: laca satinada elástica de alta densidad formulada para interiores',
+    advantage: 'Soporta el trote diario de niños, aspiradoras y mascotas'
   },
   {
     criterion: 'Limpieza y mantenimiento',
-    chalkPaint: 'Difícil: no tolera paños húmedos ni limpiadores habituales',
-    arribasMartin: 'Sencilla: paño de microfibra con agua y jabón neutro',
-    advantage: 'Mantenimiento cero estrés en el día a día'
+    diyMatte: 'Difícil: no tolera paños húmedos ni limpiadores habituales sin desgastarse',
+    arribasMartin: 'Sencilla: 100% lavable con paño de microfibra, agua y jabón neutro',
+    advantage: 'Mantenimiento cero estrés sin perder uniformidad con los años'
   },
   {
     criterion: 'Idoneidad para grandes frentes',
-    chalkPaint: 'Mala: en puertas y armarios se aprecian sombras y cortes de rodillo',
+    diyMatte: 'Mala: en puertas y armarios se aprecian sombras, marcas de pasada y cortes',
     arribasMartin: 'Excelente: velo homogéneo en superficies de 2,5 m de altura',
-    advantage: 'Aspecto de mueble de fábrica premium'
+    advantage: 'Aspecto noble y continuo de carpintería premium'
   },
   {
-    criterion: 'Desglose de carpintería',
-    chalkPaint: 'Solo pintura superficial, no ajustan cierres ni holguras',
-    arribasMartin: 'Ajuste artesanal: bisagras, cantos, enrases y cepillados',
+    criterion: 'Desglose y ajuste de carpintería',
+    diyMatte: 'Solo pintura superficial, no ajustan cierres, cantos ni holguras',
+    arribasMartin: 'Ajuste de taller tradicional: desmontaje numerado, bisagras, cantos, enrases y cepillados',
     advantage: 'Cierres suaves y puertas perfectamente aplomadas'
   }
 ];
@@ -244,14 +244,14 @@ export const REAL_PROJECTS: ProjectItem[] = [
   },
   {
     id: 'salon-tetuan-bravo-murillo',
-    title: 'Aparador nórdico y mesa de centro en mate sedoso',
+    title: 'Aparador nórdico y mesa de centro en satinado sedoso',
     category: 'salon',
     categoryLabel: 'Muebles de salón',
     neighborhood: 'Tetuán',
     description: 'Piso reformado cerca de Bravo Murillo. Conjunto de aparador de teca y mesa de centro lacados en verde salvia grisáceo con encimeras protegidas con tratamiento anti-manchas.',
     beforeImg: 'https://images.unsplash.com/photo-1540518614846-7ede433c4ef2?auto=format&fit=crop&w=800&q=80',
     afterImg: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80',
-    details: ['Aparador 2,10m + Mesa', 'Tacto mate sedoso anti-huellas', 'Verde salvia (#A4B3A0)'],
+    details: ['Aparador 2,10m + Mesa', 'Tacto satinado sedoso anti-huellas', 'Verde salvia (#A4B3A0)'],
     days: 6
   },
   {
@@ -312,8 +312,8 @@ export const REVIEWS_DATA: ReviewItem[] = [
     rating: 5,
     date: 'Hace 1 mes',
     highlightedItem: 'Boiserie, aparador y librería de salón',
-    finishType: 'Mate sedoso gris piedra',
-    text: 'En Chamberí nos actualizaron el salón completo: boiserie, aparador y librería en mate sedoso. Se nota que son auténticos profesionales del lacado, no como pintura rápida a rodillo. Desmontaron todo, nos mantuvieron informados por WhatsApp con fotos del taller y montaron en 1 día.'
+    finishType: 'Satinado sedoso gris piedra',
+    text: 'En Chamberí nos actualizaron el salón completo: boiserie, aparador y librería en satinado sedoso. Se nota que son auténticos profesionales del lacado, no como pintura rápida a rodillo. Desmontaron todo, nos mantuvieron informados por WhatsApp con fotos del taller y montaron en 1 día.'
   },
   {
     id: 'rev-3',
@@ -363,26 +363,26 @@ export const BLOG_POSTS: BlogPost[] = [
     ]
   },
   {
-    id: 'lacado-satinado-vs-chalk-paint',
-    slug: 'lacado-satinado-vs-chalk-paint-madrid',
-    title: 'Lacado satinado vs chalk paint: cuándo elegir cada uno para tus muebles en Madrid',
+    id: 'lacado-tradicional-vs-acabados-bricolaje',
+    slug: 'lacado-tradicional-satinado-vs-acabados-mate-bricolaje-madrid',
+    title: 'Lacado tradicional satinado vs acabados mate de bricolaje: durabilidad real en el hogar',
     category: 'guia',
     categoryLabel: 'Guía técnica',
     date: '28 de Enero, 2026',
     readTime: '6 min de lectura',
-    excerpt: 'Análisis honesto de un taller de lacado: por qué la pintura decorativa a tiza sirve para un jarrón o mesilla rústica, pero fracasa en armarios y puertas de uso diario.',
+    excerpt: 'En Lacados Arribas Martín nos diferenciamos tanto del alto brillo industrial de fábrica como del mate de manualidades, posicionándonos firmemente en el lacado tradicional y el acabado satinado profesional.',
     image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80',
     content: [
-      'La moda de la pintura chalk paint ha despertado el interés por recuperar muebles antiguos, lo cual aplaudimos desde la perspectiva de la economía circular.',
-      'Sin embargo, recibimos con frecuencia clientes en Tetuán y Chamberí cuyos armarios pintados a tiza se han manchado con el roce de la ropa o cuyas puertas se han desconchado al poco tiempo.',
-      'La chalk paint no tiene adherencia química profunda ni elasticidad mecánica. El lacado profesional y artesanal a pistola utiliza resinas poliméricas que penetran en el poro y crean una capa continua, sedosa y lavable.',
-      'Si buscas un acabado rústico en una mesilla auxiliar, el chalk paint es entretenido. Para armarios, puertas y aparadores que vas a abrir miles de veces al año, el lacado a pistola en taller es la única solución definitiva.'
+      'En el mercado actual existen dos extremos frecuentes que desaconsejamos para un hogar con vida: el alto brillo industrial de fábrica (frío, plástico y que delata cualquier rozadura) y los acabados mate de bricolaje o manualidades (porosos, ásperos y que absorben manchas al menor contacto).',
+      'Recibimos con frecuencia clientes en Tetuán y Chamberí cuyos armarios o puertas pintados con acabados mate caseros se han manchado con el roce de la ropa, han absorbido grasa en las zonas de agarre o se han desconchado al limpiarlos.',
+      'Los acabados mate de bricolaje carecen de adherencia polimérica profunda y elasticidad mecánica. En contraposición, en Lacados Arribas Martín aplicamos un lacado tradicional a pistola en taller con barnices poliuretánicos y acrílicos formulados para penetrar en el poro y sellar una capa continua, sedosa y 100% lavable.',
+      'Los acabados mate de manualidades pueden tener sentido en una pieza decorativa auxiliar sin uso. Para armarios empotrados, puertas de paso y aparadores que vas a abrir miles de veces al año, el lacado tradicional en acabado satinado profesional es la única solución definitiva y confortable.'
     ]
   },
   {
     id: 'como-actualizamos-salon-tetuan-sin-obras',
     slug: 'como-actualizamos-salon-tetuan-sin-obras',
-    title: 'Cómo actualizamos un salón completo en Tetuán sin obras: aparador y puertas en mate',
+    title: 'Cómo actualizamos un salón completo en Tetuán sin obras: aparador y puertas en satinado',
     category: 'transformacion',
     categoryLabel: 'Transformación real',
     neighborhood: 'Tetuán',
@@ -393,7 +393,7 @@ export const BLOG_POSTS: BlogPost[] = [
     content: [
       'En lugar de tirar un mueble de 1990 hecho con maderas que hoy costarían miles de euros, los propietarios decidieron invertir una fracción de su coste en un lacado satinado en nuestro taller de la calle de los Voluntarios Catalanes en Tetuán.',
       'Se aplicó una paleta sobria en blanco roto y detalles en verde botella satinado en tiradores y remates de moldura.',
-      'Las puertas del salón se integraron con el mismo grado de brillo (15% gloss mate satinado), logrando que la estancia parezca el doble de amplia.'
+      'Las puertas del salón se integraron con el mismo grado de brillo (acabado satinado sedoso), logrando que la estancia parezca el doble de amplia.'
     ]
   },
   {

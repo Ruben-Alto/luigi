@@ -77,14 +77,21 @@ export const Header: React.FC<HeaderProps> = ({
             <button
               id="brand-logo-btn"
               onClick={() => handleNavClick('inicio')}
-              className="text-left group cursor-pointer focus:outline-none"
+              className="text-left group cursor-pointer focus:outline-none flex items-center gap-2.5 sm:gap-3"
             >
-              <span className="block font-sans font-bold text-lg sm:text-xl tracking-tight text-[#343434] group-hover:text-[#2F4F3A] transition-colors">
-                Arribas Martín
-              </span>
-              <span className="hidden sm:block text-[11px] uppercase tracking-wider text-[#6B6B6B] font-medium">
-                Taller de lacado en Tetuán · Desde 1969
-              </span>
+              <img
+                src="/logo.png"
+                alt="Logo Taller Lacados Arribas Martín"
+                className="h-10 w-10 sm:h-12 sm:w-12 object-contain shrink-0 transition-transform group-hover:scale-105"
+              />
+              <div className="flex flex-col justify-center">
+                <span className="block font-sans font-bold text-lg sm:text-xl tracking-tight text-[#343434] group-hover:text-[#2F4F3A] transition-colors leading-tight">
+                  Arribas Martín
+                </span>
+                <span className="hidden sm:block text-[11px] uppercase tracking-wider text-[#6B6B6B] font-medium leading-tight mt-0.5">
+                  Taller de lacado en Tetuán · Desde 1969
+                </span>
+              </div>
             </button>
           </div>
 
@@ -238,9 +245,16 @@ export const Header: React.FC<HeaderProps> = ({
           className="fixed inset-0 bg-[#F5F1EA] z-50 flex flex-col p-6 overflow-y-auto animate-in fade-in duration-200"
         >
           <div className="flex items-center justify-between pb-6 border-b border-[#E3D9CC]">
-            <div>
-              <span className="font-sans font-bold text-xl text-[#343434]">Arribas Martín</span>
-              <p className="text-xs text-[#6B6B6B]">Taller de lacado en Tetuán desde 1969</p>
+            <div className="flex items-center gap-3">
+              <img
+                src="/logo.png"
+                alt="Logo Taller Lacados Arribas Martín"
+                className="h-11 w-11 object-contain shrink-0"
+              />
+              <div>
+                <span className="font-sans font-bold text-xl text-[#343434] block leading-tight">Arribas Martín</span>
+                <p className="text-xs text-[#6B6B6B] leading-tight mt-0.5">Taller de lacado en Tetuán desde 1969</p>
+              </div>
             </div>
             <button
               id="mobile-menu-close-btn"

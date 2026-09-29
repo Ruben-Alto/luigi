@@ -44,8 +44,8 @@ export const HomeView: React.FC<HomeViewProps> = ({
       a: 'No. El 95% del trabajo de lijado, imprimación y aplicación a pistola se realiza mediante lacado artesanal en nuestro taller de Tetuán. En tu vivienda solo desmontamos las hojas y, tras el secado y curado completo, volvemos a montarlas e instalarlas limpias y sin olores residuales.'
     },
     {
-      q: '¿Por qué el lacado artesanal satinado dura mucho más que la chalk paint decorativa?',
-      a: 'La pintura de tiza o chalk paint se aplica con brocha o rodillo sin penetración polimérica, rayándose y perdiendo color con el roce diario de ropa o aspiradoras. Nuestro lacado satinado emplea un proceso de lacado artesanal con barnices poliuretánicos y acrílicos, creando una película elástica, uniforme, sedosa al tacto y 100% lavable con un paño húmedo.'
+      q: '¿Por qué el lacado tradicional satinado dura mucho más que los acabados mate de bricolaje?',
+      a: 'Los acabados mate de bricolaje y manualidades se aplican a brocha o rodillo sin penetración polimérica, rayándose, absorbiendo manchas y perdiendo capa con el roce diario. En Lacados Arribas Martín nos diferenciamos tanto del alto brillo industrial de fábrica como del mate de manualidades, posicionándonos firmemente en el lacado tradicional y el acabado satinado profesional: un proceso a pistola en taller con barnices poliuretánicos y acrílicos de alta densidad, creando una película elástica, uniforme, sedosa al tacto y 100% lavable con un paño húmedo.'
     },
     {
       q: '¿Hacéis presupuesto con fotos por WhatsApp antes de venir?',
@@ -57,7 +57,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
     },
     {
       q: '¿Hacéis cocinas de alto brillo industrial?',
-      a: 'No, lo excluimos de forma clara y transparente. No somos una fábrica industrial de cocinas en serie. Somos un taller de lacado artesanal especializado exclusivamente en lacados satinados y mates para estructuras del hogar (armarios, puertas, boiseries) y mobiliario de salón o dormitorio.'
+      a: 'No, lo excluimos de forma clara y transparente. No somos una fábrica industrial de cocinas en serie. Somos un taller de lacado artesanal especializado exclusivamente en lacado satinado para estructuras del hogar (armarios, puertas, boiseries) y mobiliario de salón o dormitorio.'
     }
   ];
 
@@ -75,11 +75,11 @@ export const HomeView: React.FC<HomeViewProps> = ({
             {/* Badge de confianza */}
             <div className="inline-flex items-center space-x-2 bg-[#E3D9CC]/60 border border-[#B08C4F]/40 rounded-full px-3.5 py-1.5 mb-5 text-xs font-semibold text-[#2F4F3A]">
               <span className="w-2 h-2 rounded-full bg-[#2F4F3A] animate-pulse"></span>
-              <span>Taller familiar en Tetuán desde 1969 · Especialistas en acabados satinados y mates</span>
+              <span>Taller familiar en Tetuán desde 1969 · Especialistas en acabado satinado</span>
             </div>
 
             <h1 className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#343434] leading-[1.15] mb-5 tracking-tight">
-              Lacado satinado y mate de armarios, puertas y salones en Madrid norte y centro
+              Lacado satinado de armarios, puertas y salones en Madrid norte y centro
             </h1>
 
             <p className="text-base sm:text-lg text-[#343434]/90 mb-6 leading-relaxed">
@@ -101,7 +101,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   <Check className="w-3 h-3 stroke-[3]" />
                 </span>
                 <span>
-                  <strong>Acabados satinados y mates de tacto sedoso:</strong> aguantan el uso diario y la limpieza frecuente mucho mejor que la chalk paint decorativa.
+                  <strong>Acabado satinado profesional:</strong> nos diferenciamos tanto del alto brillo industrial como del mate de manualidades; nuestro lacado tradicional aguanta el uso diario y la limpieza frecuente.
                 </span>
               </li>
               <li className="flex items-start space-x-3">
@@ -154,7 +154,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               Por qué elegir un lacado satinado profesional en Madrid norte y centro
             </h2>
             <p className="text-sm sm:text-base text-[#343434]/80">
-              Si vives en Chamberí, Tetuán o Barrio del Pilar, probablemente tus armarios y puertas son de madera de calidad. Nosotros los actualizamos sin obra, con un acabado mate o satinado sedoso que dura años.
+              Si vives en Chamberí, Tetuán o Barrio del Pilar, probablemente tus armarios y puertas son de madera de calidad. Nosotros los actualizamos sin obra, con un acabado satinado sedoso que dura años.
             </p>
           </div>
 
@@ -181,7 +181,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 Acabado sedoso que aguanta el día a día
               </h3>
               <p className="text-sm text-[#343434]/90 leading-relaxed">
-                Lacado artesanal satinado y mate aplicado a pistola, pensado para soportar golpes, roces y limpieza frecuente mejor que la chalk paint decorativa.
+                Lacado tradicional satinado aplicado a pistola: frente al mate de manualidades frágil y al alto brillo industrial, ofrecemos un acabado profesional formulado para soportar golpes, roces y limpieza frecuente.
               </p>
             </div>
 
@@ -221,10 +221,10 @@ export const HomeView: React.FC<HomeViewProps> = ({
               Catálogo de Servicios
             </span>
             <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl font-semibold text-[#343434] mb-3">
-              Especialidades de lacado satinado y mate en Madrid
+              Especialidades de lacado satinado en Madrid
             </h2>
             <p className="text-sm sm:text-base text-[#6B6B6B]">
-              Transformamos armarios empotrados, puertas de paso y muebles de salón en pisos de Madrid norte y centro con acabados satinados y mates de tacto sedoso, sin brillos agresivos.
+              Transformamos armarios empotrados, puertas de paso y muebles de salón en pisos de Madrid norte y centro con acabados satinados de tacto sedoso, sin brillos agresivos.
             </p>
           </div>
 
@@ -307,7 +307,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               Cómo trabajamos tus armarios, puertas y muebles en nuestro taller de Tetuán
             </h2>
             <p className="text-sm text-[#6B6B6B]">
-              Nuestro taller familiar lleva décadas especializado en lacado artesanal satinado y mate con control de cada capa para evitar piel de naranja, marcas de rodillo o brillos industriales.
+              Nuestro taller familiar lleva décadas especializado en lacado artesanal satinado con control de cada capa para evitar piel de naranja, marcas de rodillo o brillos industriales.
             </p>
           </div>
 
@@ -371,21 +371,83 @@ export const HomeView: React.FC<HomeViewProps> = ({
       </section>
 
       {/* =========================================================================
-          BLOQUE 5: TABLA COMPARATIVA CHALK PAINT VS LACADO ARTESANAL SATINADO
+          BLOQUE 5: TABLA COMPARATIVA ACABADOS MATE DE BRICOLAJE VS LACADO TRADICIONAL SATINADO
           ========================================================================= */}
       <section className="bg-[#F5F1EA] py-16 md:py-24 border-b border-[#E3D9CC]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <div className="inline-flex items-center space-x-1.5 text-xs uppercase tracking-wider text-[#B08C4F] font-bold mb-2">
               <Scale className="w-4 h-4" />
-              <span>Comparativa Técnica y Objetiva</span>
+              <span>Diferenciación y Posicionamiento de Taller</span>
             </div>
             <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl font-semibold text-[#343434] mb-3">
-              Chalk paint decorativa vs Lacado artesanal satinado
+              Ni alto brillo industrial de fábrica ni mate de bricolaje
             </h2>
-            <p className="text-sm sm:text-base text-[#6B6B6B]">
-              Muchos clientes acuden a nosotros tras frustrarse con la pintura a tiza. Te explicamos las diferencias reales de durabilidad y tacto en armarios y puertas sometidos al uso diario.
+            <p className="text-sm sm:text-base text-[#6B6B6B] leading-relaxed">
+              En <strong className="text-[#343434] font-semibold">Lacados Arribas Martín</strong> nos diferenciamos tanto del alto brillo industrial de fábrica como del mate de manualidades, posicionándonos firmemente en el <strong className="text-[#2F4F3A] font-semibold">lacado tradicional</strong> y el <strong className="text-[#2F4F3A] font-semibold">acabado satinado profesional</strong>.
             </p>
+          </div>
+
+          {/* Tarjetas comparativas de los 3 mundos */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
+            {/* Polo 1: Alto brillo industrial */}
+            <div className="bg-[#FFFFFF] rounded-xl p-5 border border-[#E3D9CC] flex flex-col justify-between shadow-xs opacity-90">
+              <div>
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-xs uppercase tracking-wider font-bold text-[#6B6B6B]">Fábrica en serie</span>
+                  <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-[#E3D9CC] text-[#6B6B6B]">Descartado</span>
+                </div>
+                <h3 className="font-sans font-bold text-base text-[#343434] mb-2">
+                  Alto brillo industrial
+                </h3>
+                <p className="text-xs text-[#6B6B6B] leading-relaxed">
+                  Reflejos plásticos deslumbrantes que acusan la menor huella, rayadura o defecto superficial. Aporta frialdad visual y no encaja con la calidez de un hogar.
+                </p>
+              </div>
+              <div className="mt-4 pt-3 border-t border-[#E3D9CC] text-[11px] text-[#6B6B6B]">
+                ✕ No lo fabricamos
+              </div>
+            </div>
+
+            {/* Polo 2: Mate de bricolaje */}
+            <div className="bg-[#FFFFFF] rounded-xl p-5 border border-[#B08C4F]/30 flex flex-col justify-between shadow-xs opacity-90">
+              <div>
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-xs uppercase tracking-wider font-bold text-[#B08C4F]">Manualidades</span>
+                  <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-[#E3D9CC] text-[#B08C4F]">Inadecuado para uso diario</span>
+                </div>
+                <h3 className="font-sans font-bold text-base text-[#343434] mb-2">
+                  Acabados mate de bricolaje
+                </h3>
+                <p className="text-xs text-[#6B6B6B] leading-relaxed">
+                  Pinturas caseras, tiza o rodillo. Superficie áspera y porosa que absorbe grasa en tiradores, retiene polvo y se desconcha o desgasta al frotar con un trapo.
+                </p>
+              </div>
+              <div className="mt-4 pt-3 border-t border-[#E3D9CC] text-[11px] text-[#B08C4F]">
+                ✕ Sin durabilidad en puertas y armarios
+              </div>
+            </div>
+
+            {/* Polo 3: Nuestra especialidad */}
+            <div className="bg-[#F5F1EA] rounded-xl p-5 border-2 border-[#2F4F3A] flex flex-col justify-between shadow-md relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-[#2F4F3A]/5 rounded-bl-full pointer-events-none"></div>
+              <div>
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-xs uppercase tracking-wider font-bold text-[#2F4F3A]">Taller familiar (1969)</span>
+                  <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-[#2F4F3A] text-white">Nuestra Especialidad</span>
+                </div>
+                <h3 className="font-sans font-bold text-base text-[#2F4F3A] mb-2">
+                  Lacado tradicional satinado profesional
+                </h3>
+                <p className="text-xs text-[#343434]/90 leading-relaxed">
+                  Pistola aerográfica multicapa en cabina de taller. Velo continuo sedoso (10-15% gloss), nivelación perfecta, 100% lavable y resistencia superior para vivir la casa sin preocupaciones.
+                </p>
+              </div>
+              <div className="mt-4 pt-3 border-t border-[#B08C4F]/30 text-[11px] font-semibold text-[#2F4F3A] flex items-center space-x-1">
+                <Check className="w-3.5 h-3.5 stroke-[3]" />
+                <span>El estándar óptimo para carpinterías de hogar</span>
+              </div>
+            </div>
           </div>
 
           {/* Tabla responsive */}
@@ -395,10 +457,10 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 <tr className="bg-[#E3D9CC]/60 text-[#343434] border-b border-[#B08C4F]/30 font-sans">
                   <th className="p-4 font-bold text-xs uppercase tracking-wider w-1/4">Criterio</th>
                   <th className="p-4 font-semibold text-xs uppercase tracking-wider w-1/3 text-[#6B6B6B]">
-                    Chalk Paint (Pintura a la tiza)
+                    Acabados mate de bricolaje (manualidades)
                   </th>
                   <th className="p-4 font-bold text-xs uppercase tracking-wider w-5/12 text-[#2F4F3A] bg-[#2F4F3A]/5">
-                    Lacado Satinado Arribas Martín
+                    Lacado tradicional satinado profesional (Arribas Martín)
                   </th>
                 </tr>
               </thead>
@@ -409,7 +471,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                       {row.criterion}
                     </td>
                     <td className="p-4 text-[#6B6B6B] leading-relaxed">
-                      {row.chalkPaint}
+                      {row.diyMatte}
                     </td>
                     <td className="p-4 text-[#2F4F3A] font-medium bg-[#2F4F3A]/5 leading-relaxed">
                       <div className="flex items-start space-x-2">
@@ -428,7 +490,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
 
           <div className="bg-[#E3D9CC]/30 border border-[#B08C4F]/30 rounded-xl p-5 text-center max-w-2xl mx-auto text-xs text-[#343434]">
             <p>
-              <strong>Conclusión del taller de lacado:</strong> La pintura de tiza es divertida para una pieza decorativa auxiliar sin uso. Para armarios empotrados y puertas de paso que se abren 20 veces al día, el lacado artesanal poliuretánico es la única garantía duradera.
+              <strong>Conclusión del taller de lacado:</strong> Los acabados mate de bricolaje y manualidades pueden tener sentido en pequeñas piezas decorativas sin roce. Para armarios empotrados, puertas de paso y muebles del día a día, el lacado tradicional en acabado satinado profesional es la única solución que ofrece un tacto sedoso impecable, resistencia real a golpes y total facilidad de limpieza con un paño húmedo.
             </p>
           </div>
         </div>
@@ -449,7 +511,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               Reseñas de vecinos en Madrid norte y centro
             </h2>
             <p className="text-sm text-[#6B6B6B]">
-              Opiniones reales de clientes en Chamberí, Tetuán y Barrio del Pilar sobre nuestro lacado satinado/mate.
+              Opiniones reales de clientes en Chamberí, Tetuán y Barrio del Pilar sobre nuestro lacado satinado.
             </p>
 
             {/* Filtros de barrio para reseñas */}
@@ -550,7 +612,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 Durante más de 50 años, la familia Arribas Martín ha mantenido vivo el saber hacer del lacado tradicional en el corazón de Tetuán. No hemos querido convertirnos en una planta robotizada de cocinas de melamina ni en una gran fábrica de alto brillo.
               </p>
               <p>
-                Nuestra vocación es el <strong className="text-[#2F4F3A]">lacado satinado y mate de alta escuela</strong>: ajustar la pistola según la porosidad de la madera, respetar el reposo entre manos y devolver el esplendor a las carpinterías que visten los hogares de Chamberí, Tetuán y Barrio del Pilar.
+                Nuestra vocación es el <strong className="text-[#2F4F3A]">lacado satinado de alta escuela</strong>: ajustar la pistola según la porosidad de la madera, respetar el reposo entre manos y devolver el esplendor a las carpinterías que visten los hogares de Chamberí, Tetuán y Barrio del Pilar.
               </p>
               <div className="pt-2 flex items-center space-x-4 text-xs text-[#6B6B6B]">
                 <span>✓ Barnices ecológicos al agua</span>

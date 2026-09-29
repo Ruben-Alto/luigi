@@ -10,7 +10,7 @@ export const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({ defaultMessage }
 
   const handleClick = () => {
     const message = defaultMessage || 
-      'Hola, he visto vuestra web de Lacados Arribas Martín. Quiero pedir orientación y presupuesto para lacar en satinado/mate unos armarios/puertas/muebles en mi piso de Madrid. Os envío fotos.';
+      'Hola, he visto vuestra web de Lacados Arribas Martín. Quiero pedir orientación y presupuesto para lacar en satinado unos armarios/puertas/muebles en mi piso de Madrid. Os envío fotos.';
     const encoded = encodeURIComponent(message);
     const url = `https://wa.me/${BUSINESS_INFO.whatsappNumber}?text=${encoded}`;
     window.open(url, '_blank');

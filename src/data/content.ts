@@ -28,7 +28,7 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
     id: 'lacado-armarios-empotrados-madrid',
     title: 'Armarios Empotrados y Frentes',
     subtitle: 'Acabado sedoso y duradero sin obras',
-    shortDesc: 'Actualizamos armarios empotrados de dormitorios y pasillos en tonos blanco roto, grises cálidos y colores piedra con lacado satinado uniforme a pistola.',
+    shortDesc: 'Actualizamos armarios empotrados de dormitorios y pasillos en tonos blanco roto, grises cálidos y colores piedra con lacado satinado uniforme artesanal.',
     h1: 'Lacado satinado de armarios empotrados en Madrid norte y centro',
     heroText: 'Sustituimos el barniz anaranjado o la madera oscura de los armarios de tu vivienda por un acabado satinado sedoso y resistente al uso diario, desmontando las hojas y con lacado artesanal en taller.',
     iconName: 'DoorClosed',
@@ -41,8 +41,8 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
       'Tonos a medida: Blancos rotos luminosos, gris piedra Chamberí, arena y topo satinado'
     ],
     processSteps: [
-      { title: '1. Desmontaje y numeración', desc: 'Acudimos a tu piso en Chamberí, Tetuán o Barrio del Pilar, retiramos las puertas y frentes de armario y los protegemos para su traslado seguro al taller.' },
-      { title: '2. Lijado y lacado artesanal en Tetuán', desc: 'Decapado minucioso de barnices antiguos, corrección de golpes, imprimación selladora y 3 manos cruzadas de laca satinada a pistola.' },
+      { title: '1. Desmontaje y numeración', desc: 'Acudimos a tu piso en Chamberí, Tetuán o Barrio del Pilar o cualquier otra zona de Madrid, retiramos las puertas y frentes de armario y los protegemos para su traslado seguro al taller.' },
+      { title: '2. Lijado y lacado artesanal en Tetuán', desc: 'Decapado minucioso de barnices antiguos, corrección de golpes, imprimación selladora y 3 manos cruzadas de laca satinada artesanal.' },
       { title: '3. Montaje y ajuste de bisagras', desc: 'Volvemos con las puertas curadas al 100%, las instalamos, ajustamos los cierres y enrasamos con los tapajuntas.' }
     ],
     palette: [
@@ -53,7 +53,7 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
     faqs: [
       {
         question: '¿Se desprenden olores fuertes o polvo en mi vivienda?',
-        answer: 'No. El 95% del trabajo sucio de lijado y aplicación a pistola se realiza con lacado artesanal en nuestro taller de Tetuán. En tu casa solo desmontamos y volvemos a montar las piezas ya curadas e inodoras.'
+        answer: 'No. El 95% del trabajo sucio de lijado y aplicación se realiza con lacado artesanal en nuestro taller de Tetuán. En tu casa solo desmontamos y volvemos a montar las piezas ya curadas e inodoras.'
       },
       {
         question: '¿Cuánto tiempo dura el proceso completo de unos armarios?',
@@ -83,7 +83,7 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
     ],
     processSteps: [
       { title: '1. Descolgado y desherraje', desc: 'Retiramos las hojas de las puertas marcando su posición exacta y retiramos manillas y pernios.' },
-      { title: '2. Tratamiento y lacado artesanal', desc: 'Lijado mecánico de desbaste, fondeo aislante contra taninos de madera vieja y lacado a pistola en horizontal para máxima planitud.' },
+      { title: '2. Tratamiento y lacado artesanal', desc: 'Lijado mecánico de desbaste, fondeo aislante contra taninos de madera vieja y lacado artesanal en horizontal para máxima planitud.' },
       { title: '3. Lacado de marcos in situ', desc: 'Protegemos suelo y paredes con plástico electrostático para lacar cercos y tapajuntas con micro-turbina sin manchar nada.' }
     ],
     palette: [
@@ -106,7 +106,7 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
     id: 'lacado-muebles-salon-madrid',
     title: 'Muebles de Salón y Comedor',
     subtitle: 'Segunda vida de diseño para tus mejores piezas',
-    shortDesc: 'Rescatamos aparadores, vitrinas, librerías, mesas de comedor y muebles de TV en Chamberí, Tetuán y Barrio del Pilar con un acabado satinado sedoso de alta resistencia.',
+    shortDesc: 'Rescatamos aparadores, vitrinas, librerías, mesas de comedor y muebles de TV en Chamberí, Tetuán y Barrio del Pilar o cualquier otra zona de Madrid con un acabado satinado sedoso de alta resistencia.',
     h1: 'Lacado satinado de muebles de salón (aparadores, librerías, mesas) en Madrid',
     heroText: 'Tu aparador o mesa de madera maciza merece seguir en casa. Transformamos muebles oscuros o desfasados en piezas protagonistas de revista de interiorismo, sin brillos plásticos.',
     iconName: 'Armchair',
@@ -182,7 +182,7 @@ export const COMPARISON_TABLE = [
   {
     criterion: 'Método de aplicación',
     diyMatte: 'Brocha, rodillo o sprays caseros sin cabina de ventilación',
-    arribasMartin: 'Pistola aerográfica calibrada para lacado tradicional en taller',
+    arribasMartin: 'Aplicación calibrada en taller para lacado tradicional',
     advantage: 'Acabado perfectamente plano y liso sin surcos ni sombras'
   },
   {
@@ -272,7 +272,7 @@ export const REAL_PROJECTS: ProjectItem[] = [
     category: 'armarios',
     categoryLabel: 'Armarios empotrados',
     neighborhood: 'Tetuán',
-    description: 'Piso en Valdeacederas. Frente corrido con altillos de 2,60m de altura, lacado a pistola en blanco puro satinado con tiradores embutidos.',
+    description: 'Piso en Valdeacederas. Frente corrido con altillos de 2,60m de altura, lacado artesanal en blanco puro satinado con tiradores embutidos.',
     beforeImg: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=800&q=80',
     afterImg: 'https://images.unsplash.com/photo-1558997519-83ea9252def8?auto=format&fit=crop&w=800&q=80',
     details: ['10 hojas y 4 altillos', 'Sellado de ranuras antiguas', 'Garantía 5 años'],
@@ -354,7 +354,7 @@ export const BLOG_POSTS: BlogPost[] = [
     content: [
       'En los pisos clásicos de Chamberí es muy habitual encontrar armarios empotrados de madera maciza o chapada de extraordinaria calidad constructiva, pero con barnices anaranjados que oscurecen los dormitorios.',
       'En este proyecto de la calle Alonso Cano desmontamos 8 hojas y sus altillos correspondientes, numerando cada bisagra y cerradura.',
-      'En nuestro taller de Tetuán eliminamos la vieja película brillante mediante lijado calibrado y aplicamos un fondo sellador acrílico. El acabado final se ejecutó mediante lacado artesanal a pistola con laca satinada en tono #F5F1EA.',
+      'En nuestro taller de Tetuán eliminamos la vieja película brillante mediante lijado calibrado y aplicamos un fondo sellador acrílico. El acabado final se ejecutó mediante lacado artesanal con laca satinada en tono #F5F1EA.',
       'El resultado: un incremento notable de luz natural en la vivienda y una superficie de tacto sedoso que resiste el uso diario sin amarillear.'
     ],
     faqs: [
@@ -375,7 +375,7 @@ export const BLOG_POSTS: BlogPost[] = [
     content: [
       'En el mercado actual existen dos extremos frecuentes que desaconsejamos para un hogar con vida: el alto brillo industrial de fábrica (frío, plástico y que delata cualquier rozadura) y los acabados mate de bricolaje o manualidades (porosos, ásperos y que absorben manchas al menor contacto).',
       'Recibimos con frecuencia clientes en Tetuán y Chamberí cuyos armarios o puertas pintados con acabados mate caseros se han manchado con el roce de la ropa, han absorbido grasa en las zonas de agarre o se han desconchado al limpiarlos.',
-      'Los acabados mate de bricolaje carecen de adherencia polimérica profunda y elasticidad mecánica. En contraposición, en Lacados Arribas Martín aplicamos un lacado tradicional a pistola en taller con barnices poliuretánicos y acrílicos formulados para penetrar en el poro y sellar una capa continua, sedosa y 100% lavable.',
+      'Los acabados mate de bricolaje carecen de adherencia polimérica profunda y elasticidad mecánica. En contraposición, en Lacados Arribas Martín aplicamos un lacado tradicional artesanal en taller con barnices poliuretánicos y acrílicos formulados para penetrar en el poro y sellar una capa continua, sedosa y 100% lavable.',
       'Los acabados mate de manualidades pueden tener sentido en una pieza decorativa auxiliar sin uso. Para armarios empotrados, puertas de paso y aparadores que vas a abrir miles de veces al año, el lacado tradicional en acabado satinado profesional es la única solución definitiva y confortable.'
     ]
   },

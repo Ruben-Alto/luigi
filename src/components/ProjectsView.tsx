@@ -141,7 +141,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenWhatsApp }) =>
             Galería & Herramientas
           </span>
           <h1 className="font-editorial text-3xl sm:text-4xl font-semibold text-[#343434] mb-4">
-            Proyectos de lacado satinado en Tetuán, Chamberí y Barrio del Pilar
+            Proyectos de lacado satinado en Tetuán, Chamberí y Barrio del Pilar o cualquier otra zona de Madrid
           </h1>
           <p className="text-sm sm:text-base text-[#6B6B6B]">
             Casos reales de armarios empotrados, puertas y salones modernizados con acabado sedoso en Madrid norte y centro. Compara el antes y después y prueba nuestro simulador.
@@ -637,7 +637,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenWhatsApp }) =>
                   {estimate.min.toLocaleString('es-ES')} € - {estimate.max.toLocaleString('es-ES')} €
                 </div>
                 <p className="text-xs text-white/80 leading-relaxed mb-4">
-                  Estimación basada en desmontaje, preparación, lijado, lacado artesanal a pistola en nuestro taller de Tetuán y montaje final.
+                  Estimación basada en desmontaje, preparación, lijado, lacado artesanal en nuestro taller de Tetuán y montaje final.
                 </p>
 
                 <div className="space-y-2 border-t border-white/20 pt-4 text-xs text-white/90">

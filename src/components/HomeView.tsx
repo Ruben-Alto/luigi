@@ -41,11 +41,11 @@ export const HomeView: React.FC<HomeViewProps> = ({
   const faqsList = [
     {
       q: '¿Se desprenden olores o se genera polvo en mi casa durante el lacado?',
-      a: 'No. El 95% del trabajo de lijado, imprimación y aplicación a pistola se realiza mediante lacado artesanal en nuestro taller de Tetuán. En tu vivienda solo desmontamos las hojas y, tras el secado y curado completo, volvemos a montarlas e instalarlas limpias y sin olores residuales.'
+      a: 'No. El 95% del trabajo de lijado, imprimación y aplicación se realiza mediante lacado artesanal en nuestro taller de Tetuán. En tu vivienda solo desmontamos las hojas y, tras el secado y curado completo, volvemos a montarlas e instalarlas limpias y sin olores residuales.'
     },
     {
       q: '¿Por qué el lacado tradicional satinado dura mucho más que los acabados mate de bricolaje?',
-      a: 'Los acabados mate de bricolaje y manualidades se aplican a brocha o rodillo sin penetración polimérica, rayándose, absorbiendo manchas y perdiendo capa con el roce diario. En Lacados Arribas Martín nos diferenciamos tanto del alto brillo industrial de fábrica como del mate de manualidades, posicionándonos firmemente en el lacado tradicional y el acabado satinado profesional: un proceso a pistola en taller con barnices poliuretánicos y acrílicos de alta densidad, creando una película elástica, uniforme, sedosa al tacto y 100% lavable con un paño húmedo.'
+      a: 'Los acabados mate de bricolaje y manualidades se aplican a brocha o rodillo sin penetración polimérica, rayándose, absorbiendo manchas y perdiendo capa con el roce diario. En Lacados Arribas Martín nos diferenciamos tanto del alto brillo industrial de fábrica como del mate de manualidades, posicionándonos firmemente en el lacado tradicional y el acabado satinado profesional: un proceso artesanal en taller con barnices poliuretánicos y acrílicos de alta densidad, creando una película elástica, uniforme, sedosa al tacto y 100% lavable con un paño húmedo.'
     },
     {
       q: '¿Hacéis presupuesto con fotos por WhatsApp antes de venir?',
@@ -93,7 +93,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   <Check className="w-3 h-3 stroke-[3]" />
                 </span>
                 <span>
-                  <strong>Especialistas en estructuras del hogar:</strong> armarios, puertas y boiseries, no en alto brillo de cocina ni producciones industriales.
+                  <strong>Especialistas en estructuras del hogar:</strong> armarios, puertas y boiseries; damos una nueva vida a tus muebles con un acabado artesanal.
                 </span>
               </li>
               <li className="flex items-start space-x-3">
@@ -138,7 +138,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
             </div>
 
             <p className="text-xs text-[#6B6B6B] leading-relaxed">
-              <span className="font-semibold text-[#343434]">Sin compromiso:</span> Nos envías fotos por WhatsApp desde Chamberí, Tetuán o Barrio del Pilar y te respondemos en menos de 24 h con una orientación honesta.
+              <span className="font-semibold text-[#343434]">Sin compromiso:</span> Nos envías fotos por WhatsApp desde Chamberí, Tetuán o Barrio del Pilar o cualquier otra zona de Madrid y te respondemos en menos de 24 h con una orientación honesta.
             </p>
           </div>
         </div>
@@ -154,7 +154,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               Por qué elegir un lacado satinado profesional en Madrid norte y centro
             </h2>
             <p className="text-sm sm:text-base text-[#343434]/80">
-              Si vives en Chamberí, Tetuán o Barrio del Pilar, probablemente tus armarios y puertas son de madera de calidad. Nosotros los actualizamos sin obra, con un acabado satinado sedoso que dura años.
+              Si vives en Chamberí, Tetuán o Barrio del Pilar o cualquier otra zona de Madrid, probablemente tus armarios y puertas son de madera de calidad. Nosotros los actualizamos sin obra, con un acabado satinado sedoso que dura años.
             </p>
           </div>
 
@@ -181,7 +181,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 Acabado sedoso que aguanta el día a día
               </h3>
               <p className="text-sm text-[#343434]/90 leading-relaxed">
-                Lacado tradicional satinado aplicado a pistola: frente al mate de manualidades frágil y al alto brillo industrial, ofrecemos un acabado profesional formulado para soportar golpes, roces y limpieza frecuente.
+                  Lacado tradicional satinado aplicado artesanalmente: frente al mate de manualidades frágil y al alto brillo industrial, ofrecemos un acabado profesional formulado para soportar golpes, roces y limpieza frecuente.
               </p>
             </div>
 
@@ -360,10 +360,10 @@ export const HomeView: React.FC<HomeViewProps> = ({
               </div>
               <div>
                 <h3 className="font-sans font-bold text-lg text-[#343434] mb-2">
-                  Preparación minuciosa y lacado artesanal a pistola
+                  Preparación minuciosa y lacado artesanal
                 </h3>
                 <p className="text-sm text-[#343434]/90 leading-relaxed">
-                  Con un proceso de lacado artesanal en nuestro taller de {BUSINESS_INFO.street}, preparamos la base con lijados por fases, corregimos golpes y defectos de la madera, aplicamos imprimaciones selladoras y varias manos de laca satinada a pistola aerográfica.
+                  Con un proceso de lacado artesanal en nuestro taller de {BUSINESS_INFO.street}, preparamos la base con lijados por fases, corregimos golpes y defectos de la madera, aplicamos imprimaciones selladoras y varias manos de laca satinada artesanal.
                 </p>
               </div>
             </div>
@@ -375,10 +375,10 @@ export const HomeView: React.FC<HomeViewProps> = ({
               </div>
               <div>
                 <h3 className="font-sans font-bold text-lg text-[#343434] mb-2">
-                  Lacado a pistola, curado real y montaje final
+                  Lacado artesanal, curado real y montaje final
                 </h3>
                 <p className="text-sm text-[#343434]/90 leading-relaxed">
-                  Una vez curado el lacado completamente, montamos de nuevo las piezas en tu piso de Chamberí, Tetuán o Barrio del Pilar, revisamos cierres y bisagras, y te explicamos pautas sencillas de limpieza para mantener el tacto sedoso intacto durante años.
+                  Una vez curado el lacado completamente, montamos de nuevo las piezas en tu piso de Chamberí, Tetuán o Barrio del Pilar o cualquier otra zona de Madrid, revisamos cierres y bisagras, y te explicamos pautas sencillas de limpieza para mantener el tacto sedoso intacto durante años.
                 </p>
               </div>
             </div>
@@ -466,7 +466,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   Lacado tradicional satinado profesional
                 </h3>
                 <p className="text-xs text-[#343434]/90 leading-relaxed">
-                  Pistola aerográfica multicapa en cabina de taller. Velo continuo sedoso (10-15% gloss), nivelación perfecta, 100% lavable y resistencia superior para vivir la casa sin preocupaciones.
+                  Aplicación multicapa en cabina de taller. Velo continuo sedoso (10-15% gloss), nivelación perfecta, 100% lavable y resistencia superior para vivir la casa sin preocupaciones.
                 </p>
               </div>
               <div className="mt-4 pt-3 border-t border-[#B08C4F]/30 text-[11px] font-semibold text-[#2F4F3A] flex items-center space-x-1">
@@ -537,7 +537,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               Reseñas de vecinos en Madrid norte y centro
             </h2>
             <p className="text-sm text-[#6B6B6B]">
-              Opiniones reales de clientes en Chamberí, Tetuán y Barrio del Pilar sobre nuestro lacado satinado.
+              Opiniones reales de clientes en Chamberí, Tetuán y Barrio del Pilar o cualquier otra zona de Madrid sobre nuestro lacado satinado.
             </p>
 
             {/* Filtros de barrio para reseñas */}
@@ -638,7 +638,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 Durante más de 50 años, la familia Arribas Martín ha mantenido vivo el saber hacer del lacado tradicional en el corazón de Tetuán. No hemos querido convertirnos en una planta robotizada de cocinas de melamina ni en una gran fábrica de alto brillo.
               </p>
               <p>
-                Nuestra vocación es el <strong className="text-[#2F4F3A]">lacado satinado de alta escuela</strong>: ajustar la pistola según la porosidad de la madera, respetar el reposo entre manos y devolver el esplendor a las carpinterías que visten los hogares de Chamberí, Tetuán y Barrio del Pilar.
+                Nuestra vocación es el <strong className="text-[#2F4F3A]">lacado satinado de alta escuela</strong>: ajustar el proceso según la porosidad de la madera, respetar el reposo entre manos y devolver el esplendor a las carpinterías que visten los hogares de Chamberí, Tetuán y Barrio del Pilar o cualquier otra zona de Madrid.
               </p>
               <div className="pt-2 flex items-center space-x-4 text-xs text-[#6B6B6B]">
                 <span>✓ Barnices ecológicos al agua</span>

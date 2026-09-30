@@ -31,7 +31,7 @@ export const BlogView: React.FC<BlogViewProps> = ({ onOpenWhatsApp }) => {
             Transformaciones reales de lacado satinado en Madrid norte y centro
           </h1>
           <p className="text-sm sm:text-base text-[#6B6B6B]">
-            Crónicas de proyectos en Chamberí, Tetuán y Barrio del Pilar, guías técnicas sobre barnices ecológicos y comparativas honestas frente a la pintura de tiza.
+            Crónicas de proyectos en Chamberí, Tetuán y Barrio del Pilar o cualquier otra zona de Madrid, guías técnicas sobre barnices ecológicos y comparativas honestas frente a la pintura de tiza.
           </p>
         </div>
 

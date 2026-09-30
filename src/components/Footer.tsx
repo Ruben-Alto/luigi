@@ -30,7 +30,7 @@ export const Footer: React.FC<FooterProps> = ({
               Taller de lacado familiar desde 1969
             </p>
             <p className="text-sm text-[#343434]/90 leading-relaxed">
-              Especialistas en lacado artesanal satinado a pistola para armarios empotrados, puertas de paso y muebles de salón en Tetuán, Chamberí y Barrio del Pilar.
+              Especialistas en lacado artesanal satinado para armarios empotrados, puertas de paso y muebles de salón en Tetuán, Chamberí y Barrio del Pilar o cualquier otra zona de Madrid.
             </p>
             <div className="flex items-center space-x-2 text-xs text-[#343434] bg-[#E3D9CC]/70 p-2.5 rounded-lg border border-[#B08C4F]/30">
               <Award className="w-4 h-4 text-[#2F4F3A] shrink-0" />

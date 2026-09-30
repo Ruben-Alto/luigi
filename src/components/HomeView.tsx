@@ -66,12 +66,12 @@ export const HomeView: React.FC<HomeViewProps> = ({
       {/* =========================================================================
           BLOQUE 1: HERO DE IMPACTO (Claim GEO-Ready + CTAs Directos)
           ========================================================================= */}
-      <section className="relative bg-[#F5F1EA] pt-8 pb-16 md:pt-14 md:pb-24 border-b border-[#E3D9CC] overflow-hidden">
+      <section className="relative bg-[#F5F1EA] pt-8 pb-16 md:pt-14 md:pb-24 border-b border-[#E3D9CC] overflow-hidden" style={{ backgroundImage: 'url("/images/restauracion-muebles-antiguos.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
         {/* Adorno sutil de fondo */}
         <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-[#E3D9CC]/30 blur-3xl pointer-events-none"></div>
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl bg-white/70 rounded-xl p-6 sm:p-8">
             {/* Badge de confianza */}
             <div className="inline-flex items-center space-x-2 bg-[#E3D9CC]/60 border border-[#B08C4F]/40 rounded-full px-3.5 py-1.5 mb-5 text-xs font-semibold text-[#2F4F3A]">
               <span className="w-2 h-2 rounded-full bg-[#2F4F3A] animate-pulse"></span>
@@ -229,20 +229,45 @@ export const HomeView: React.FC<HomeViewProps> = ({
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            {Object.values(SERVICES_DATA).map((srv) => (
-              <article
-                key={srv.id}
-                className="bg-[#FFFFFF] rounded-xl border border-[#E3D9CC] p-7 shadow-xs hover:shadow-md hover:border-[#2F4F3A]/60 transition-all flex flex-col justify-between"
-              >
-                <div>
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="p-3 rounded-lg bg-[#E3D9CC]/30 text-[#2F4F3A]">
-                      {srv.iconName === 'DoorClosed' && <DoorClosed className="w-6 h-6" />}
-                      {srv.iconName === 'DoorOpen' && <DoorOpen className="w-6 h-6" />}
-                      {srv.iconName === 'Armchair' && <Armchair className="w-6 h-6" />}
-                      {srv.iconName === 'Sparkles' && <Sparkles className="w-6 h-6" />}
+            {Object.values(SERVICES_DATA).map((srv) => {
+              const isArmarios = srv.id === 'lacado-armarios-empotrados-madrid';
+              const isPuertas = srv.id === 'lacado-puertas-paso-madrid';
+              const isSalon = srv.id === 'lacado-muebles-salon-madrid';
+              const isRestauracion = srv.id === 'restauracion-muebles-antiguos-madrid';
+              const cardConFoto = isArmarios || isPuertas || isSalon || isRestauracion;
+              const bgImage = isArmarios
+                ? 'url("/images/armarios-empotrados-bg.jpg")'
+                : isPuertas
+                  ? 'url("/images/puertas-paso-bg.jpg")'
+                  : isSalon
+                    ? 'url("/images/muebles-salon-bg.jpg")'
+                    : 'url("/images/restauracion-muebles-bg.jpg")';
+              return (
+               <article
+                 key={srv.id}
+                 className={`relative rounded-xl border border-[#E3D9CC] p-7 shadow-xs hover:shadow-md hover:border-[#2F4F3A]/60 transition-all flex flex-col justify-between overflow-hidden ${
+                   cardConFoto ? 'min-h-[360px] bg-center bg-fixed bg-no-repeat' : 'bg-[#FFFFFF]'
+                 }`}
+                 style={cardConFoto ? {
+                   backgroundImage: bgImage,
+                    backgroundSize: 'cover',
+                   backgroundPosition: 'center',
+                   backgroundAttachment: 'fixed',
+                   backgroundRepeat: 'no-repeat',
+                 } : undefined}
+               >
+                {cardConFoto && (
+                  <div className="absolute inset-0 bg-white/10 pointer-events-none"></div>
+                )}
+                <div className={cardConFoto ? 'relative z-10 bg-white/50 rounded-lg p-4' : ' '}>
+                   <div className="flex items-center justify-between mb-4">
+                      <div className="p-3 rounded-lg bg-[#E3D9CC]/30 text-[#2F4F3A]">
+                       {srv.iconName === 'DoorClosed' && <DoorClosed className="w-6 h-6" />}
+                       {srv.iconName === 'DoorOpen' && <DoorOpen className="w-6 h-6" />}
+                       {srv.iconName === 'Armchair' && <Armchair className="w-6 h-6" />}
+                       {srv.iconName === 'Sparkles' && <Sparkles className="w-6 h-6" />}
                     </div>
-                    <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-[#E3D9CC]/50 text-[#343434]">
+                     <span className="text-xs font-bold px-2.5 py-1 rounded-full bg-[#E3D9CC]/50 text-[#343434]">
                       En taller Tetuán
                     </span>
                   </div>
@@ -251,19 +276,19 @@ export const HomeView: React.FC<HomeViewProps> = ({
                     {srv.title}
                   </h3>
 
-                  <p className="text-sm text-[#343434]/90 mb-4 leading-relaxed">
+                   <p className={`text-sm font-bold mb-4 leading-relaxed ${cardConFoto ? 'text-[#343434]' : 'text-[#343434]/90'}`}>
                     {srv.shortDesc}
                   </p>
 
-                  <div className="border-l-2 border-[#A4B3A0] pl-3 py-1 mb-6 text-xs text-[#6B6B6B] italic">
+                   <div className="border-l-2 border-[#A4B3A0] pl-3 py-1 mb-6 text-xs text-[#6B6B6B] font-bold">
                     {srv.features[0]}
                   </div>
                 </div>
 
-                <div className="pt-4 border-t border-[#E3D9CC] flex items-center justify-between">
+                 <div className={`pt-4 border-t border-[#E3D9CC] flex items-center justify-between ${cardConFoto ? 'relative z-10 bg-white/50 mt-2 rounded-lg p-3' : ''}`}>
                   <button
                     onClick={() => onSelectService(srv.id)}
-                    className="text-sm font-semibold text-[#2F4F3A] hover:text-[#243E2E] flex items-center space-x-1 cursor-pointer"
+                     className="text-sm font-bold text-[#2F4F3A] hover:text-[#243E2E] flex items-center space-x-1 cursor-pointer"
                   >
                     <span>Ver detalles y proceso</span>
                     <ArrowRight className="w-4 h-4" />
@@ -271,13 +296,14 @@ export const HomeView: React.FC<HomeViewProps> = ({
 
                   <button
                     onClick={() => onOpenWhatsApp(`Hola, quiero pedir presupuesto para el servicio de: ${srv.title}`)}
-                    className="text-xs font-medium text-[#6B6B6B] hover:text-[#2F4F3A] underline"
+                     className="text-xs font-bold text-[#6B6B6B] hover:text-[#2F4F3A] underline"
                   >
                     Consultar por WhatsApp
                   </button>
                 </div>
-              </article>
-            ))}
+               </article>
+              );
+            })}
           </div>
 
           <div className="text-center">

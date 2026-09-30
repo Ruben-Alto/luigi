@@ -41,7 +41,7 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
       'Tonos a medida: Blancos rotos luminosos, gris piedra Chamberí, arena y topo satinado'
     ],
     processSteps: [
-      { title: '1. Desmontaje y numeración', desc: 'Acudimos a tu piso en Chamberí, Tetuán o Barrio del Pilar o cualquier otra zona de Madrid, retiramos las puertas y frentes de armario y los protegemos para su traslado seguro al taller.' },
+      { title: '1. Desmontaje y numeración', desc: 'Acudimos a tu piso en Chamberí, Tetuán, Barrio del Pilar o cualquier otra zona de Madrid, retiramos las puertas y frentes de armario y los protegemos para su traslado seguro al taller.' },
       { title: '2. Lijado y lacado artesanal en Tetuán', desc: 'Decapado minucioso de barnices antiguos, corrección de golpes, imprimación selladora y 3 manos cruzadas de laca satinada artesanal.' },
       { title: '3. Montaje y ajuste de bisagras', desc: 'Volvemos con las puertas curadas al 100%, las instalamos, ajustamos los cierres y enrasamos con los tapajuntas.' }
     ],

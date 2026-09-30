@@ -138,7 +138,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
             </div>
 
             <p className="text-xs text-[#6B6B6B] leading-relaxed">
-              <span className="font-semibold text-[#343434]">Sin compromiso:</span> Nos envías fotos por WhatsApp desde Chamberí, Tetuán o Barrio del Pilar o cualquier otra zona de Madrid y te respondemos en menos de 24 h con una orientación honesta.
+              <span className="font-semibold text-[#343434]">Sin compromiso:</span> Nos envías fotos por WhatsApp desde Chamberí, Tetuán, Barrio del Pilar o cualquier otra zona de Madrid y te respondemos en menos de 24 h con una orientación honesta.
             </p>
           </div>
         </div>
@@ -154,7 +154,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               Por qué elegir un lacado satinado profesional en Madrid norte y centro
             </h2>
             <p className="text-sm sm:text-base text-[#343434]/80">
-              Si vives en Chamberí, Tetuán o Barrio del Pilar o cualquier otra zona de Madrid, probablemente tus armarios y puertas son de madera de calidad. Nosotros los actualizamos sin obra, con un acabado satinado sedoso que dura años.
+              Si vives en Chamberí, Tetuán, Barrio del Pilar o cualquier otra zona de Madrid, probablemente tus armarios y puertas son de madera de calidad. Nosotros los actualizamos sin obra, con un acabado satinado sedoso que dura años.
             </p>
           </div>
 
@@ -378,7 +378,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   Lacado artesanal, curado real y montaje final
                 </h3>
                 <p className="text-sm text-[#343434]/90 leading-relaxed">
-                  Una vez curado el lacado completamente, montamos de nuevo las piezas en tu piso de Chamberí, Tetuán o Barrio del Pilar o cualquier otra zona de Madrid, revisamos cierres y bisagras, y te explicamos pautas sencillas de limpieza para mantener el tacto sedoso intacto durante años.
+                  Una vez curado el lacado completamente, montamos de nuevo las piezas en tu piso de Chamberí, Tetuán, Barrio del Pilar o cualquier otra zona de Madrid, revisamos cierres y bisagras, y te explicamos pautas sencillas de limpieza para mantener el tacto sedoso intacto durante años.
                 </p>
               </div>
             </div>

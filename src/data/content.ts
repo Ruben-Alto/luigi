@@ -37,7 +37,7 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
     features: [
       'Sin obras en casa: desmontamos frentes y puertas numeradas para un lacado artesanal en nuestro taller de Tetuán',
       'Lijados sucesivos y corrección de holguras para una base ultraestable sin piel de naranja',
-      'Barnices ecológicos al agua certificados para interiores de dormitorios infantiles y adultos',
+      'Barnices y lacas ecológicos al agua certificados para interiores de dormitorios infantiles y adultos',
       'Tonos a medida: Blancos rotos luminosos, gris piedra Chamberí, arena y topo satinado'
     ],
     processSteps: [
@@ -181,38 +181,44 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
 export const COMPARISON_TABLE = [
   {
     criterion: 'Método de aplicación',
-    diyMatte: 'Brocha, rodillo o sprays caseros sin cabina de ventilación',
     arribasMartin: 'Aplicación calibrada en taller para lacado tradicional',
+    altoBrilloIndustrial: 'Aplicación en cabina industrial robotizada, producción en serie sin personalización',
+    diyMatte: 'Brocha, rodillo o sprays caseros sin cabina de ventilación',
     advantage: 'Acabado perfectamente plano y liso sin surcos ni sombras'
   },
   {
     criterion: 'Textura al tacto',
-    diyMatte: 'Porosa, rugosa, áspera o efecto tiza que acumula suciedad',
     arribasMartin: 'Tacto sedoso continuo, uniforme y agradable al tacto diario',
+    altoBrilloIndustrial: 'Superficie lisa pero plástica y fría al tacto, sin calidez',
+    diyMatte: 'Porosa, rugosa, áspera o efecto tiza que acumula suciedad',
     advantage: 'Placer táctil sin asperezas ni absorción de polvo o grasa'
   },
   {
     criterion: 'Resistencia a roces y golpes',
-    diyMatte: 'Baja: se marca con la uña, se desconcha con facilidad y absorbe suciedad',
     arribasMartin: 'Alta durabilidad: laca satinada elástica de alta densidad formulada para interiores',
+    altoBrilloIndustrial: 'Dura inicialmente pero se raspa, amarillea y pierde brillo con el tiempo',
+    diyMatte: 'Baja: se marca con la uña, se desconcha con facilidad y absorbe suciedad',
     advantage: 'Soporta el trote diario de niños, aspiradoras y mascotas'
   },
   {
     criterion: 'Limpieza y mantenimiento',
-    diyMatte: 'Difícil: no tolera paños húmedos ni limpiadores habituales sin desgastarse',
     arribasMartin: 'Sencilla: 100% lavable con paño de microfibra, agua y jabón neutro',
+    altoBrilloIndustrial: 'Limpieza rápida pero acumula huellas, marcas de agua y defectos visibles',
+    diyMatte: 'Difícil: no tolera paños húmedos ni limpiadores habituales sin desgastarse',
     advantage: 'Mantenimiento cero estrés sin perder uniformidad con los años'
   },
   {
     criterion: 'Idoneidad para grandes frentes',
-    diyMatte: 'Mala: en puertas y armarios se aprecian sombras, marcas de pasada y cortes',
     arribasMartin: 'Excelente: velo homogéneo en superficies de 2,5 m de altura',
+    altoBrilloIndustrial: 'Uniforme en serie pero con reflejos deslumbrantes y efecto espejo',
+    diyMatte: 'Mala: en puertas y armarios se aprecian sombras, marcas de pasada y cortes',
     advantage: 'Aspecto noble y continuo de carpintería premium'
   },
   {
     criterion: 'Desglose y ajuste de carpintería',
-    diyMatte: 'Solo pintura superficial, no ajustan cierres, cantos ni holguras',
     arribasMartin: 'Ajuste de taller tradicional: desmontaje numerado, bisagras, cantos, enrases y cepillados',
+    altoBrilloIndustrial: 'Sin ajuste personalizado: aplicación directa en serie sin retoques',
+    diyMatte: 'Solo pintura superficial, no ajustan cierres, cantos ni holguras',
     advantage: 'Cierres suaves y puertas perfectamente aplomadas'
   }
 ];
@@ -323,8 +329,8 @@ export const REVIEWS_DATA: ReviewItem[] = [
     rating: 5,
     date: 'Hace 2 meses',
     highlightedItem: 'Aparador antiguo y 6 puertas de paso',
-    finishType: 'Barnices ecológicos satinados',
-    text: 'Vivo en Barrio del Pilar y buscaba alguien que respetara mis muebles de calidad. Restauraron un aparador antiguo y varias puertas con barnices ecológicos satinados, y parecen nuevos. No desprendieron nada de olor en casa.'
+    finishType: 'Barnices y lacas ecológicos satinados',
+    text: 'Vivo en Barrio del Pilar y buscaba alguien que respetara mis muebles de calidad. Restauraron un aparador antiguo y varias puertas con barnices y lacas ecológicos satinados, y parecen nuevos. No desprendieron nada de olor en casa.'
   },
   {
     id: 'rev-4',
@@ -404,12 +410,12 @@ export const BLOG_POSTS: BlogPost[] = [
     categoryLabel: 'Sostenibilidad',
     date: '5 de Enero, 2026',
     readTime: '4 min de lectura',
-    excerpt: 'Evitamos la tala innecesaria y el desecho de toneladas de madera de calidad prolongando la vida de las carpinterías con barnices ecológicos.',
+    excerpt: 'Evitamos la tala innecesaria y el desecho de toneladas de madera de calidad prolongando la vida de las carpinterías con barnices y lacas ecológicos.',
     image: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80',
     content: [
       'El mobiliario contemporáneo de grandes superficies de muebles en kit suele estar fabricado con aglomerado prensado de baja densidad con colas volátiles y una vida útil estimada de 4 a 7 años.',
       'Por contra, las carpinterías de los pisos de Madrid norte y centro esconden madera de pino de Flandes, roble español o maderas tropicales con décadas de estabilidad que nunca se deformarán.',
-      'Al renovar el acabado con lacados y barnices ecológicos al agua en taller artesanal, reducimos la huella de carbono a menos de un 10% respecto a comprar carpinterías nuevas.'
+      'Al renovar el acabado con lacados y barnices y lacas ecológicos al agua en taller artesanal, reducimos la huella de carbono a menos de un 10% respecto a comprar carpinterías nuevas.'
     ]
   }
 ];

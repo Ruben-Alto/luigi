@@ -109,7 +109,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   <Check className="w-3 h-3 stroke-[3]" />
                 </span>
                 <span>
-                  <strong>Taller de lacado en Tetuán ({BUSINESS_INFO.street}):</strong> con barnices ecológicos certificados pensados para el interior de tu hogar.
+                  <strong>Taller de lacado en Tetuán ({BUSINESS_INFO.street}):</strong> con barnices y lacas ecológicos certificados pensados para el interior de tu hogar.
                 </span>
               </li>
             </ul>
@@ -481,12 +481,15 @@ export const HomeView: React.FC<HomeViewProps> = ({
             <table className="w-full text-left text-sm border-collapse min-w-[620px]">
               <thead>
                 <tr className="bg-[#E3D9CC]/60 text-[#343434] border-b border-[#B08C4F]/30 font-sans">
-                  <th className="p-4 font-bold text-xs uppercase tracking-wider w-1/4">Criterio</th>
-                  <th className="p-4 font-semibold text-xs uppercase tracking-wider w-1/3 text-[#6B6B6B]">
-                    Acabados mate de bricolaje (manualidades)
-                  </th>
-                  <th className="p-4 font-bold text-xs uppercase tracking-wider w-5/12 text-[#2F4F3A] bg-[#2F4F3A]/5">
+                  <th className="p-4 font-bold text-xs uppercase tracking-wider w-1/5">Criterio</th>
+                  <th className="p-4 font-bold text-xs uppercase tracking-wider w-2/5 text-[#2F4F3A] bg-[#2F4F3A]/5">
                     Lacado tradicional satinado profesional (Arribas Martín)
+                  </th>
+                  <th className="p-4 font-semibold text-xs uppercase tracking-wider w-1/5 text-[#B08C4F]">
+                    Alto brillo industrial
+                  </th>
+                  <th className="p-4 font-semibold text-xs uppercase tracking-wider w-1/5 text-[#6B6B6B]">
+                    Acabados mate de bricolaje (manualidades)
                   </th>
                 </tr>
               </thead>
@@ -496,9 +499,6 @@ export const HomeView: React.FC<HomeViewProps> = ({
                     <td className="p-4 font-semibold text-[#343434]">
                       {row.criterion}
                     </td>
-                    <td className="p-4 text-[#6B6B6B] leading-relaxed">
-                      {row.diyMatte}
-                    </td>
                     <td className="p-4 text-[#2F4F3A] font-medium bg-[#2F4F3A]/5 leading-relaxed">
                       <div className="flex items-start space-x-2">
                         <Check className="w-4 h-4 text-[#2F4F3A] shrink-0 mt-0.5" />
@@ -507,6 +507,12 @@ export const HomeView: React.FC<HomeViewProps> = ({
                       <span className="block text-[11px] text-[#B08C4F] font-semibold mt-1">
                         Ventaja: {row.advantage}
                       </span>
+                    </td>
+                    <td className="p-4 text-[#B08C4F] leading-relaxed">
+                      {row.altoBrilloIndustrial}
+                    </td>
+                    <td className="p-4 text-[#6B6B6B] leading-relaxed">
+                      {row.diyMatte}
                     </td>
                   </tr>
                 ))}
@@ -641,7 +647,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 Nuestra vocación es el <strong className="text-[#2F4F3A]">lacado satinado de alta escuela</strong>: ajustar el proceso según la porosidad de la madera, respetar el reposo entre manos y devolver el esplendor a las carpinterías que visten los hogares de Chamberí, Tetuán y Barrio del Pilar o cualquier otra zona de Madrid.
               </p>
               <div className="pt-2 flex items-center space-x-4 text-xs text-[#6B6B6B]">
-                <span>✓ Barnices ecológicos al agua</span>
+                <span>✓ Barnices y lacas ecológicos al agua</span>
                 <span>✓ Recogida y entrega propia</span>
                 <span>✓ Trato directo sin intermediarios</span>
               </div>

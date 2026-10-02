@@ -369,20 +369,20 @@ export const BLOG_POSTS: BlogPost[] = [
     ]
   },
   {
-    id: 'chalk-paint-vs-lacado-pistola-guia-durabilidad-puertas',
-    slug: 'chalk-paint-vs-lacado-pistola-guia-durabilidad-puertas',
-    title: 'Chalk Paint vs Lacado a Pistola: Guía de durabilidad para tus puertas',
+    id: 'chalk-paint-vs-lacado-artesanal-guia-durabilidad-puertas',
+    slug: 'chalk-paint-vs-lacado-artesanal-guia-durabilidad-puertas',
+    title: 'Chalk Paint vs Lacado Artesanal: Guía de durabilidad para tus puertas',
     category: 'guia',
     categoryLabel: 'Guías Técnicas',
     date: '28 de Enero, 2026',
     readTime: '6 min de lectura',
-    excerpt: 'Comparamos la pintura decorativa a mano frente al lacado profesional en cabina ebanista. Descubre por qué el micraje uniforme aguanta el roce diario en pasillos.',
+    excerpt: 'Comparamos la pintura decorativa a mano frente al lacado artesanal en cabina ebanista. Descubre por qué el micraje uniforme aguanta el roce diario en pasillos.',
     image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80',
     content: [
       'En el mercado actual existen dos extremos frecuentes que desaconsejamos para un hogar con vida: el alto brillo industrial de fábrica (frío, plástico y que delata cualquier rozadura) y los acabados mate de bricolaje o manualidades (porosos, ásperos y que absorben manchas al menor contacto).',
       'Recibimos con frecuencia clientes en Tetuán y Chamberí cuyas puertas pintadas con chalk paint o acabados mate caseros se han manchado con el roce de la ropa, han absorbido grasa en las zonas de agarre o se han desconchado al limpiarlas.',
-      'La pintura decorativa a mano (chalk paint) carece de adherencia polimérica profunda y elasticidad mecánica. En contraposición, en Lacados Arribas Martín aplicamos un lacado tradicional artesanal en cabina ebanista con barnices y lacas ecológicos al agua formulados para penetrar en el poro y sellar una capa continua, sedosa y 100% lavable.',
-      'Los acabados mate de manualidades pueden tener sentido en una pieza decorativa auxiliar sin uso. Para puertas de paso que vas a abrir miles de veces al año, el lacado tradicional en acabado satinado profesional es la única solución definitiva y confortable.'
+      'La pintura decorativa a mano (chalk paint) carece de adherencia polimérica profunda y elasticidad mecánica. En contraposición, en Lacados Arribas Martín aplicamos un lacado artesanal en cabina ebanista con barnices y lacas ecológicos al agua formulados para penetrar en el poro y sellar una capa continua, sedosa y 100% lavable.',
+      'Los acabados mate de manualidades pueden tener sentido en una pieza decorativa auxiliar sin uso. Para puertas de paso que vas a abrir miles de veces al año, el lacado artesanal en acabado satinado profesional es la única solución definitiva y confortable.'
     ]
   },
   {

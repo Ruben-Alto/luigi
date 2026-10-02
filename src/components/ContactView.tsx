@@ -21,9 +21,7 @@ export const ContactView: React.FC<ContactViewProps> = ({ onOpenWhatsApp }) => {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
-    piece: '',
-    lacaTone: '',
-    other: '',
+    projectType: 'armarios',
     neighborhood: 'Chamberí',
     message: '',
     privacyAccepted: true
@@ -138,9 +136,7 @@ export const ContactView: React.FC<ContactViewProps> = ({ onOpenWhatsApp }) => {
                       setFormData({
                         name: '',
                         phone: '',
-                        piece: '',
-                        lacaTone: '',
-                        other: '',
+                        projectType: 'armarios',
                         neighborhood: 'Chamberí',
                         message: '',
                         privacyAccepted: true
@@ -203,42 +199,19 @@ export const ContactView: React.FC<ContactViewProps> = ({ onOpenWhatsApp }) => {
 
                   <div>
                     <label className="block text-xs font-bold uppercase tracking-wider text-[#343434] mb-1">
-                      Pieza a lacar *
+                      Tipo de proyecto
                     </label>
-                    <input
-                      type="text"
-                      required
-                      placeholder="Ej. Armario empotrado, puertas de paso, mesa de comedor..."
-                      value={formData.piece}
-                      onChange={(e) => setFormData({ ...formData, piece: e.target.value })}
+                    <select
+                      value={formData.projectType}
+                      onChange={(e) => setFormData({ ...formData, projectType: e.target.value })}
                       className="w-full p-3 rounded-lg border border-[#E3D9CC] bg-[#F5F1EA] text-sm text-[#343434] focus:outline-none focus:border-[#2F4F3A]"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-xs font-bold uppercase tracking-wider text-[#343434] mb-1">
-                      Tono de laca
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="Ej. Blanco roto, gris piedra, verde botella..."
-                      value={formData.lacaTone}
-                      onChange={(e) => setFormData({ ...formData, lacaTone: e.target.value })}
-                      className="w-full p-3 rounded-lg border border-[#E3D9CC] bg-[#F5F1EA] text-sm text-[#343434] focus:outline-none focus:border-[#2F4F3A]"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-xs font-bold uppercase tracking-wider text-[#343434] mb-1">
-                      Otro (patinado, restauración, acabado especial...)
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="Ej. Patinado envejecido, restauración antigua..."
-                      value={formData.other}
-                      onChange={(e) => setFormData({ ...formData, other: e.target.value })}
-                      className="w-full p-3 rounded-lg border border-[#E3D9CC] bg-[#F5F1EA] text-sm text-[#343434] focus:outline-none focus:border-[#2F4F3A]"
-                    />
+                    >
+                      <option value="armarios">Armarios empotrados y frentes</option>
+                      <option value="puertas">Puertas de paso y tapajuntas</option>
+                      <option value="salon">Muebles de salón (aparador, mesa, librería)</option>
+                      <option value="restauracion">Restauración de mueble antiguo</option>
+                      <option value="combinado">Varios elementos combinados</option>
+                    </select>
                   </div>
 
                   <div>

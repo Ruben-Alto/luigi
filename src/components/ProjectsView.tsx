@@ -25,55 +25,22 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenWhatsApp }) =>
   const [neighborhoodFilter, setNeighborhoodFilter] = useState<string>('todos');
   const [activeProjectForSlider, setActiveProjectForSlider] = useState<ProjectItem>(REAL_PROJECTS[0]);
   const [sliderPosition, setSliderPosition] = useState<number>(50);
-
-  // Estados del Simulador IA de Acabados
-  const [simulatorItemType, setSimulatorItemType] = useState<string>('armario');
-  const [simulatorColor, setSimulatorColor] = useState<{ name: string; hex: string; desc: string }>({
-    name: 'Blanco Roto Cálido',
-    hex: '#F5F1EA',
-    desc: 'Luminosidad neutra sin deslumbramientos.'
-  });
-  const [simulatorFinish, setSimulatorFinish] = useState<'satinado sedoso' | 'satinado suave'>('satinado sedoso');
-  const [uploadedImagePreview, setUploadedImagePreview] = useState<string | null>(null);
  
+  // Estados del Simulador IA de Acabados (texto descriptivo)
+  const [simulatorPiece, setSimulatorPiece] = useState<string>('');
+  const [simulatorLacaTone, setSimulatorLacaTone] = useState<string>('');
+  const [simulatorOther, setSimulatorOther] = useState<string>('');
+  const [simulatorNotes, setSimulatorNotes] = useState<string>('');
   // Filtrado de proyectos
   const filteredProjects = REAL_PROJECTS.filter((p) => {
     const matchCategory = categoryFilter === 'todos' || p.category === categoryFilter;
     const matchNeighborhood = neighborhoodFilter === 'todos' || p.neighborhood.toLowerCase().includes(neighborhoodFilter.toLowerCase());
     return matchCategory && matchNeighborhood;
   });
-
-  // Muestras para el simulador
-  const sampleImagesByType: Record<string, { before: string; title: string }> = {
-    armario: {
-      before: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=800&q=80',
-      title: 'Armario empotrado sapelly clásico'
-    },
-    puerta: {
-      before: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80',
-      title: 'Puerta de paso con barniz anaranjado'
-    },
-    salon: {
-      before: 'https://images.unsplash.com/photo-1540518614846-7ede433c4ef2?auto=format&fit=crop&w=800&q=80',
-      title: 'Aparador de salón madera oscura'
-    },
-    antiguo: {
-      before: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80',
-      title: 'Cómoda antigua herencia familiar'
-    }
-  };
-
-  const paletteOptions = [
-    { name: 'Blanco Roto Cálido', hex: '#F5F1EA', desc: 'Máxima luminosidad para interiores de Madrid.' },
-    { name: 'Gris Piedra Chamberí', hex: '#E3D9CC', desc: 'Neutro contemporáneo suave.' },
-    { name: 'Gris Topo Suave', hex: '#C2B39A', desc: 'Calidez envolvente similar al lino.' },
-    { name: 'Verde Botella Satinado', hex: '#2F4F3A', desc: 'Distinción señorial británica.' },
-    { name: 'Verde Salvia Sedoso', hex: '#A4B3A0', desc: 'Tendencia botánica en satinado anti-huellas.' },
-    { name: 'Negro Carbón Satinado', hex: '#343434', desc: 'Elegancia sobria y sedosa para piezas singulares.' }
-  ];
  
+
   const handleSendSimulatorToWhatsApp = () => {
-    const msg = `Hola, he utilizado el simulador de vuestra web de Lacados Arribas Martín. Me interesa un acabado en color ${simulatorColor.name} (${simulatorColor.hex}) en acabado ${simulatorFinish} para un proyecto de tipo ${simulatorItemType}. ¿Me podéis orientar sobre fechas y presupuesto?`;
+    const msg = `Hola, he utilizado vuestra web de Lacados Arribas Martín. Quiero un lacado satinado para: pieza: ${simulatorPiece || 'no especificada'}, tono de laca: ${simulatorLacaTone || 'no especificado'}, otros: ${simulatorOther || 'ninguno'}. ${simulatorNotes ? 'Detalles: ' + simulatorNotes : ''}. Os envío fotos.`;
     onOpenWhatsApp(msg);
   };
 
@@ -278,177 +245,103 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenWhatsApp }) =>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            {/* Controles de selección (5 columnas) */}
-            <div className="lg:col-span-5 space-y-6">
-              
-              {/* Paso 1: Tipo de elemento */}
+            {/* Campos de texto descriptivos (5 columnas) */}
+            <div className="lg:col-span-5 space-y-4">
+
+              {/* 1. Pieza a lacar */}
               <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-[#343434] mb-2">
-                  1. Selecciona la pieza a lacar
+                <label className="block text-xs font-bold uppercase tracking-wider text-[#343434] mb-1">
+                  1. Pieza a lacar *
                 </label>
-                <div className="grid grid-cols-2 gap-2">
-                  {[
-                    { id: 'armario', label: 'Armario Empotrado' },
-                    { id: 'puerta', label: 'Puerta de Paso' },
-                    { id: 'salon', label: 'Mueble de Salón' },
-                    { id: 'antiguo', label: 'Mueble Antiguo' }
-                  ].map((item) => (
-                    <button
-                      key={item.id}
-                      onClick={() => setSimulatorItemType(item.id)}
-                      className={`p-2.5 rounded-lg text-xs font-medium text-left border transition-all cursor-pointer ${
-                        simulatorItemType === item.id
-                          ? 'bg-[#2F4F3A] text-white border-[#2F4F3A] font-semibold'
-                          : 'bg-[#F5F1EA] text-[#343434] border-[#E3D9CC] hover:bg-[#E3D9CC]/60'
-                      }`}
-                    >
-                      {item.label}
-                    </button>
-                  ))}
-                </div>
+                <input
+                  type="text"
+                  required
+                  placeholder="Ej. Armario empotrado, puertas de paso, mesa de comedor..."
+                  value={simulatorPiece}
+                  onChange={(e) => setSimulatorPiece(e.target.value)}
+                  className="w-full p-3 rounded-lg border border-[#E3D9CC] bg-[#F5F1EA] text-sm text-[#343434] focus:outline-none focus:border-[#2F4F3A]"
+                />
               </div>
 
-              {/* Paso 2: Paleta de color */}
+              {/* 2. Tono de laca */}
               <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-[#343434] mb-2">
-                  2. Elige el tono de laca
+                <label className="block text-xs font-bold uppercase tracking-wider text-[#343434] mb-1">
+                  2. Tono de laca
                 </label>
-                <div className="grid grid-cols-3 gap-2">
-                  {paletteOptions.map((color) => {
-                    const isSelected = simulatorColor.hex === color.hex;
-                    return (
-                      <button
-                        key={color.hex}
-                        onClick={() => setSimulatorColor(color)}
-                        className={`p-2 rounded-lg border text-left transition-all cursor-pointer flex flex-col items-center justify-center text-center ${
-                          isSelected
-                            ? 'border-[#2F4F3A] ring-2 ring-[#2F4F3A]/30 bg-[#F5F1EA]'
-                            : 'border-[#E3D9CC] hover:border-[#B08C4F]'
-                        }`}
-                      >
-                        <div
-                          className="w-7 h-7 rounded-full border border-black/20 shadow-xs mb-1.5"
-                          style={{ backgroundColor: color.hex }}
-                        ></div>
-                        <span className="text-[11px] font-medium text-[#343434] line-clamp-1">
-                          {color.name}
-                        </span>
-                      </button>
-                    );
-                  })}
-                </div>
-                <p className="text-[11px] text-[#6B6B6B] mt-2 italic">
-                  Tono seleccionado: <strong>{simulatorColor.name}</strong> ({simulatorColor.desc})
-                </p>
+                <input
+                  type="text"
+                  placeholder="Ej. Blanco roto, gris piedra, verde botella..."
+                  value={simulatorLacaTone}
+                  onChange={(e) => setSimulatorLacaTone(e.target.value)}
+                  className="w-full p-3 rounded-lg border border-[#E3D9CC] bg-[#F5F1EA] text-sm text-[#343434] focus:outline-none focus:border-[#2F4F3A]"
+                />
               </div>
 
-              {/* Paso 3: Grado de brillo */}
+              {/* 3. Otro */}
               <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-[#343434] mb-2">
-                  3. Grado de acabado sedoso
+                <label className="block text-xs font-bold uppercase tracking-wider text-[#343434] mb-1">
+                  3. Otro (patinado, restauración, acabado especial...)
                 </label>
-                <div className="grid grid-cols-2 gap-2">
-                  <button
-                    onClick={() => setSimulatorFinish('satinado sedoso')}
-                    className={`p-3 rounded-lg border text-left cursor-pointer transition-all ${
-                      simulatorFinish === 'satinado sedoso'
-                        ? 'bg-[#2F4F3A] text-white border-[#2F4F3A]'
-                        : 'bg-[#F5F1EA] text-[#343434] border-[#E3D9CC]'
-                    }`}
-                  >
-                    <span className="block text-xs font-bold">Satinado Sedoso (15% gloss)</span>
-                    <span className={`block text-[10px] mt-0.5 ${simulatorFinish === 'satinado sedoso' ? 'text-white/80' : 'text-[#6B6B6B]'}`}>
-                      Tacto agradable y fácil limpieza. El más solicitado.
-                    </span>
-                  </button>
+                <input
+                  type="text"
+                  placeholder="Ej. Patinado envejecido, restauración antigua..."
+                  value={simulatorOther}
+                  onChange={(e) => setSimulatorOther(e.target.value)}
+                  className="w-full p-3 rounded-lg border border-[#E3D9CC] bg-[#F5F1EA] text-sm text-[#343434] focus:outline-none focus:border-[#2F4F3A]"
+                />
+              </div>
 
-                  <button
-                    onClick={() => setSimulatorFinish('satinado suave')}
-                    className={`p-3 rounded-lg border text-left cursor-pointer transition-all ${
-                      simulatorFinish === 'satinado suave'
-                        ? 'bg-[#2F4F3A] text-white border-[#2F4F3A]'
-                        : 'bg-[#F5F1EA] text-[#343434] border-[#E3D9CC]'
-                    }`}
-                  >
-                    <span className="block text-xs font-bold">Satinado Suave (10% gloss)</span>
-                    <span className={`block text-[10px] mt-0.5 ${simulatorFinish === 'satinado suave' ? 'text-white/80' : 'text-[#6B6B6B]'}`}>
-                      Reflejo muy atenuado y discreto para estancias luminosas.
-                    </span>
-                  </button>
-                </div>
+              {/* Comentarios adicionales */}
+              <div>
+                <label className="block text-xs font-bold uppercase tracking-wider text-[#343434] mb-1">
+                  Comentarios adicionales
+                </label>
+                <textarea
+                  rows={3}
+                  placeholder="Cuéntanos más detalles: dimensiones, estado actual de la madera, ubicación..."
+                  value={simulatorNotes}
+                  onChange={(e) => setSimulatorNotes(e.target.value)}
+                  className="w-full p-3 rounded-lg border border-[#E3D9CC] bg-[#F5F1EA] text-sm text-[#343434] focus:outline-none focus:border-[#2F4F3A]"
+                />
               </div>
 
             </div>
 
-            {/* Vista previa simulada (7 columnas) */}
-            <div className="lg:col-span-7 bg-[#F5F1EA] rounded-xl border border-[#E3D9CC] p-5">
-              <div className="flex items-center justify-between mb-3 text-xs">
-                <span className="font-bold text-[#343434]">
-                  Simulación estimada de acabado:
-                </span>
-                <span className="text-[#2F4F3A] font-semibold">
-                  {simulatorColor.name} · {simulatorFinish.toUpperCase()}
-                </span>
-              </div>
-
-              {/* Canvas visual de simulación */}
-              <div className="relative h-72 sm:h-80 rounded-lg overflow-hidden border border-[#B08C4F]/30 bg-black/10 shadow-inner flex items-center justify-center">
-                {/* Imagen base de muestra */}
-                <img
-                  src={sampleImagesByType[simulatorItemType]?.before}
-                  alt="Muestra a simular"
-                  className="w-full h-full object-cover"
-                />
-
-                {/* Filtro cromático superpuesto con modo blend multiply/overlay para simular la mano de laca */}
-                <div
-                  className="absolute inset-0 transition-all duration-500 pointer-events-none"
-                  style={{
-                    backgroundColor: simulatorColor.hex,
-                    opacity: simulatorFinish === 'satinado sedoso' ? 0.78 : 0.82,
-                    mixBlendMode: 'multiply'
-                  }}
-                ></div>
-
-                {/* Reflejo sedoso simulado */}
-                <div className={`absolute inset-0 bg-gradient-to-tr from-transparent via-white/${simulatorFinish === 'satinado sedoso' ? '10' : '5'} to-transparent pointer-events-none`}></div>
-
-                {/* Badge superpuesto en la simulación */}
-                <div className="absolute bottom-3 left-3 bg-white/95 backdrop-blur-xs p-3 rounded-lg shadow-lg border border-[#B08C4F]/40 max-w-xs">
-                  <div className="flex items-center space-x-2">
-                    <div
-                      className="w-4 h-4 rounded-full border border-black/20"
-                      style={{ backgroundColor: simulatorColor.hex }}
-                    ></div>
-                    <span className="text-xs font-bold text-[#343434]">
-                      {simulatorColor.name}
-                    </span>
-                  </div>
-                  <span className="block text-[10px] text-[#6B6B6B] mt-0.5">
-                    Acabado {simulatorFinish} sobre {sampleImagesByType[simulatorItemType]?.title}
+            {/* Vista previa de solicitud (7 columnas) */}
+            <div className="lg:col-span-7">
+              <div className="bg-[#F5F1EA] rounded-xl border border-[#E3D9CC] p-5 h-full flex flex-col justify-center">
+                <div className="flex items-center justify-between mb-3 text-xs">
+                  <span className="font-bold text-[#343434]">
+                    Resumen de tu solicitud:
+                  </span>
+                  <span className="text-[#2F4F3A] font-semibold">
+                    {simulatorPiece || 'Sin pieza definida'}
                   </span>
                 </div>
-              </div>
-
-              {/* Disclaimer de honestidad */}
-              <div className="mt-4 flex items-start space-x-2 text-[11px] text-[#6B6B6B] bg-[#E3D9CC]/40 p-3 rounded-lg">
-                <Info className="w-4 h-4 text-[#B08C4F] shrink-0 mt-0.5" />
-                <span>
-                  <strong>Nota del maestro lacador:</strong> Esta previsualización digital es orientativa. En el taller aplicamos muestras físicas sobre madera real para que compruebes el tono exacto bajo la luz de tu casa antes de iniciar el lacado definitivo.
-                </span>
-              </div>
-
-              {/* Botón WhatsApp prellenado con la simulación */}
-              <div className="mt-5">
-                <button
-                  onClick={handleSendSimulatorToWhatsApp}
-                  className="w-full flex items-center justify-center space-x-2 bg-[#2F4F3A] hover:bg-[#243E2E] text-white font-semibold py-3.5 px-4 rounded-lg shadow-sm hover:shadow transition-all cursor-pointer"
-                >
-                  <Send className="w-4 h-4" />
-                  <span>Enviar esta simulación al taller por WhatsApp</span>
-                </button>
+                <p className="text-xs sm:text-sm text-[#6B6B6B] leading-relaxed">
+                  {simulatorNotes || 'Describe tu pieza, tono y acabado deseado y te contactaremos con una orientación personalizada.'}
+                </p>
               </div>
             </div>
+          </div>
+
+          {/* Disclaimer de honestidad */}
+          <div className="mt-4 flex items-start space-x-2 text-[11px] text-[#6B6B6B] bg-[#E3D9CC]/40 p-3 rounded-lg">
+            <Info className="w-4 h-4 text-[#B08C4F] shrink-0 mt-0.5" />
+            <span>
+              <strong>Nota del maestro lacador:</strong> Esta previsualización digital es orientativa. En el taller aplicamos muestras físicas sobre madera real para que compruebes el tono exacto bajo la luz de tu casa antes de iniciar el lacado definitivo.
+            </span>
+          </div>
+
+          {/* Botón WhatsApp prellenado con la simulación */}
+          <div className="mt-5">
+            <button
+              onClick={handleSendSimulatorToWhatsApp}
+              className="w-full flex items-center justify-center space-x-2 bg-[#2F4F3A] hover:bg-[#243E2E] text-white font-semibold py-3.5 px-4 rounded-lg shadow-sm hover:shadow transition-all cursor-pointer"
+            >
+              <Send className="w-4 h-4" />
+              <span>Enviar esta solicitud al taller por WhatsApp</span>
+            </button>
           </div>
         </section>
 

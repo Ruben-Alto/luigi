@@ -9,13 +9,10 @@ interface BlogViewProps {
 
 export const BlogView: React.FC<BlogViewProps> = ({ onOpenWhatsApp }) => {
   const [selectedCategory, setSelectedCategory] = useState<string>('todos');
-  const [selectedNeighborhood, setSelectedNeighborhood] = useState<string>('todos');
   const [activePost, setActivePost] = useState<BlogPost | null>(null);
 
   const filteredPosts = BLOG_POSTS.filter((post) => {
-    const matchCat = selectedCategory === 'todos' || post.category === selectedCategory;
-    const matchNeigh = selectedNeighborhood === 'todos' || (post.neighborhood && post.neighborhood.toLowerCase().includes(selectedNeighborhood.toLowerCase()));
-    return matchCat && matchNeigh;
+    return selectedCategory === 'todos' || post.category === selectedCategory;
   });
 
   return (
@@ -57,21 +54,6 @@ export const BlogView: React.FC<BlogViewProps> = ({ onOpenWhatsApp }) => {
                 {cat.label}
               </button>
             ))}
-          </div>
-
-          {/* Barrios */}
-          <div className="flex items-center space-x-2 text-xs">
-            <span className="text-[#6B6B6B] font-medium">Barrio:</span>
-            <select
-              value={selectedNeighborhood}
-              onChange={(e) => setSelectedNeighborhood(e.target.value)}
-              className="p-1.5 rounded-md border border-[#E3D9CC] bg-white text-xs text-[#343434] focus:outline-none"
-            >
-              <option value="todos">Todos los barrios</option>
-              <option value="Chamberí">Chamberí</option>
-              <option value="Tetuán">Tetuán</option>
-              <option value="Barrio del Pilar">Barrio del Pilar</option>
-            </select>
           </div>
         </div>
 

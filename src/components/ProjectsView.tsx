@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { 
   Sparkles, 
-  Calculator, 
   Filter, 
   Calendar, 
   MapPin, 
@@ -36,14 +35,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenWhatsApp }) =>
   });
   const [simulatorFinish, setSimulatorFinish] = useState<'satinado sedoso' | 'satinado suave'>('satinado sedoso');
   const [uploadedImagePreview, setUploadedImagePreview] = useState<string | null>(null);
-
-  // Estados de la Calculadora de Presupuesto
-  const [calcServiceType, setCalcServiceType] = useState<'armarios' | 'puertas' | 'salon' | 'restauracion'>('armarios');
-  const [calcQuantity, setCalcQuantity] = useState<number>(6); // ej. 6 puertas de armario
-  const [calcIncludeFrames, setCalcIncludeFrames] = useState<boolean>(true);
-  const [calcNeighborhood, setCalcNeighborhood] = useState<string>('Chamberí');
-  const [calcWoodCondition, setCalcWoodCondition] = useState<'bueno' | 'medio' | 'antiguo'>('medio');
-
+ 
   // Filtrado de proyectos
   const filteredProjects = REAL_PROJECTS.filter((p) => {
     const matchCategory = categoryFilter === 'todos' || p.category === categoryFilter;
@@ -79,55 +71,9 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenWhatsApp }) =>
     { name: 'Verde Salvia Sedoso', hex: '#A4B3A0', desc: 'Tendencia botánica en satinado anti-huellas.' },
     { name: 'Negro Carbón Satinado', hex: '#343434', desc: 'Elegancia sobria y sedosa para piezas singulares.' }
   ];
-
-  // Cálculo de presupuesto orientativo
-  const calculateEstimate = () => {
-    let min = 0;
-    let max = 0;
-    let days = '7 - 10 días laborables';
-
-    if (calcServiceType === 'armarios') {
-      const basePerDoor = calcIncludeFrames ? 140 : 120;
-      const multiplier = calcWoodCondition === 'antiguo' ? 1.25 : calcWoodCondition === 'bueno' ? 0.95 : 1.1;
-      min = Math.round(calcQuantity * basePerDoor * multiplier);
-      max = Math.round(min * 1.3);
-      days = calcQuantity > 8 ? '10 - 14 días' : '7 - 10 días';
-    } else if (calcServiceType === 'puertas') {
-      const basePerDoor = calcIncludeFrames ? 160 : 130;
-      const multiplier = calcWoodCondition === 'antiguo' ? 1.2 : 1.05;
-      min = Math.round(calcQuantity * basePerDoor * multiplier);
-      max = Math.round(min * 1.28);
-      days = calcQuantity > 6 ? '9 - 12 días' : '6 - 8 días';
-    } else if (calcServiceType === 'salon') {
-      // Aparadores, mesas, librerías
-      const basePiece = 450;
-      min = Math.round(calcQuantity * basePiece * (calcWoodCondition === 'antiguo' ? 1.3 : 1.1));
-      max = Math.round(min * 1.35);
-      days = '8 - 12 días';
-    } else {
-      // Restauración antigua
-      min = Math.round(calcQuantity * 520);
-      max = Math.round(min * 1.4);
-      days = '12 - 18 días';
-    }
-
-    return { min, max, days };
-  };
-
-  const estimate = calculateEstimate();
-
+ 
   const handleSendSimulatorToWhatsApp = () => {
     const msg = `Hola, he utilizado el simulador de vuestra web de Lacados Arribas Martín. Me interesa un acabado en color ${simulatorColor.name} (${simulatorColor.hex}) en acabado ${simulatorFinish} para un proyecto de tipo ${simulatorItemType}. ¿Me podéis orientar sobre fechas y presupuesto?`;
-    onOpenWhatsApp(msg);
-  };
-
-  const handleSendEstimateToWhatsApp = () => {
-    const serviceName = 
-      calcServiceType === 'armarios' ? 'Armarios empotrados' :
-      calcServiceType === 'puertas' ? 'Puertas de paso' :
-      calcServiceType === 'salon' ? 'Muebles de salón' : 'Restauración antigua';
-
-    const msg = `Hola, he calculado en vuestra web un presupuesto orientativo para ${calcQuantity} unidades de ${serviceName} en ${calcNeighborhood} (estado ${calcWoodCondition}). El rango estimado fue de ${estimate.min}€ a ${estimate.max}€. Os adjunto fotos para presupuesto cerrado.`;
     onOpenWhatsApp(msg);
   };
 
@@ -503,173 +449,6 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenWhatsApp }) =>
                 </button>
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* =========================================================================
-            SECCIÓN 4: CALCULADORA DE PRESUPUESTO ORIENTATIVO (#calculadora)
-            ========================================================================= */}
-        <section id="calculadora" className="bg-[#E3D9CC]/40 rounded-2xl border border-[#B08C4F]/40 p-6 sm:p-10 mb-12 shadow-sm">
-          <div className="max-w-3xl mb-8">
-            <div className="inline-flex items-center space-x-1.5 text-xs uppercase tracking-wider text-[#2F4F3A] font-bold bg-white px-3 py-1 rounded-full mb-2">
-              <Calculator className="w-4 h-4 text-[#2F4F3A]" />
-              <span>Calculadora Transparente</span>
-            </div>
-            <h2 className="font-editorial text-2xl sm:text-3xl font-semibold text-[#343434] mb-2">
-              Estimación orientativa de presupuesto para tu proyecto
-            </h2>
-            <p className="text-xs sm:text-sm text-[#6B6B6B]">
-              Introduce los datos básicos de tu vivienda en Madrid norte o centro y obtén un rango orientativo en menos de 1 minuto. No sustituye el presupuesto final, que ajustamos tras ver fotos reales.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-            
-            {/* Formulario interactivo (7 columnas) */}
-            <div className="lg:col-span-7 bg-white p-6 rounded-xl border border-[#E3D9CC] space-y-5">
-              
-              {/* Tipo de proyecto */}
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-[#343434] mb-2">
-                  Tipo de estructura o mueble
-                </label>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
-                  {[
-                    { id: 'armarios', label: 'Armarios' },
-                    { id: 'puertas', label: 'Puertas paso' },
-                    { id: 'salon', label: 'Mueble salón' },
-                    { id: 'restauracion', label: 'Restauración' }
-                  ].map((s) => (
-                    <button
-                      key={s.id}
-                      onClick={() => setCalcServiceType(s.id as any)}
-                      className={`p-2.5 rounded-lg text-xs font-semibold border transition-all cursor-pointer text-center ${
-                        calcServiceType === s.id
-                          ? 'bg-[#2F4F3A] text-white border-[#2F4F3A]'
-                          : 'bg-[#F5F1EA] text-[#343434] border-[#E3D9CC] hover:bg-[#E3D9CC]'
-                      }`}
-                    >
-                      {s.label}
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-              {/* Cantidad / Unidades con slider */}
-              <div>
-                <div className="flex items-center justify-between mb-1">
-                  <label className="text-xs font-bold uppercase tracking-wider text-[#343434]">
-                    {calcServiceType === 'armarios' ? 'Número de puertas / hojas de frente:' :
-                     calcServiceType === 'puertas' ? 'Número de puertas de paso:' : 'Número de piezas:'}
-                  </label>
-                  <span className="text-base font-bold text-[#2F4F3A] bg-[#F5F1EA] px-3 py-0.5 rounded-md border border-[#E3D9CC]">
-                    {calcQuantity} {calcQuantity === 1 ? 'unidad' : 'unidades'}
-                  </span>
-                </div>
-                <input
-                  type="range"
-                  min="1"
-                  max={calcServiceType === 'armarios' ? 16 : 12}
-                  value={calcQuantity}
-                  onChange={(e) => setCalcQuantity(Number(e.target.value))}
-                  className="w-full accent-[#2F4F3A] cursor-pointer"
-                />
-              </div>
-
-              {/* Barrio de Madrid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-xs font-bold uppercase tracking-wider text-[#343434] mb-1.5">
-                    Barrio o zona de Madrid
-                  </label>
-                  <select
-                    value={calcNeighborhood}
-                    onChange={(e) => setCalcNeighborhood(e.target.value)}
-                    className="w-full p-2.5 rounded-lg border border-[#E3D9CC] bg-[#F5F1EA] text-xs font-medium text-[#343434] focus:outline-none focus:border-[#2F4F3A]"
-                  >
-                    <option value="Chamberí">Chamberí (Almagro, Trafalgar, Vallehermoso)</option>
-                    <option value="Tetuán">Tetuán (Cuatro Caminos, Bellas Vistas, Castillejos)</option>
-                    <option value="Barrio del Pilar">Barrio del Pilar / La Paz</option>
-                    <option value="Chamartín">Chamartín (El Viso, Prosperidad, Bernabéu)</option>
-                    <option value="Moncloa">Moncloa / Argüelles</option>
-                    <option value="Otro Madrid">Otra zona Madrid Norte o Centro</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block text-xs font-bold uppercase tracking-wider text-[#343434] mb-1.5">
-                    Estado actual de la madera
-                  </label>
-                  <select
-                    value={calcWoodCondition}
-                    onChange={(e) => setCalcWoodCondition(e.target.value as any)}
-                    className="w-full p-2.5 rounded-lg border border-[#E3D9CC] bg-[#F5F1EA] text-xs font-medium text-[#343434] focus:outline-none focus:border-[#2F4F3A]"
-                  >
-                    <option value="bueno">Buen estado (solo cambiar color y barniz)</option>
-                    <option value="medio">Estado medio (algún golpe y holgura leve)</option>
-                    <option value="antiguo">Antiguo o barniz cuarteado (requiere decapado)</option>
-                  </select>
-                </div>
-              </div>
-
-              {/* Opción marcos y tapajuntas */}
-              <div className="pt-2">
-                <label className="flex items-center space-x-2 text-xs text-[#343434] cursor-pointer">
-                  <input
-                    type="checkbox"
-                    checked={calcIncludeFrames}
-                    onChange={(e) => setCalcIncludeFrames(e.target.checked)}
-                    className="w-4 h-4 rounded text-[#2F4F3A] accent-[#2F4F3A]"
-                  />
-                  <span>Incluir lacado de marcos fijos y tapajuntas a juego (Recomendado para continuidad)</span>
-                </label>
-              </div>
-
-            </div>
-
-            {/* Tarjeta de resultado del presupuesto (5 columnas) */}
-            <div className="lg:col-span-5 bg-[#2F4F3A] text-white p-6 sm:p-7 rounded-xl flex flex-col justify-between shadow-md">
-              <div>
-                <span className="text-[11px] uppercase tracking-wider font-semibold text-white/70 block mb-1">
-                  Rango de Presupuesto Estimado
-                </span>
-                <div className="text-3xl sm:text-4xl font-editorial font-bold text-white mb-2">
-                  {estimate.min.toLocaleString('es-ES')} € - {estimate.max.toLocaleString('es-ES')} €
-                </div>
-                <p className="text-xs text-white/80 leading-relaxed mb-4">
-                  Estimación basada en desmontaje, preparación, lijado, lacado artesanal en nuestro taller de Tetuán y montaje final.
-                </p>
-
-                <div className="space-y-2 border-t border-white/20 pt-4 text-xs text-white/90">
-                  <div className="flex justify-between">
-                    <span>Plazo estimado de taller:</span>
-                    <strong className="text-white">{estimate.days}</strong>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Zona de intervención:</span>
-                    <strong className="text-white">{calcNeighborhood}</strong>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Tipo de acabado:</span>
-                    <strong className="text-white">Satinado Sedoso (sin obras)</strong>
-                  </div>
-                </div>
-              </div>
-
-              <div className="pt-6 mt-6 border-t border-white/20">
-                <button
-                  onClick={handleSendEstimateToWhatsApp}
-                  className="w-full flex items-center justify-center space-x-2 bg-white hover:bg-[#F5F1EA] text-[#2F4F3A] font-bold py-3.5 px-4 rounded-lg transition-all shadow cursor-pointer text-xs sm:text-sm"
-                >
-                  <Send className="w-4 h-4" />
-                  <span>Enviar este cálculo al taller por WhatsApp</span>
-                </button>
-                <p className="text-[10px] text-center text-white/70 mt-2">
-                  Respuesta en menos de 24h con presupuesto cerrado
-                </p>
-              </div>
-            </div>
-
           </div>
         </section>
 

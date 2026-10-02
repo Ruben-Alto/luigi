@@ -347,20 +347,20 @@ export const REVIEWS_DATA: ReviewItem[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    id: 'lacado-armarios-chamberi-caso-real',
-    slug: 'lacado-satinado-armarios-empotrados-chamberi',
-    title: 'Lacado satinado de armarios empotrados en Chamberí: caso real en calle Alonso Cano',
+    id: 'renovacion-armarios-chamberi-barniz-oscuro-mate-sedoso',
+    slug: 'renovacion-armarios-chamberi-barniz-oscuro-mate-sedoso',
+    title: 'Renovación de armarios en Chamberí: del barniz oscuro al mate sedoso',
     category: 'transformacion',
-    categoryLabel: 'Transformación real',
+    categoryLabel: 'Casos Reales',
     neighborhood: 'Chamberí',
     date: '12 de Febrero, 2026',
     readTime: '4 min de lectura',
-    excerpt: 'Cómo transformamos los armarios empotrados de un piso señorial de los años 80 sustituyendo el barniz oscuro por un blanco roto luminoso sin obras en la vivienda.',
+    excerpt: 'Analizamos un caso real en Madrid Norte: cómo transformamos frentes de armario empotrados sin obras, eliminando tonos anaranjados mediante lacado artesanal a pistola.',
     image: 'https://images.unsplash.com/photo-1558997519-83ea9252def8?auto=format&fit=crop&w=800&q=80',
     content: [
       'En los pisos clásicos de Chamberí es muy habitual encontrar armarios empotrados de madera maciza o chapada de extraordinaria calidad constructiva, pero con barnices anaranjados que oscurecen los dormitorios.',
-      'En este proyecto de la calle Alonso Cano desmontamos 8 hojas y sus altillos correspondientes, numerando cada bisagra y cerradura.',
-      'En nuestro taller de Tetuán eliminamos la vieja película brillante mediante lijado calibrado y aplicamos un fondo sellador acrílico. El acabado final se ejecutó mediante lacado artesanal con laca satinada en tono #F5F1EA.',
+      'En este proyecto desmontamos las hojas y frentes, numerando cada bisagra y cerradura para su perfecto reensamblaje.',
+      'En nuestro taller de Tetuán eliminamos la vieja película brillante mediante lijado calibrado y aplicamos un fondo sellador acrílico. El acabado final se ejecutó mediante lacado artesanal con laca satinada en tono #F5F1EA (blanco roto lino).',
       'El resultado: un incremento notable de luz natural en la vivienda y una superficie de tacto sedoso que resiste el uso diario sin amarillear.'
     ],
     faqs: [
@@ -369,53 +369,38 @@ export const BLOG_POSTS: BlogPost[] = [
     ]
   },
   {
-    id: 'lacado-tradicional-vs-acabados-bricolaje',
-    slug: 'lacado-tradicional-satinado-vs-acabados-mate-bricolaje-madrid',
-    title: 'Lacado tradicional satinado vs acabados mate de bricolaje: durabilidad real en el hogar',
+    id: 'chalk-paint-vs-lacado-pistola-guia-durabilidad-puertas',
+    slug: 'chalk-paint-vs-lacado-pistola-guia-durabilidad-puertas',
+    title: 'Chalk Paint vs Lacado a Pistola: Guía de durabilidad para tus puertas',
     category: 'guia',
-    categoryLabel: 'Guía técnica',
+    categoryLabel: 'Guías Técnicas',
     date: '28 de Enero, 2026',
     readTime: '6 min de lectura',
-    excerpt: 'En Lacados Arribas Martín nos diferenciamos tanto del alto brillo industrial de fábrica como del mate de manualidades, posicionándonos firmemente en el lacado tradicional y el acabado satinado profesional.',
+    excerpt: 'Comparamos la pintura decorativa a mano frente al lacado profesional en cabina ebanista. Descubre por qué el micraje uniforme aguanta el roce diario en pasillos.',
     image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80',
     content: [
       'En el mercado actual existen dos extremos frecuentes que desaconsejamos para un hogar con vida: el alto brillo industrial de fábrica (frío, plástico y que delata cualquier rozadura) y los acabados mate de bricolaje o manualidades (porosos, ásperos y que absorben manchas al menor contacto).',
-      'Recibimos con frecuencia clientes en Tetuán y Chamberí cuyos armarios o puertas pintados con acabados mate caseros se han manchado con el roce de la ropa, han absorbido grasa en las zonas de agarre o se han desconchado al limpiarlos.',
-      'Los acabados mate de bricolaje carecen de adherencia polimérica profunda y elasticidad mecánica. En contraposición, en Lacados Arribas Martín aplicamos un lacado tradicional artesanal en taller con barnices poliuretánicos y acrílicos formulados para penetrar en el poro y sellar una capa continua, sedosa y 100% lavable.',
-      'Los acabados mate de manualidades pueden tener sentido en una pieza decorativa auxiliar sin uso. Para armarios empotrados, puertas de paso y aparadores que vas a abrir miles de veces al año, el lacado tradicional en acabado satinado profesional es la única solución definitiva y confortable.'
+      'Recibimos con frecuencia clientes en Tetuán y Chamberí cuyas puertas pintadas con chalk paint o acabados mate caseros se han manchado con el roce de la ropa, han absorbido grasa en las zonas de agarre o se han desconchado al limpiarlas.',
+      'La pintura decorativa a mano (chalk paint) carece de adherencia polimérica profunda y elasticidad mecánica. En contraposición, en Lacados Arribas Martín aplicamos un lacado tradicional artesanal en cabina ebanista con barnices y lacas ecológicos al agua formulados para penetrar en el poro y sellar una capa continua, sedosa y 100% lavable.',
+      'Los acabados mate de manualidades pueden tener sentido en una pieza decorativa auxiliar sin uso. Para puertas de paso que vas a abrir miles de veces al año, el lacado tradicional en acabado satinado profesional es la única solución definitiva y confortable.'
     ]
   },
   {
-    id: 'como-actualizamos-salon-tetuan-sin-obras',
-    slug: 'como-actualizamos-salon-tetuan-sin-obras',
-    title: 'Cómo actualizamos un salón completo en Tetuán sin obras: aparador y puertas en satinado',
-    category: 'transformacion',
-    categoryLabel: 'Transformación real',
+    id: 'esmaltes-ecologicos-importancia-secado-taller-hogar',
+    slug: 'esmaltes-ecologicos-importancia-secado-taller-hogar',
+    title: 'Esmaltes ecológicos: la importancia del secado en taller para tu hogar',
+    category: 'sostenibilidad',
+    categoryLabel: 'Sostenibilidad',
     neighborhood: 'Tetuán',
     date: '15 de Enero, 2026',
     readTime: '5 min de lectura',
-    excerpt: 'Crónica del rescate de un mueble aparador y 4 puertas de salón en Bravo Murillo: de madera pasada de moda a una atmósfera contemporánea y serena.',
+    excerpt: 'Explicamos por qué realizamos el 90% del lacado en nuestra cabina de la Calle de los Voluntarios Catalanes, garantizando cero olores y máxima seguridad en dormitorios.',
     image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80',
     content: [
-      'En lugar de tirar un mueble de 1990 hecho con maderas que hoy costarían miles de euros, los propietarios decidieron invertir una fracción de su coste en un lacado satinado en nuestro taller de la calle de los Voluntarios Catalanes en Tetuán.',
-      'Se aplicó una paleta sobria en blanco roto y detalles en verde botella satinado en tiradores y remates de moldura.',
-      'Las puertas del salón se integraron con el mismo grado de brillo (acabado satinado sedoso), logrando que la estancia parezca el doble de amplia.'
-    ]
-  },
-  {
-    id: 'sostenibilidad-economia-circular-madrid',
-    slug: 'por-que-restaurar-muebles-es-sostenible-tetuan',
-    title: 'Por qué restaurar muebles y armarios es la verdadera economía circular en Madrid',
-    category: 'sostenibilidad',
-    categoryLabel: 'Sostenibilidad',
-    date: '5 de Enero, 2026',
-    readTime: '4 min de lectura',
-    excerpt: 'Evitamos la tala innecesaria y el desecho de toneladas de madera de calidad prolongando la vida de las carpinterías con barnices y lacas ecológicos.',
-    image: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80',
-    content: [
-      'El mobiliario contemporáneo de grandes superficies de muebles en kit suele estar fabricado con aglomerado prensado de baja densidad con colas volátiles y una vida útil estimada de 4 a 7 años.',
-      'Por contra, las carpinterías de los pisos de Madrid norte y centro esconden madera de pino de Flandes, roble español o maderas tropicales con décadas de estabilidad que nunca se deformarán.',
-      'Al renovar el acabado con lacados y barnices y lacas ecológicos al agua en taller artesanal, reducimos la huella de carbono a menos de un 10% respecto a comprar carpinterías nuevas.'
+      'Desde 1969 aplicamos el oficio tradicional de lacado en nuestra cabina de la Calle de los Voluntarios Catalanes en Tetuán. El 90% del proceso (desinsectación de carcoma, consolidación estructural, lijado, imprimación y lacado final) se realiza en taller.',
+      'Utilizamos barnices y lacas ecológicos al agua certificados para interiores de dormitorios infantiles y adultos. Esto garantiza cero olores residuales, ausencia de COVs dañinos y máxima seguridad para tu familia.',
+      'El secado en cabina controlada permite un curado completo antes de la entrega. Al montar de nuevo las piezas en tu piso de Chamberí, Tetuán o Barrio del Pilar, revisamos cierres y bisagras, y te explicamos pautas sencillas de limpieza para mantener el tacto sedoso intacto durante años.',
+      'Al renovar el acabado con lacados y barnices y lacas ecológicos al agua en taller artesanal, reducimos la huella de carbono a menos de un 10% respecto a comprar carpinterías nuevas. Evitamos la tala innecesaria y el desecho de toneladas de madera de calidad prolongando la vida de las carpinterías.'
     ]
   }
 ];

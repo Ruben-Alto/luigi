@@ -18,8 +18,8 @@ export const BUSINESS_INFO = {
   schedule: 'Lunes a Viernes: 9:00 - 14:00 y 17:00 - 20:00 (Sábados con cita previa)',
   scheduleWeekdays: 'Lunes a Viernes: 9:00 - 14:00 y 17:00 - 20:00',
   scheduleSaturdays: 'Sábados con cita previa',
-  metro: 'Metro Estrecho (Línea 1) o Francos Rodríguez (Línea 7)',
-  buses: 'Líneas 64, 124, 126, 128, 3, 44',
+  metro: 'Metro Valdeacederas o Tetuán (Línea 1)',
+  buses: 'Líneas 11, 49, 66, 124',
   zones: ['Tetuán', 'Chamberí', 'Barrio del Pilar', 'Chamartín', 'Moncloa', 'Madrid Norte y Centro']
 };
 

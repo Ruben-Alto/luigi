@@ -391,7 +391,6 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'Esmaltes ecológicos: la importancia del secado en taller para tu hogar',
     category: 'sostenibilidad',
     categoryLabel: 'Sostenibilidad',
-    neighborhood: 'Tetuán',
     date: '15 de Enero, 2026',
     readTime: '5 min de lectura',
     excerpt: 'Explicamos por qué realizamos el 90% del lacado en nuestra cabina de la Calle de los Voluntarios Catalanes, garantizando cero olores y máxima seguridad en dormitorios.',

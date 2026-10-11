@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { SimulatorSection } from './SimulatorSection';
 import { 
   Check, 
   Phone, 
@@ -143,6 +144,11 @@ export const HomeView: React.FC<HomeViewProps> = ({
           </div>
         </div>
       </section>
+
+      {/* =========================================================================
+          HERRAMIENTA Y SIMULADOR DE ACABADOS CON IA (NANO BANANA GEMINI)
+          ========================================================================= */}
+      <SimulatorSection onOpenWhatsApp={onOpenWhatsApp} />
 
       {/* =========================================================================
           BLOQUE 2: PROPUESTA DE VALOR EN 3 TARJETAS

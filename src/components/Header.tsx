@@ -109,25 +109,6 @@ export const Header: React.FC<HeaderProps> = ({
               Inicio
             </button>
 
-            <button
-              id="nav-simulador-btn"
-              onClick={() => {
-                if (activeTab !== 'inicio') {
-                  onSelectTab('inicio');
-                  setTimeout(() => {
-                    document.getElementById('simulador')?.scrollIntoView({ behavior: 'smooth' });
-                  }, 100);
-                } else {
-                  document.getElementById('simulador')?.scrollIntoView({ behavior: 'smooth' });
-                }
-                setMobileMenuOpen(false);
-              }}
-              className="flex items-center space-x-1.5 px-3 py-1.5 text-xs font-bold transition-all cursor-pointer rounded-full bg-[#2F4F3A] text-white hover:bg-[#243E2E] shadow-xs"
-            >
-              <Sparkles className="w-3.5 h-3.5 text-[#C39A6B]" />
-              <span>Simulador IA</span>
-            </button>
-
             {/* Dropdown Servicios */}
             <div className="relative" ref={dropdownRef}>
               <button

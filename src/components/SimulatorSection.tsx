@@ -277,24 +277,6 @@ ${additionalNotes ? `• Notas: ${additionalNotes}` : ''}
     onOpenWhatsApp(msg);
   };
 
-  // Calculate rough estimate for budget box
-  const getEstimatedPrice = () => {
-    switch (furnitureType) {
-      case 'Armario Empotrado':
-        return '220€ – 480€ (Según número de hojas y maletero)';
-      case 'Puerta de Paso':
-        return '130€ – 190€ / unidad (Conjunto de piso tarifa especial)';
-      case 'Mueble de Salón / Librería':
-        return '350€ – 750€ (Según dimensiones y módulos)';
-      case 'Cómoda / Aparador':
-        return '180€ – 320€';
-      case 'Mesa / Silla':
-        return '90€ – 240€';
-      default:
-        return 'Presupuesto a medida tras ver fotos';
-    }
-  };
-
   return (
     <section id="simulador" className="bg-[#F5F1EA] py-16 md:py-24 border-b border-[#E3D9CC]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -637,20 +619,6 @@ ${additionalNotes ? `• Notas: ${additionalNotes}` : ''}
                   </div>
                 </div>
               )}
-            </div>
-
-            {/* Widget de Estimación Orientativa de Precio */}
-            <div className="bg-[#E3D9CC]/40 border border-[#B08C4F]/30 rounded-2xl p-5 text-xs text-[#343434]">
-              <div className="flex items-center justify-between mb-2">
-                <span className="font-bold text-[#2F4F3A] uppercase tracking-wider flex items-center space-x-1">
-                  <Info className="w-4 h-4" />
-                  <span>Estimación de Precio Orientativa en Taller</span>
-                </span>
-                <span className="font-bold text-[#343434] text-sm">{getEstimatedPrice()}</span>
-              </div>
-              <p className="text-[#6B6B6B] leading-relaxed">
-                Precio estimado de taller para <strong className="text-[#343434]">{furnitureType}</strong> en acabado <strong className="text-[#2F4F3A]">{lacquerColor}</strong>. Incluye desmontaje, lijado, masillado, imprimación y curado artesanal en Tetuán.
-              </p>
             </div>
 
           </div>

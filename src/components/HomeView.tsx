@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { SimulatorSection } from './SimulatorSection';
 import { 
   Check, 
   Phone, 
@@ -113,6 +112,14 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   <strong>Taller de lacado en Tetuán ({BUSINESS_INFO.street}):</strong> con barnices y lacas ecológicos certificados pensados para el interior de tu hogar.
                 </span>
               </li>
+              <li className="flex items-start space-x-3">
+                <span className="mt-1 flex items-center justify-center w-5 h-5 rounded-full bg-[#2F4F3A] text-white shrink-0 text-xs">
+                  <Check className="w-3 h-3 stroke-[3]" />
+                </span>
+                <span>
+                  <strong>Previsualizador con IA (Gemini Nano Banana):</strong> pruébalo en el apartado <strong>Proyectos</strong> subiendo una foto de tu mueble para ver el acabado satinado en tiempo real.
+                </span>
+              </li>
             </ul>
 
             {/* Grupo de CTAs */}
@@ -144,11 +151,6 @@ export const HomeView: React.FC<HomeViewProps> = ({
           </div>
         </div>
       </section>
-
-      {/* =========================================================================
-          HERRAMIENTA Y SIMULADOR DE ACABADOS CON IA (NANO BANANA GEMINI)
-          ========================================================================= */}
-      <SimulatorSection onOpenWhatsApp={onOpenWhatsApp} />
 
       {/* =========================================================================
           BLOQUE 2: PROPUESTA DE VALOR EN 3 TARJETAS

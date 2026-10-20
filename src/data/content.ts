@@ -20,7 +20,7 @@ export const BUSINESS_INFO = {
   scheduleSaturdays: 'Sábados con cita previa',
   metro: 'Metro Valdeacederas o Tetuán (Línea 1)',
   buses: 'Líneas 11, 49, 66, 124',
-  zones: ['Tetuán', 'Chamberí', 'Barrio del Pilar', 'Chamartín', 'Moncloa', 'Madrid Norte y Centro']
+  zones: ['Chamberí', 'Plaza de Castilla', 'Serrano', 'Tetuán', 'Chamartín', 'Moncloa', 'Madrid Norte y Centro']
 };
 
 export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
@@ -41,7 +41,7 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
       'Tonos a medida: Blancos rotos luminosos, gris piedra Chamberí, arena y topo satinado'
     ],
     processSteps: [
-      { title: '1. Desmontaje y numeración', desc: 'Acudimos a tu piso en Chamberí, Tetuán, Barrio del Pilar o cualquier otra zona de Madrid, retiramos las puertas y frentes de armario y los protegemos para su traslado seguro al taller.' },
+      { title: '1. Desmontaje y numeración', desc: 'Acudimos a tu piso en Chamberí, Plaza de Castilla, Serrano y en todo Madrid, retiramos las puertas y frentes de armario y los protegemos para su traslado seguro al taller.' },
       { title: '2. Lijado y lacado artesanal en Tetuán', desc: 'Decapado minucioso de barnices antiguos, corrección de golpes, imprimación selladora y 3 manos cruzadas de laca satinada artesanal.' },
       { title: '3. Montaje y ajuste de bisagras', desc: 'Volvemos con las puertas curadas al 100%, las instalamos, ajustamos los cierres y enrasamos con los tapajuntas.' }
     ],
@@ -63,11 +63,17 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
         question: '¿Aguanta el roce diario de niños o aspiradoras?',
         answer: 'Absolutamente. No es pintura plástica ni acabados mate de bricolaje: en Lacados Arribas Martín nos posicionamos firmemente en el lacado tradicional y el acabado satinado profesional, utilizando lacas poliuretánicas y acrílicas de alta dureza concebidas para soportar golpes moderados y limpieza recurrente.'
       }
+    ],
+    sampleImages: [
+      { src: '/images/projects/project-1.jpeg', label: 'Mesilla restaurada y lacada', category: 'Restauración' },
+      { src: '/images/projects/project-7.jpeg', label: 'Juego de mesa y sillas de comedor', category: 'Salón' },
+      { src: '/images/projects/project-12.jpeg', label: 'Estantería lacada - Tienda Gucci Ibiza', category: 'Armarios' },
+      { src: '/images/projects/project-14.jpeg', label: 'Estantería Gucci Madrid Castellana', category: 'Armarios' },
     ]
   },
   'lacado-puertas-paso-madrid': {
     id: 'lacado-puertas-paso-madrid',
-    title: 'Puertas de Paso y Tapajuntas',
+    title: 'Puertas de Paso',
     subtitle: 'Unificamos la arquitectura de tu vivienda',
     shortDesc: 'Lacamos puertas interiores, marcos y tapajuntas para unificar el conjunto del piso y llevarlo a un efecto satinado sedoso contemporáneo y limpio.',
     h1: 'Lacado satinado de puertas de paso y marcos en Madrid norte y centro',
@@ -100,13 +106,18 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
         question: '¿Qué se hace con los marcos fijos en la pared?',
         answer: 'Los marcos y tapajuntas se lian y tratan in situ de forma meticulosa por nuestros oficiales protegiendo paredes y suelos para que queden con el mismo tono y brillo sedoso que las hojas.'
       }
+    ],
+    sampleImages: [
+      { src: '/images/projects/project-3.jpeg', label: 'Puertas de paso lacadas', category: 'Puertas' },
+      { src: '/images/projects/project-19.jpeg', label: 'Lacado de cercos y barnizado in situ', category: 'Puertas' },
+      { src: '/images/projects/project-21.jpeg', label: 'Lacado de puertas de paso', category: 'Puertas' },
     ]
   },
   'lacado-muebles-salon-madrid': {
     id: 'lacado-muebles-salon-madrid',
-    title: 'Muebles de Salón y Comedor',
+    title: 'Muebles de Salón, Comedor y Dormitorio',
     subtitle: 'Segunda vida de diseño para tus mejores piezas',
-    shortDesc: 'Rescatamos aparadores, vitrinas, librerías, mesas de comedor y muebles de TV en Chamberí, Tetuán y Barrio del Pilar o cualquier otra zona de Madrid con un acabado satinado sedoso de alta resistencia.',
+    shortDesc: 'Rescatamos aparadores, vitrinas, librerías, mesas de comedor y muebles de TV en Chamberí, Plaza de Castilla, Serrano y en todo Madrid con un acabado satinado sedoso de alta resistencia.',
     h1: 'Lacado satinado de muebles de salón (aparadores, librerías, mesas) en Madrid',
     heroText: 'Tu aparador o mesa de madera maciza merece seguir en casa. Transformamos muebles oscuros o desfasados en piezas protagonistas de revista de interiorismo, sin brillos plásticos.',
     iconName: 'Armchair',
@@ -137,6 +148,14 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
         question: '¿Podéis lacar el mueble manteniendo la tapa en madera original?',
         answer: 'Sí, es una de las soluciones más demandadas en Chamberí: decapamos y protegemos la tapa en madera natural con aceite cera protector y lacamos la estructura en blanco roto satinado.'
       }
+    ],
+    sampleImages: [
+      { src: '/images/projects/project-2.jpeg', label: 'Boiserie lacada y patinada', category: 'Salón' },
+      { src: '/images/projects/project-4.jpeg', label: 'Silla de comedor restaurada', category: 'Salón' },
+      { src: '/images/projects/project-7.jpeg', label: 'Juego de mesa y sillas de comedor', category: 'Salón' },
+      { src: '/images/projects/project-10.jpeg', label: 'Mesilla auxiliar de salón', category: 'Salón' },
+      { src: '/images/projects/project-13.jpeg', label: 'Mesa de centro lacada y patinada', category: 'Salón' },
+      { src: '/images/projects/project-15.jpeg', label: 'Sillas barnizadas', category: 'Salón' },
     ]
   },
   'restauracion-muebles-antiguos-madrid': {
@@ -174,6 +193,18 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
         question: '¿Qué hacéis si la madera tiene carcoma activa?',
         answer: 'Sometemos la pieza a un tratamiento insecticida por impregnación profunda y embolsado hermético que garantiza la eliminación de larvas y adultos antes de iniciar el acabado.'
       }
+    ],
+    sampleImages: [
+      { src: '/images/projects/project-1.jpeg', label: 'Mesilla restaurada y lacada', category: 'Restauración' },
+      { src: '/images/projects/project-5.jpeg', label: 'Mesilla lacada y patinada', category: 'Restauración' },
+      { src: '/images/projects/project-8.jpeg', label: 'Cómoda restaurada en taller', category: 'Restauración' },
+      { src: '/images/projects/project-9.jpeg', label: 'Biombo restaurado y lacado en negro', category: 'Restauración' },
+      { src: '/images/projects/project-11.jpeg', label: 'Mesilla lacada en negro', category: 'Restauración' },
+      { src: '/images/projects/project-16.jpeg', label: 'Mesilla lacada y patinada', category: 'Restauración' },
+      { src: '/images/projects/project-17.jpeg', label: 'Silla con patina al óleo', category: 'Restauración' },
+      { src: '/images/projects/project-18.jpeg', label: 'Mesilla lacada en azul con patina blanca', category: 'Restauración' },
+      { src: '/images/projects/project-20.jpeg', label: 'Barnizado de sillón', category: 'Restauración' },
+      { src: '/images/projects/project-22.jpeg', label: 'Sillones lacados y patinados en crema', category: 'Restauración' },
     ]
   }
 };
@@ -324,19 +355,19 @@ export const REVIEWS_DATA: ReviewItem[] = [
   {
     id: 'rev-3',
     author: 'Carmen Gómez-Bravo',
-    location: 'Barrio del Pilar, Madrid',
-    neighborhood: 'Barrio del Pilar',
+    location: 'Plaza de Castilla, Madrid',
+    neighborhood: 'Plaza de Castilla',
     rating: 5,
     date: 'Hace 2 meses',
     highlightedItem: 'Aparador antiguo y 6 puertas de paso',
     finishType: 'Barnices y lacas ecológicos satinados',
-    text: 'Vivo en Barrio del Pilar y buscaba alguien que respetara mis muebles de calidad. Restauraron un aparador antiguo y varias puertas con barnices y lacas ecológicos satinados, y parecen nuevos. No desprendieron nada de olor en casa.'
+    text: 'Vivo en Plaza de Castilla y buscaba alguien que respetara mis muebles de calidad. Restauraron un aparador antiguo y varias puertas con barnices y lacas ecológicos satinados, y parecen nuevos. No desprendieron nada de olor en casa.'
   },
   {
     id: 'rev-4',
     author: 'Álvaro F. Pardo',
-    location: 'Chamartín, Madrid',
-    neighborhood: 'Chamartín',
+    location: 'Serrano, Madrid',
+    neighborhood: 'Serrano',
     rating: 5,
     date: 'Hace 2 meses',
     highlightedItem: 'Frentes de vestidor a medida',
@@ -355,7 +386,7 @@ export const BLOG_POSTS: BlogPost[] = [
     neighborhood: 'Chamberí',
     date: '12 de Febrero, 2026',
     readTime: '4 min de lectura',
-    excerpt: 'Analizamos un caso real en Madrid Norte: cómo transformamos frentes de armario empotrados sin obras, eliminando tonos anaranjados mediante lacado artesanal a pistola.',
+    excerpt: 'Analizamos un caso real en Chamberí: cómo transformamos frentes de armario empotrados sin obras, eliminando tonos anaranjados mediante lacado artesanal.',
     image: 'https://images.unsplash.com/photo-1558997519-83ea9252def8?auto=format&fit=crop&w=800&q=80',
     content: [
       'En los pisos clásicos de Chamberí es muy habitual encontrar armarios empotrados de madera maciza o chapada de extraordinaria calidad constructiva, pero con barnices anaranjados que oscurecen los dormitorios.',
@@ -380,7 +411,7 @@ export const BLOG_POSTS: BlogPost[] = [
     image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80',
     content: [
       'En el mercado actual existen dos extremos frecuentes que desaconsejamos para un hogar con vida: el alto brillo industrial de fábrica (frío, plástico y que delata cualquier rozadura) y los acabados mate de bricolaje o manualidades (porosos, ásperos y que absorben manchas al menor contacto).',
-      'Recibimos con frecuencia clientes en Tetuán y Chamberí cuyas puertas pintadas con chalk paint o acabados mate caseros se han manchado con el roce de la ropa, han absorbido grasa en las zonas de agarre o se han desconchado al limpiarlas.',
+      'Recibimos con frecuencia clientes en Chamberí, Plaza de Castilla y Serrano cuyas puertas pintadas con chalk paint o acabados mate caseros se han manchado con el roce de la ropa, han absorbido grasa en las zonas de agarre o se han desconchado al limpiarlas.',
       'La pintura decorativa a mano (chalk paint) carece de adherencia polimérica profunda y elasticidad mecánica. En contraposición, en Lacados Arribas Martín aplicamos un lacado artesanal en cabina ebanista con barnices y lacas ecológicos al agua formulados para penetrar en el poro y sellar una capa continua, sedosa y 100% lavable.',
       'Los acabados mate de manualidades pueden tener sentido en una pieza decorativa auxiliar sin uso. Para puertas de paso que vas a abrir miles de veces al año, el lacado artesanal en acabado satinado profesional es la única solución definitiva y confortable.'
     ]
@@ -398,7 +429,7 @@ export const BLOG_POSTS: BlogPost[] = [
     content: [
       'Desde 1969 aplicamos el oficio tradicional de lacado en nuestra cabina de la Calle de los Voluntarios Catalanes en Tetuán. El 90% del proceso (desinsectación de carcoma, consolidación estructural, lijado, imprimación y lacado final) se realiza en taller.',
       'Utilizamos barnices y lacas ecológicos al agua certificados para interiores de dormitorios infantiles y adultos. Esto garantiza cero olores residuales, ausencia de COVs dañinos y máxima seguridad para tu familia.',
-      'El secado en cabina controlada permite un curado completo antes de la entrega. Al montar de nuevo las piezas en tu piso de Chamberí, Tetuán o Barrio del Pilar, revisamos cierres y bisagras, y te explicamos pautas sencillas de limpieza para mantener el tacto sedoso intacto durante años.',
+      'El secado en cabina controlada permite un curado completo antes de la entrega. Al montar de nuevo las piezas en tu piso de Chamberí, Plaza de Castilla, Serrano o cualquier otra zona de Madrid, revisamos cierres y bisagras, y te explicamos pautas sencillas de limpieza para mantener el tacto sedoso intacto durante años.',
       'Al renovar el acabado con lacados y barnices y lacas ecológicos al agua en taller artesanal, reducimos la huella de carbono a menos de un 10% respecto a comprar carpinterías nuevas. Evitamos la tala innecesaria y el desecho de toneladas de madera de calidad prolongando la vida de las carpinterías.'
     ]
   }

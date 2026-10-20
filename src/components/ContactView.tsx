@@ -52,11 +52,11 @@ export const ContactView: React.FC<ContactViewProps> = ({ onOpenWhatsApp }) => {
     },
     {
       q: '¿Hacéis presupuestos a domicilio en mi piso?',
-      a: 'Sí, para proyectos de armarios empotrados completos o varias puertas de paso en Madrid norte y centro acudimos a medir in situ. Primero recomendamos enviarnos fotos por WhatsApp para confirmar que el trabajo encaja con nuestro tipo de lacado artesanal.'
+      a: 'Sí, para proyectos de armarios empotrados completos o varias puertas de paso en Chamberí, Plaza de Castilla, Serrano o cualquier otra zona de Madrid acudimos a medir in situ. Primero recomendamos enviarnos fotos por WhatsApp para confirmar que el trabajo encaja con nuestro tipo de lacado artesanal.'
     },
     {
-      q: '¿Atendéis proyectos fuera de Tetuán, Chamberí y Barrio del Pilar?',
-      a: 'Sí, trabajamos en todo Madrid norte y centro (Chamartín, Salamanca, Moncloa, Retiro, Mirasierra, etc.). Indícanos tu barrio al contactar y te confirmamos disponibilidad inmediata.'
+      q: '¿Atendéis proyectos fuera de Chamberí, Plaza de Castilla, Serrano y alrededores?',
+      a: 'Sí, trabajamos en todo Madrid (Chamartín, Salamanca, Moncloa, Retiro, Mirasierra, etc.). Indícanos tu barrio al contactar y te confirmamos disponibilidad inmediata.'
     }
   ];
 
@@ -100,7 +100,7 @@ export const ContactView: React.FC<ContactViewProps> = ({ onOpenWhatsApp }) => {
             </a>
           </div>
           <p className="text-[11px] text-white/70 mt-3">
-            Horario: Lunes a Viernes de 8:30 a 18:30 h
+            Horario: {BUSINESS_INFO.schedule}
           </p>
         </div>
       </section>
@@ -188,11 +188,13 @@ export const ContactView: React.FC<ContactViewProps> = ({ onOpenWhatsApp }) => {
                         className="w-full p-3 rounded-lg border border-[#E3D9CC] bg-[#F5F1EA] text-sm text-[#343434] focus:outline-none focus:border-[#2F4F3A]"
                       >
                         <option value="Chamberí">Chamberí</option>
+                        <option value="Plaza de Castilla">Plaza de Castilla</option>
+                        <option value="Serrano">Serrano</option>
                         <option value="Tetuán">Tetuán</option>
                         <option value="Barrio del Pilar">Barrio del Pilar</option>
                         <option value="Chamartín">Chamartín</option>
                         <option value="Moncloa">Moncloa / Argüelles</option>
-                        <option value="Otra zona Madrid">Otra zona Madrid norte/centro</option>
+                        <option value="Otra zona Madrid">Otra zona de Madrid</option>
                       </select>
                     </div>
                   </div>

@@ -6,7 +6,7 @@ export type ServiceId =
   | 'lacado-muebles-salon-madrid'
   | 'restauracion-muebles-antiguos-madrid';
 
-export type Neighborhood = 'Chamberí' | 'Tetuán' | 'Barrio del Pilar' | 'Chamartín' | 'Madrid Centro / Norte';
+export type Neighborhood = 'Chamberí' | 'Plaza de Castilla' | 'Serrano' | 'Tetuán' | 'Barrio del Pilar' | 'Chamartín' | 'Madrid Centro / Norte';
 
 export interface ProjectItem {
   id: string;
@@ -62,4 +62,5 @@ export interface ServiceDetail {
   faqs: { question: string; answer: string }[];
   sampleImageBefore: string;
   sampleImageAfter: string;
+  sampleImages: { src: string; label: string; category: string }[];
 }

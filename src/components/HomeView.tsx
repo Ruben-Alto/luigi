@@ -38,6 +38,8 @@ export const HomeView: React.FC<HomeViewProps> = ({
     ? REVIEWS_DATA 
     : REVIEWS_DATA.filter(r => r.neighborhood.toLowerCase().includes(activeReviewFilter.toLowerCase()));
 
+  const reviewNeighborhoods = Array.from(new Set(REVIEWS_DATA.map(r => r.neighborhood)));
+
   const faqsList = [
     {
       q: '¿Se desprenden olores o se genera polvo en mi casa durante el lacado?',
@@ -49,7 +51,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
     },
     {
       q: '¿Hacéis presupuesto con fotos por WhatsApp antes de venir?',
-      a: 'Sí, es la forma más rápida y cómoda para ti: nos envías 2 o 3 fotos de tus armarios, puertas o muebles por WhatsApp indicando tu barrio (Chamberí, Tetuán, Barrio del Pilar, etc.), y en menos de 24 horas te damos una orientación honesta con rango de precios orientativo sin compromiso.'
+      a: 'Sí, es la forma más rápida y cómoda para ti: nos envías 2 o 3 fotos de tus armarios, puertas o muebles por WhatsApp indicando tu barrio (Chamberí, Plaza de Castilla, Serrano, etc.), y en menos de 24 horas te damos una orientación honesta con rango de precios orientativo sin compromiso.'
     },
     {
       q: '¿Cuánto tiempo tarda el proceso completo de unos armarios o puertas?',
@@ -83,7 +85,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
             </h1>
 
             <p className="text-base sm:text-lg text-[#343434]/90 mb-6 leading-relaxed">
-              Actualizamos armarios empotrados, puertas de paso y muebles de salón en pisos de <strong className="text-[#2F4F3A] font-semibold">Chamberí, Tetuán, Barrio del Pilar y alrededores</strong> con un acabado sedoso, uniforme y duradero, sin obras en casa.
+              Actualizamos armarios empotrados, puertas de paso y muebles de salón en pisos de <strong className="text-[#2F4F3A] font-semibold">Chamberí, Plaza de Castilla, Serrano y en todo Madrid</strong> con un acabado sedoso, uniforme y duradero, sin obras en casa.
             </p>
 
             {/* Bullets diferenciales */}
@@ -146,7 +148,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
             </div>
 
             <p className="text-xs text-[#6B6B6B] leading-relaxed">
-              <span className="font-semibold text-[#343434]">Sin compromiso:</span> Nos envías fotos por WhatsApp desde Chamberí, Tetuán, Barrio del Pilar o cualquier otra zona de Madrid y te respondemos en menos de 24 h con una orientación honesta.
+              <span className="font-semibold text-[#343434]">Sin compromiso:</span> Nos envías fotos por WhatsApp desde Chamberí, Plaza de Castilla, Serrano o cualquier otra zona de Madrid y te respondemos en menos de 24 h con una orientación honesta.
             </p>
           </div>
         </div>
@@ -162,7 +164,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               Por qué elegir un lacado satinado profesional en Madrid norte y centro
             </h2>
             <p className="text-sm sm:text-base text-[#343434]/80">
-              Si vives en Chamberí, Tetuán, Barrio del Pilar o cualquier otra zona de Madrid, probablemente tus armarios y puertas son de madera de calidad. Nosotros los actualizamos sin obra, con un acabado satinado sedoso que dura años.
+              Si vives en Chamberí, Plaza de Castilla, Serrano o cualquier otra zona de Madrid, probablemente tus armarios y puertas son de madera de calidad. Nosotros los actualizamos sin obra, con un acabado satinado sedoso que dura años.
             </p>
           </div>
 
@@ -232,7 +234,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               Especialidades de lacado satinado en Madrid
             </h2>
             <p className="text-sm sm:text-base text-[#6B6B6B]">
-              Transformamos armarios empotrados, puertas de paso y muebles de salón en pisos de Madrid norte y centro con acabados satinados de tacto sedoso, sin brillos agresivos.
+              Transformamos armarios empotrados, puertas de paso y muebles de salón en pisos de Chamberí, Plaza de Castilla, Serrano y el resto de Madrid con acabados satinados de tacto sedoso, sin brillos agresivos.
             </p>
           </div>
 
@@ -386,7 +388,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   Lacado artesanal, curado real y montaje final
                 </h3>
                 <p className="text-sm text-[#343434]/90 leading-relaxed">
-                  Una vez curado el lacado completamente, montamos de nuevo las piezas en tu piso de Chamberí, Tetuán, Barrio del Pilar o cualquier otra zona de Madrid, revisamos cierres y bisagras, y te explicamos pautas sencillas de limpieza para mantener el tacto sedoso intacto durante años.
+                  Una vez curado el lacado completamente, montamos de nuevo las piezas en tu piso de Chamberí, Plaza de Castilla, Serrano o cualquier otra zona de Madrid, revisamos cierres y bisagras, y te explicamos pautas sencillas de limpieza para mantener el tacto sedoso intacto durante años.
                 </p>
               </div>
             </div>
@@ -537,7 +539,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
       </section>
 
       {/* =========================================================================
-          BLOQUE 6: RESEÑAS GEO DE CLIENTES (Tetuán, Chamberí, Barrio del Pilar)
+          BLOQUE 6: RESEÑAS GEO DE CLIENTES (Chamberí, Plaza de Castilla, Serrano)
           ========================================================================= */}
       <section className="bg-[#E3D9CC]/30 py-16 md:py-24 border-b border-[#E3D9CC]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -551,12 +553,12 @@ export const HomeView: React.FC<HomeViewProps> = ({
               Reseñas de vecinos en Madrid norte y centro
             </h2>
             <p className="text-sm text-[#6B6B6B]">
-              Opiniones reales de clientes en Chamberí, Tetuán y Barrio del Pilar o cualquier otra zona de Madrid sobre nuestro lacado satinado.
+              Opiniones reales de clientes en Chamberí, Plaza de Castilla, Serrano y en todo Madrid sobre nuestro lacado satinado.
             </p>
 
             {/* Filtros de barrio para reseñas */}
             <div className="flex flex-wrap items-center justify-center gap-2 mt-6">
-              {['todos', 'Chamberí', 'Tetuán', 'Barrio del Pilar', 'Chamartín'].map((b) => (
+              {['todos', ...reviewNeighborhoods].map((b) => (
                 <button
                   key={b}
                   onClick={() => setActiveReviewFilter(b)}
@@ -652,7 +654,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 Durante más de 50 años, la familia Arribas Martín ha mantenido vivo el saber hacer del lacado tradicional en el corazón de Tetuán. No hemos querido convertirnos en una planta robotizada de cocinas de melamina ni en una gran fábrica de alto brillo.
               </p>
               <p>
-                Nuestra vocación es el <strong className="text-[#2F4F3A]">lacado satinado de alta escuela</strong>: ajustar el proceso según la porosidad de la madera, respetar el reposo entre manos y devolver el esplendor a las carpinterías que visten los hogares de Chamberí, Tetuán y Barrio del Pilar o cualquier otra zona de Madrid.
+                Nuestra vocación es el <strong className="text-[#2F4F3A]">lacado satinado de alta escuela</strong>: ajustar el proceso según la porosidad de la madera, respetar el reposo entre manos y devolver el esplendor a las carpinterías que visten los hogares de Chamberí, Plaza de Castilla, Serrano y en todo Madrid.
               </p>
               <div className="pt-2 flex items-center space-x-4 text-xs text-[#6B6B6B]">
                 <span>✓ Barnices y lacas ecológicos al agua</span>
@@ -716,10 +718,10 @@ export const HomeView: React.FC<HomeViewProps> = ({
           <div className="bg-[#E3D9CC]/50 rounded-2xl p-8 sm:p-12 border border-[#B08C4F]/30">
             <div className="max-w-3xl mx-auto text-center mb-10">
               <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl font-semibold text-[#343434] mb-3">
-                Estamos en Tetuán, muy cerca de Chamberí y Barrio del Pilar
+                Estamos en Tetuán, muy cerca de Chamberí, Plaza de Castilla y Serrano
               </h2>
               <p className="text-sm sm:text-base text-[#343434]/80 leading-relaxed">
-                Trabajamos cada día para pisos de Madrid norte y centro: Tetuán, Chamberí, Barrio del Pilar, Chamartín y alrededores. Conocemos bien el parque de viviendas de la zona y las necesidades de sus armarios y puertas.
+                Trabajamos cada día para pisos de Madrid norte y centro: Tetuán, Chamberí, Plaza de Castilla, Serrano y en todo Madrid. Conocemos bien el parque de viviendas de la zona y las necesidades de sus armarios y puertas.
               </p>
             </div>
 

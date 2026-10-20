@@ -295,6 +295,9 @@ ${additionalNotes ? `• Notas: ${additionalNotes}` : ''}
           <p className="text-sm sm:text-base text-[#6B6B6B] leading-relaxed">
             Sube una foto de tus armarios, puertas o muebles y la inteligencia artificial <strong className="text-[#2F4F3A]">Nano Banana Gemini</strong> aplicará el lacado artesanal de nuestro taller de Tetuán en el color y acabado que selecciones.
           </p>
+          <p className="text-xs text-[#6B6B6B] mt-3">
+            Taller en {BUSINESS_INFO.district}: {BUSINESS_INFO.scheduleWeekdays} · {BUSINESS_INFO.scheduleSaturdays} · Zona de servicio: Chamberí, Plaza de Castilla, Serrano y todo Madrid.
+          </p>
         </div>
 
         {/* BARRA DE API KEY DE GOOGLE */}
@@ -830,7 +833,7 @@ ${additionalNotes ? `• Notas: ${additionalNotes}` : ''}
                   <CheckCircle2 className="w-3.5 h-3.5 text-[#2F4F3A]" />
                   <span>Lacado 100% lavable y duradero</span>
                 </span>
-                <span className="font-semibold text-[#2F4F3A]">Taller Tetuán desde 1969</span>
+                <span className="font-semibold text-[#2F4F3A]">Taller Tetuán desde 1969 · {BUSINESS_INFO.scheduleWeekdays}</span>
               </div>
 
             </div>

@@ -110,7 +110,7 @@ export const ServicesView: React.FC<ServicesViewProps> = ({
           {/* Cabecera del servicio */}
           <div className="max-w-3xl mb-8">
             <span className="inline-block text-xs uppercase tracking-wider text-[#2F4F3A] font-bold bg-[#E3D9CC]/40 px-3 py-1 rounded-full mb-3">
-              Taller de Lacado Tetuán · Madrid Norte y Centro
+              Taller de Lacado en Tetuán · Chamberí, Plaza de Castilla y Serrano
             </span>
             <h1 className="font-editorial text-2xl sm:text-3xl lg:text-4xl font-semibold text-[#343434] leading-tight mb-4">
               {service.h1}
@@ -146,29 +146,32 @@ export const ServicesView: React.FC<ServicesViewProps> = ({
               Sin reflejos deslumbrantes ni efecto plástico: brillo satinado controlado (10-15% gloss) que armoniza con la luz natural de pisos de Madrid.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="relative rounded-lg overflow-hidden border border-[#E3D9CC] group">
-                <img
-                  src={service.sampleImageBefore}
-                  alt="Madera antes de lacar"
-                  className="w-full h-56 object-cover"
-                />
-                <span className="absolute top-3 left-3 bg-[#343434]/90 text-white text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md">
-                  Antes: Barniz oscuro o desgastado
-                </span>
+            {/* Grid de fotos con etiquetas por categoría */}
+            {service.sampleImages && service.sampleImages.length > 0 && (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {service.sampleImages.map((img, idx) => (
+                  <div key={idx} className="relative rounded-lg overflow-hidden border border-[#E3D9CC] group">
+                    <img
+                      src={img.src}
+                      alt={img.label}
+                      className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-3">
+                      <span className="text-white text-[11px] font-bold uppercase tracking-wider">
+                        {img.label}
+                      </span>
+                      <span className="text-white/80 text-[10px] font-medium bg-[#2F4F3A]/90 inline-block px-2 py-0.5 rounded mt-1 w-fit">
+                        {img.category}
+                      </span>
+                    </div>
+                    {/* Etiqueta de categoría siempre visible en la esquina */}
+                    <span className="absolute top-3 left-3 bg-[#2F4F3A] text-white text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-md shadow-sm">
+                      {img.category}
+                    </span>
+                  </div>
+                ))}
               </div>
-
-              <div className="relative rounded-lg overflow-hidden border border-[#2F4F3A]/40 group">
-                <img
-                  src={service.sampleImageAfter}
-                  alt="Lacado satinado final"
-                  className="w-full h-56 object-cover"
-                />
-                <span className="absolute top-3 left-3 bg-[#2F4F3A] text-white text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md shadow-sm">
-                  Después: Lacado satinado sedoso
-                </span>
-              </div>
-            </div>
+            )}
           </div>
 
           {/* Paleta recomendada para este servicio */}
@@ -250,6 +253,9 @@ export const ServicesView: React.FC<ServicesViewProps> = ({
               <p className="text-xs sm:text-sm text-white/80">
                 Envíanos 2 o 3 fotos de frente por WhatsApp y te damos una estimación transparente en menos de 24 horas.
               </p>
+              <p className="text-[11px] text-white/70 mt-1">
+                Taller en {BUSINESS_INFO.district}: {BUSINESS_INFO.scheduleWeekdays} · {BUSINESS_INFO.scheduleSaturdays}
+              </p>
             </div>
 
             <button
@@ -264,7 +270,7 @@ export const ServicesView: React.FC<ServicesViewProps> = ({
 
         {/* Banner de contacto alternativo */}
         <div className="text-center text-xs text-[#6B6B6B]">
-          ¿Prefieres que vayamos a medir a tu piso de Madrid norte o centro?{' '}
+          ¿Prefieres que vayamos a medir a tu piso de Chamberí, Plaza de Castilla, Serrano o cualquier otra zona de Madrid?{' '}
           <a href={`tel:${BUSINESS_INFO.phoneRaw}`} className="text-[#2F4F3A] font-semibold underline">
             Llámanos al {BUSINESS_INFO.phone}
           </a>

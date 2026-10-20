@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BLOG_POSTS } from '../data/content';
+import { BLOG_POSTS, BUSINESS_INFO } from '../data/content';
 import { BlogPost, Neighborhood } from '../types';
 import { BookOpen, Calendar, Clock, MapPin, ArrowRight, X, HelpCircle, Send } from 'lucide-react';
 
@@ -28,7 +28,7 @@ export const BlogView: React.FC<BlogViewProps> = ({ onOpenWhatsApp }) => {
             Transformaciones reales de lacado satinado en Madrid norte y centro
           </h1>
           <p className="text-sm sm:text-base text-[#6B6B6B]">
-            Crónicas de proyectos en Chamberí, Tetuán y Barrio del Pilar o cualquier otra zona de Madrid, guías técnicas sobre barnices y lacas ecológicos y comparativas honestas frente a la pintura de tiza.
+            Crónicas de proyectos en Chamberí, Plaza de Castilla, Serrano y en todo Madrid, guías técnicas sobre barnices y lacas ecológicos y comparativas honestas frente a la pintura de tiza.
           </p>
         </div>
 
@@ -193,6 +193,9 @@ export const BlogView: React.FC<BlogViewProps> = ({ onOpenWhatsApp }) => {
                   </h4>
                   <p className="text-xs text-white/80">
                     Envíanos fotos por WhatsApp y te orientamos sin compromiso en menos de 24 horas.
+                  </p>
+                  <p className="text-[11px] text-white/70 mt-1">
+                    Taller en {BUSINESS_INFO.district}: {BUSINESS_INFO.scheduleWeekdays} · {BUSINESS_INFO.scheduleSaturdays}
                   </p>
                 </div>
                 <button

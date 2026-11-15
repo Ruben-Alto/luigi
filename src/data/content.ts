@@ -387,7 +387,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '12 de Febrero, 2026',
     readTime: '4 min de lectura',
     excerpt: 'Analizamos un caso real en Chamberí: cómo transformamos frentes de armario empotrados sin obras, eliminando tonos anaranjados mediante lacado artesanal.',
-    image: 'https://images.unsplash.com/photo-1558997519-83ea9252def8?auto=format&fit=crop&w=800&q=80',
+    image: '/images/projects/project-2.jpeg',
     content: [
       'En los pisos clásicos de Chamberí es muy habitual encontrar armarios empotrados de madera maciza o chapada de extraordinaria calidad constructiva, pero con barnices anaranjados que oscurecen los dormitorios.',
       'En este proyecto desmontamos las hojas y frentes, numerando cada bisagra y cerradura para su perfecto reensamblaje.',
@@ -408,7 +408,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '28 de Enero, 2026',
     readTime: '6 min de lectura',
     excerpt: 'Comparamos la pintura decorativa a mano frente al lacado artesanal en cabina ebanista. Descubre por qué el micraje uniforme aguanta el roce diario en pasillos.',
-    image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
     content: [
       'En el mercado actual existen dos extremos frecuentes que desaconsejamos para un hogar con vida: el alto brillo industrial de fábrica (frío, plástico y que delata cualquier rozadura) y los acabados mate de bricolaje o manualidades (porosos, ásperos y que absorben manchas al menor contacto).',
       'Recibimos con frecuencia clientes en Chamberí, Plaza de Castilla y Serrano cuyas puertas pintadas con chalk paint o acabados mate caseros se han manchado con el roce de la ropa, han absorbido grasa en las zonas de agarre o se han desconchado al limpiarlas.',
@@ -425,7 +425,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '15 de Enero, 2026',
     readTime: '5 min de lectura',
     excerpt: 'Explicamos por qué realizamos el 90% del lacado en nuestra cabina de la Calle de los Voluntarios Catalanes, garantizando cero olores y máxima seguridad en dormitorios.',
-    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80',
     content: [
       'Desde 1969 aplicamos el oficio tradicional de lacado en nuestra cabina de la Calle de los Voluntarios Catalanes en Tetuán. El 90% del proceso (desinsectación de carcoma, consolidación estructural, lijado, imprimación y lacado final) se realiza en taller.',
       'Utilizamos barnices y lacas ecológicos al agua certificados para interiores de dormitorios infantiles y adultos. Esto garantiza cero olores residuales, ausencia de COVs dañinos y máxima seguridad para tu familia.',

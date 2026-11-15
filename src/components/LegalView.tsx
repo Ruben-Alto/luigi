@@ -7,8 +7,7 @@ interface LegalViewProps {
   onClose: () => void;
 }
 
-const TITULAR = 'Manuel Arribas Caballero';
-const DENOMINACION = 'Lacados Arribas Martín S.L.';
+const TITULAR = 'Manuel Arribas Caballero (Lacados Arribas Martín)';
 const DIRECCION = `${BUSINESS_INFO.street}, ${BUSINESS_INFO.postalCode} ${BUSINESS_INFO.district}, ${BUSINESS_INFO.city}`;
 const TELEFONO = BUSINESS_INFO.phone;
 const EMAIL = 'info@lacadosarribasmartin.es';
@@ -48,8 +47,7 @@ export const LegalView: React.FC<LegalViewProps> = ({ section, onClose }) => {
             <>
               <h2 className="font-bold text-lg text-[#2F4F3A] mb-3 mt-6">1. Titular del sitio web</h2>
               <p className="mb-4">
-                El titular de este sitio web es <strong>{TITULAR}</strong>, en su condición de
-                representante de <strong>{DENOMINACION}</strong>, con domicilio en{' '}
+                El titular de este sitio web es <strong>{TITULAR}</strong>, con domicilio en{' '}
                 <strong>{DIRECCION}</strong>, teléfonos de contacto <strong>{TELEFONO}</strong> y{' '}
                 <strong>{EMAIL}</strong>.
               </p>
@@ -63,7 +61,7 @@ export const LegalView: React.FC<LegalViewProps> = ({ section, onClose }) => {
               <h2 className="font-bold text-lg text-[#2F4F3A] mb-3 mt-6">3. Propiedad intelectual e industrial</h2>
               <p className="mb-4">
                 Todos los contenidos, textos, imágenes, logotipos y diseños de este sitio web son
-                propiedad de {DENOMINACION} o de terceros que han autorizado su uso. Queda
+                propiedad de {TITULAR} o de terceros que han autorizado su uso. Queda
                 prohibida su reproducción, distribución o transformación sin autorización previa
                 por escrito del titular.
               </p>
@@ -85,7 +83,7 @@ export const LegalView: React.FC<LegalViewProps> = ({ section, onClose }) => {
             <>
               <h2 className="font-bold text-lg text-[#2F4F3A] mb-3 mt-6">1. Responsable del tratamiento</h2>
               <p className="mb-4">
-                <strong>{TITULAR}</strong> ({DENOMINACION}), con domicilio en{' '}
+                <strong>{TITULAR}</strong>, con domicilio en{' '}
                 <strong>{DIRECCION}</strong> y teléfono <strong>{TELEFONO}</strong>, es el
                 responsable del tratamiento de los datos personales recabados a través de este
                 sitio web.

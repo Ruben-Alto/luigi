@@ -146,7 +146,7 @@ export const Footer: React.FC<FooterProps> = ({
         {/* Zona inferior de enlaces legales y copyright */}
         <div className="pt-6 border-t border-[#B08C4F]/30 flex flex-col sm:flex-row items-center justify-between text-xs text-[#343434]/80 space-y-4 sm:space-y-0">
           <p>
-            © {new Date().getFullYear()} Lacados Arribas Martín S.L. Todos los derechos reservados.
+            © {new Date().getFullYear()} Lacados Arribas Martín. Todos los derechos reservados.
           </p>
           <div className="flex items-center space-x-4">
             <span className="hover:text-[#2F4F3A] cursor-pointer" onClick={() => onOpenLegal('aviso')}>

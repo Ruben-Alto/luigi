@@ -9,10 +9,41 @@ import { ProjectsView } from './components/ProjectsView';
 import { BlogView } from './components/BlogView';
 import { ContactView } from './components/ContactView';
 import { BUSINESS_INFO } from './data/content';
+import { usePageMeta } from './hooks/usePageMeta';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<ActiveTab>('inicio');
   const [selectedServiceId, setSelectedServiceId] = useState<ServiceId | null>(null);
+
+  const PAGE_META: Record<ActiveTab, { title: string; description: string }> = {
+    inicio: {
+      title: 'Lacados Arribas Martín | Armarios Empotrados, Puertas y Muebles en Madrid',
+      description:
+        'Lacado satinado artesanal de armarios empotrados, puertas de paso y muebles de salón en Chamberí, Plaza de Castilla y Serrano. Taller en Tetuán desde 1969. Presupuesto sin compromiso en menos de 24 h.',
+    },
+    servicios: {
+      title: 'Servicios de Lacado Satinado en Madrid | Arribas Martín',
+      description:
+        'Lacado profesional de armarios empotrados, puertas de paso y muebles de salón en Chamberí, Plaza de Castilla y Serrano. Acabado sedoso y duradero, sin obras en casa.',
+    },
+    proyectos: {
+      title: 'Proyectos de Lacado Satinado Antes y Después | Madrid',
+      description:
+        'Galería de proyectos reales de lacado satinado en armarios, puertas y muebles en Chamberí, Plaza de Castilla y Serrano. Ve la transformación antes y después.',
+    },
+    blog: {
+      title: 'Blog de Lacado Satinado y Carpintería | Arribas Martín',
+      description:
+        'Artículos, guías y casos reales sobre lacado satinado, restauración y acabados en Chamberí, Plaza de Castilla y Serrano, Madrid.',
+    },
+    contacto: {
+      title: 'Contacto | Pedir Presupuesto de Lacado en Madrid',
+      description:
+        'Envíanos fotos de tus armarios o muebles y te orientamos en menos de 24 h. Taller de lacado en Tetuán, sirve Chamberí, Plaza de Castilla y Serrano.',
+    },
+  };
+
+  usePageMeta(PAGE_META[activeTab]);
 
   const handleOpenWhatsApp = (customMessage?: string) => {
     const defaultMsg = 'Hola, he visto vuestra web de Lacados Arribas Martín. Me gustaría pedir orientación y presupuesto para lacar en satinado mis armarios, puertas o muebles en Madrid. Os envío fotos.';

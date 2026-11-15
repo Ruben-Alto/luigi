@@ -1,0 +1,20 @@
+{
+  "redirects": [
+    { "source": "/galeria*", "destination": "/proyectos", "statusCode": 301 },
+    { "source": "/trabajos*", "destination": "/proyectos", "statusCode": 301 },
+    { "source": "/servicios*", "destination": "/servicios", "statusCode": 301 },
+    { "source": "/productos*", "destination": "/servicios", "statusCode": 301 },
+    { "source": "/contacto*", "destination": "/contacto", "statusCode": 301 },
+    { "source": "/contacta*", "destination": "/contacto", "statusCode": 301 },
+    { "source": "/noticias*", "destination": "/blog", "statusCode": 301 },
+    { "source": "/blog*", "destination": "/blog", "statusCode": 301 },
+    { "source": "/boiserie*", "destination": "/blog", "statusCode": 301 },
+    { "source": "/lacado*", "destination": "/blog", "statusCode": 301 },
+    { "source": "/empresa-solidaria*", "destination": "/blog", "statusCode": 301 },
+    { "source": "/comoda*", "destination": "/blog", "statusCode": 301 },
+    { "source": "/:slug.html", "destination": "/", "statusCode": 301 }
+  ],
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

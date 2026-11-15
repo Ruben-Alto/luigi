@@ -41,7 +41,7 @@ const DYNAMIC_PROJECTS: DynamicProject[] = [
     neighborhood: 'Tetuán',
     description: 'Mesilla de noche antigua restaurada íntegramente en taller: lijado, saneado de madera, lacado satinado artesanal y patina protectora.',
     image: '/images/projects/project-1.jpeg',
-    beforeImage: '/images/projects/before/project-1.jpeg',
+    beforeImage: '',
     details: ['Restauración completa', 'Lacado satinado artesanal', 'Patina protectora'],
     days: 8
   },
@@ -65,7 +65,7 @@ const DYNAMIC_PROJECTS: DynamicProject[] = [
     neighborhood: 'Tetuán',
     description: 'Conjunto de puertas de paso lacadas en satinado sedoso con marcos y tapajuntas a juego, unificando la estética de la vivienda.',
     image: '/images/projects/project-3.jpeg',
-    beforeImage: '/images/projects/before/project-3.jpeg',
+    beforeImage: '',
     details: ['Lacado satinado', 'Marcos y tapajuntas a juego', 'Herrajes renovados'],
     days: 7
   },
@@ -101,7 +101,7 @@ const DYNAMIC_PROJECTS: DynamicProject[] = [
     neighborhood: 'Chamartín',
     description: 'Conjunto completo de mesa de comedor y sillas lacadas en satinado sedoso, renovando el corazón de la estancia.',
     image: '/images/projects/project-7.jpeg',
-    beforeImage: '/images/projects/before/project-7.jpeg',
+    beforeImage: '',
     details: ['Mesa + sillas', 'Lacado satinado completo', 'Conjunto unificado'],
     days: 10
   },
@@ -113,7 +113,7 @@ const DYNAMIC_PROJECTS: DynamicProject[] = [
     neighborhood: 'Tetuán',
     description: 'Cómoda de madera maciza restaurada íntegramente en nuestro taller de Tetuán: desparasitado, saneado, lacado y patina.',
     image: '/images/projects/project-8.jpeg',
-    beforeImage: '/images/projects/before/project-8.jpeg',
+    beforeImage: '',
     details: ['Restauración completa en taller', 'Desparasitado', 'Lacado y patina'],
     days: 12
   },
@@ -161,7 +161,7 @@ const DYNAMIC_PROJECTS: DynamicProject[] = [
     neighborhood: 'Ibiza',
     description: 'Estantería comercial lacada y restaurada para tienda Gucci en Ibiza, acabado satinado de alta resistencia para retail.',
     image: '/images/projects/project-12.jpeg',
-    beforeImage: '/images/projects/before/project-12.jpeg',
+    beforeImage: '',
     details: ['Proyecto comercial Gucci', 'Lacado alta resistencia', 'Acabado retail'],
     days: 14
   },
@@ -245,7 +245,7 @@ const DYNAMIC_PROJECTS: DynamicProject[] = [
     neighborhood: 'Tetuán',
     description: 'Lacado de cercos y marcos en domicilio con micro-turbina, y barnizado de puertas de paso sin desmontar, protección total de suelos y paredes.',
     image: '/images/projects/project-19.jpeg',
-    beforeImage: '/images/projects/before/project-19.jpeg',
+    beforeImage: '',
     details: ['Lacado in situ', 'Micro-turbina', 'Protección total'],
     days: 5
   },
@@ -269,7 +269,7 @@ const DYNAMIC_PROJECTS: DynamicProject[] = [
     neighborhood: 'Chamberí',
     description: 'Conjunto de puertas de paso lacadas en satinado artesanal, incluyendo marcos y tapajuntas para continuidad perfecta.',
     image: '/images/projects/project-21.jpeg',
-    beforeImage: '/images/projects/before/project-21.jpeg',
+    beforeImage: '',
     details: ['Lacado artesanal', 'Marcos y tapajuntas', 'Continuidad visual'],
     days: 8
   },
@@ -325,7 +325,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenWhatsApp }) =>
 
   const hasRealBeforeImage = (proj: DynamicProject) => {
     const before = getBeforeImage(proj);
-    return Boolean(before) && before !== proj.image;
+    return Boolean(before) && before.trim() !== '' && before !== proj.image;
   };
 
   return (

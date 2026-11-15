@@ -262,8 +262,8 @@ export const REAL_PROJECTS: ProjectItem[] = [
     categoryLabel: 'Armarios empotrados',
     neighborhood: 'Chamberí',
     description: 'Piso señorial en calle Alonso Cano. 8 hojas de armario empotrado con moldura clásica barnizadas en sapelly oscuro de 1982, actualizadas a blanco roto satinado luminoso.',
-    beforeImg: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=800&q=80',
-    afterImg: 'https://images.unsplash.com/photo-1558997519-83ea9252def8?auto=format&fit=crop&w=800&q=80',
+    beforeImage: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1558997519-83ea9252def8?auto=format&fit=crop&w=800&q=80',
     details: ['8 puertas con lacado artesanal', 'Ajuste de pernios y tiradores latón', 'Blanco roto cálido (#F5F1EA)'],
     days: 9
   },
@@ -274,8 +274,8 @@ export const REAL_PROJECTS: ProjectItem[] = [
     categoryLabel: 'Puertas de paso',
     neighborhood: 'Barrio del Pilar',
     description: 'Vivienda familiar de 1978. Puertas de paso con barniz anaranjado brillante convertidas en puertas contemporáneas en gris suave satinado con marcos a juego.',
-    beforeImg: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80',
-    afterImg: 'https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&w=800&q=80',
+    beforeImage: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&w=800&q=80',
     details: ['7 puertas de paso + 1 vidriera', 'Tapajuntas nuevos lacados', 'Manillas cambiadas'],
     days: 8
   },
@@ -286,8 +286,8 @@ export const REAL_PROJECTS: ProjectItem[] = [
     categoryLabel: 'Muebles de salón',
     neighborhood: 'Tetuán',
     description: 'Piso reformado cerca de Bravo Murillo. Conjunto de aparador de teca y mesa de centro lacados en verde salvia grisáceo con encimeras protegidas con tratamiento anti-manchas.',
-    beforeImg: 'https://images.unsplash.com/photo-1540518614846-7ede433c4ef2?auto=format&fit=crop&w=800&q=80',
-    afterImg: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80',
+    beforeImage: 'https://images.unsplash.com/photo-1540518614846-7ede433c4ef2?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80',
     details: ['Aparador 2,10m + Mesa', 'Tacto satinado sedoso anti-huellas', 'Verde salvia (#A4B3A0)'],
     days: 6
   },
@@ -298,8 +298,8 @@ export const REAL_PROJECTS: ProjectItem[] = [
     categoryLabel: 'Restauración antigua',
     neighborhood: 'Chamartín',
     description: 'Cómoda francesa de herencia familiar con barniz cuarteado. Desparasitada, saneada y acabada en satinado sutil marfil respetando los herrajes cincelados originales.',
-    beforeImg: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80',
-    afterImg: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80',
+    beforeImage: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80',
     details: ['Tratamiento antitermita', 'Pulido de bronces con cera', 'Acabado lacado marfil'],
     days: 12
   },
@@ -310,8 +310,8 @@ export const REAL_PROJECTS: ProjectItem[] = [
     categoryLabel: 'Armarios empotrados',
     neighborhood: 'Tetuán',
     description: 'Piso en Valdeacederas. Frente corrido con altillos de 2,60m de altura, lacado artesanal en blanco puro satinado con tiradores embutidos.',
-    beforeImg: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=800&q=80',
-    afterImg: 'https://images.unsplash.com/photo-1558997519-83ea9252def8?auto=format&fit=crop&w=800&q=80',
+    beforeImage: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1558997519-83ea9252def8?auto=format&fit=crop&w=800&q=80',
     details: ['10 hojas y 4 altillos', 'Sellado de ranuras antiguas', 'Garantía 5 años'],
     days: 10
   },
@@ -322,8 +322,8 @@ export const REAL_PROJECTS: ProjectItem[] = [
     categoryLabel: 'Muebles de salón',
     neighborhood: 'Chamberí',
     description: 'Paseo del General Martínez Campos. Gran boiserie de roble teñido que oscurecía todo el salón, transformada a un blanco roto con fondo piedra de gran elegancia.',
-    beforeImg: 'https://images.unsplash.com/photo-1540518614846-7ede433c4ef2?auto=format&fit=crop&w=800&q=80',
-    afterImg: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80',
+    beforeImage: 'https://images.unsplash.com/photo-1540518614846-7ede433c4ef2?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80',
     details: ['Librería 5 metros lineales', 'Iluminación cálida respetada', 'Laca ignífuga para interior'],
     days: 14
   }

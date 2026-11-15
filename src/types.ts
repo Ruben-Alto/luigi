@@ -15,8 +15,8 @@ export interface ProjectItem {
   categoryLabel: string;
   neighborhood: Neighborhood;
   description: string;
-  beforeImg: string;
-  afterImg: string;
+  image: string;
+  beforeImage?: string;
   details: string[];
   days: number;
 }

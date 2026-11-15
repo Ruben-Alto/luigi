@@ -53,7 +53,7 @@ const DYNAMIC_PROJECTS: DynamicProject[] = [
     neighborhood: 'Chamberí',
     description: 'Boiserie completa de salón lacada y patinada artesanalmente, respetando molduras y relieves originales con acabado satinado sedoso.',
     image: '/images/projects/project-2.jpeg',
-    beforeImage: '/images/projects/project-2.jpeg',
+    beforeImage: '',
     details: ['Boiserie completa', 'Lacado y patina artesanal', 'Molduras respetadas'],
     days: 12
   },
@@ -323,8 +323,9 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenWhatsApp }) =>
     return proj.beforeImage || proj.beforeImgUploaded || '';
   };
 
-  const hasBeforeImage = (proj: DynamicProject) => {
-    return Boolean(getBeforeImage(proj));
+  const hasRealBeforeImage = (proj: DynamicProject) => {
+    const before = getBeforeImage(proj);
+    return Boolean(before) && before !== proj.image;
   };
 
   return (
@@ -362,7 +363,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenWhatsApp }) =>
             </span>
           </div>
 
-          {hasBeforeImage(activeProjectForSlider) ? (
+          {hasRealBeforeImage(activeProjectForSlider) ? (
             <div className="relative w-full h-[320px] sm:h-[440px] rounded-xl overflow-hidden select-none border border-[#E3D9CC]">
               {/* Imagen DESPUÉS (Base) */}
               <img
@@ -429,7 +430,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenWhatsApp }) =>
           )}
 
           <div className="flex flex-wrap items-center justify-between text-xs text-[#6B6B6B] mt-4 pt-3 border-t border-[#E3D9CC]">
-            <p className={hasBeforeImage(activeProjectForSlider) ? '' : 'hidden'}>
+            <p className={hasRealBeforeImage(activeProjectForSlider) ? '' : 'hidden'}>
               💡 <em>Arrastra el círculo blanco hacia los lados para comparar la transformación de textura y luminosidad.</em>
             </p>
             <div className="flex items-center space-x-2 mt-2 sm:mt-0">
@@ -532,7 +533,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenWhatsApp }) =>
                       onClick={(e) => handleComparatorClick(proj, e)}
                       className="flex items-center justify-center space-x-1.5 text-[#2F4F3A] font-semibold hover:text-[#243E2E] cursor-pointer px-3 py-2 rounded-lg bg-[#E3D9CC]/40 hover:bg-[#E3D9CC]/60 transition-colors w-full sm:w-auto"
                     >
-                      <span>{hasBeforeImage(proj) ? 'Ver en comparador' : 'Ver en grande'}</span>
+                      <span>{hasRealBeforeImage(proj) ? 'Ver en comparador' : 'Ver en grande'}</span>
                       <ChevronRight className="w-3.5 h-3.5" />
                     </button>
                     <button

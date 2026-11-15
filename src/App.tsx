@@ -8,12 +8,14 @@ import { ServicesView } from './components/ServicesView';
 import { ProjectsView } from './components/ProjectsView';
 import { BlogView } from './components/BlogView';
 import { ContactView } from './components/ContactView';
+import { LegalView } from './components/LegalView';
 import { BUSINESS_INFO } from './data/content';
 import { usePageMeta } from './hooks/usePageMeta';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<ActiveTab>('inicio');
   const [selectedServiceId, setSelectedServiceId] = useState<ServiceId | null>(null);
+  const [legalSection, setLegalSection] = useState<'aviso' | 'privacidad' | 'cookies'>('aviso');
 
   const PAGE_META: Record<ActiveTab, { title: string; description: string }> = {
     inicio: {
@@ -41,9 +43,14 @@ export default function App() {
       description:
         'Envíanos fotos de tus armarios o muebles y te orientamos en menos de 24 h. Taller de lacado en Tetuán, sirve Chamberí, Plaza de Castilla y Serrano.',
     },
+    legal: {
+      title: 'Aviso Legal y Privacidad | Lacados Arribas Martín',
+      description:
+        'Aviso legal, política de privacidad y política de cookies de Lacados Arribas Martín S.L. Taller en Tetuán, Manuel Arribas Caballero, Calle de los Voluntarios Catalanes 20B, 28039 Madrid.',
+    },
   };
 
-  usePageMeta(PAGE_META[activeTab]);
+  usePageMeta({ ...PAGE_META[activeTab], path: activeTab === 'inicio' ? '/' : `/${activeTab}` });
 
   const handleOpenWhatsApp = (customMessage?: string) => {
     const defaultMsg = 'Hola, he visto vuestra web de Lacados Arribas Martín. Me gustaría pedir orientación y presupuesto para lacar en satinado mis armarios, puertas o muebles en Madrid. Os envío fotos.';
@@ -60,6 +67,12 @@ export default function App() {
 
   const handleSelectTab = (tab: ActiveTab) => {
     setActiveTab(tab);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleOpenLegal = (section: 'aviso' | 'privacidad' | 'cookies') => {
+    setLegalSection(section);
+    setActiveTab('legal');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -108,6 +121,13 @@ export default function App() {
             onOpenWhatsApp={handleOpenWhatsApp}
           />
         )}
+
+        {activeTab === 'legal' && (
+          <LegalView
+            section={legalSection}
+            onClose={() => setActiveTab('inicio')}
+          />
+        )}
       </main>
 
       {/* Botón flotante de WhatsApp siempre accesible */}
@@ -118,6 +138,7 @@ export default function App() {
         onSelectTab={handleSelectTab}
         onSelectService={handleSelectService}
         onOpenWhatsApp={handleOpenWhatsApp}
+        onOpenLegal={handleOpenLegal}
       />
     </div>
   );

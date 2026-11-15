@@ -7,12 +7,14 @@ interface FooterProps {
   onSelectTab: (tab: ActiveTab) => void;
   onSelectService: (serviceId: ServiceId) => void;
   onOpenWhatsApp: () => void;
+  onOpenLegal: (section: 'aviso' | 'privacidad' | 'cookies') => void;
 }
 
 export const Footer: React.FC<FooterProps> = ({
   onSelectTab,
   onSelectService,
-  onOpenWhatsApp
+  onOpenWhatsApp,
+  onOpenLegal
 }) => {
   return (
     <footer id="global-footer" className="bg-[#C2B39A] text-[#343434] border-t border-[#B08C4F]/40 pt-12 pb-8 mt-auto">
@@ -147,15 +149,15 @@ export const Footer: React.FC<FooterProps> = ({
             © {new Date().getFullYear()} Lacados Arribas Martín S.L. Todos los derechos reservados.
           </p>
           <div className="flex items-center space-x-4">
-            <span className="hover:text-[#2F4F3A] cursor-pointer" onClick={() => alert(`Aviso Legal: ${BUSINESS_INFO.name} S.L. - ${BUSINESS_INFO.address}. Registro Mercantil de Madrid.`)}>
+            <span className="hover:text-[#2F4F3A] cursor-pointer" onClick={() => onOpenLegal('aviso')}>
               Aviso Legal
             </span>
             <span>·</span>
-            <span className="hover:text-[#2F4F3A] cursor-pointer" onClick={() => alert('Política de Privacidad: Cumplimiento estricto RGPD. Los datos y fotos enviados se emplean exclusivamente para elaborar presupuestos de lacado.')}>
+            <span className="hover:text-[#2F4F3A] cursor-pointer" onClick={() => onOpenLegal('privacidad')}>
               Privacidad
             </span>
             <span>·</span>
-            <span className="hover:text-[#2F4F3A] cursor-pointer" onClick={() => alert('Política de Cookies: Utilizamos cookies técnicas para garantizar el correcto funcionamiento del sitio.')}>
+            <span className="hover:text-[#2F4F3A] cursor-pointer" onClick={() => onOpenLegal('cookies')}>
               Cookies
             </span>
             <span>·</span>

@@ -325,7 +325,7 @@ export const Header: React.FC<HeaderProps> = ({
               onClick={() => handleNavClick('proyectos')}
               className="py-3.5 text-left font-sans text-lg font-medium text-[#343434] hover:text-[#2F4F3A]"
             >
-              Proyectos (Galería & Simulador)
+              Proyectos
             </button>
 
             <button

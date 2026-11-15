@@ -13,7 +13,6 @@ import {
   Info
 } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/content';
-import { SimulatorSection } from './SimulatorSection';
 
 interface ProjectsViewProps {
   onOpenWhatsApp: (customMessage?: string) => void;
@@ -345,7 +344,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenWhatsApp }) =>
             Proyectos de lacado satinado en Chamberí, Plaza de Castilla, Serrano y en todo Madrid
           </h1>
           <p className="text-sm sm:text-base text-[#6B6B6B]">
-            Casos reales de armarios empotrados, puertas y salones modernizados con acabado sedoso en Chamberí, Plaza de Castilla, Serrano y el resto de Madrid. Compara el antes y después y prueba nuestro simulador.
+            Casos reales de armarios empotrados, puertas y salones modernizados con acabado sedoso en Chamberí, Plaza de Castilla, Serrano y el resto de Madrid.
           </p>
         </div>
 
@@ -371,6 +370,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenWhatsApp }) =>
           <div className="relative w-full h-[320px] sm:h-[440px] rounded-xl overflow-hidden select-none border border-[#E3D9CC]">
             {/* Imagen DESPUÉS (Base) */}
             <img
+              loading="lazy"
               src={activeProjectForSlider.afterImg}
               alt="Después de lacar"
               className="absolute inset-0 w-full h-full object-cover"
@@ -382,6 +382,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenWhatsApp }) =>
               style={{ width: `${sliderPosition}%` }}
             >
               <img
+                loading="lazy"
                 src={getBeforeImageForComparator(activeProjectForSlider)}
                 alt="Antes de lacar"
                 className="absolute inset-0 w-full h-full object-cover max-w-none"
@@ -480,6 +481,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenWhatsApp }) =>
                 >
                   <div className="relative h-48 overflow-hidden">
                     <img
+                      loading="lazy"
                       src={proj.afterImg}
                       alt={proj.title}
                       className={`w-full h-full object-cover transition-transform duration-500 ${
@@ -539,12 +541,6 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenWhatsApp }) =>
             })}
           </div>
         </div>
-
-        {/* =========================================================================
-            SECCIÓN 3: SIMULADOR IA DE ACABADOS CON GEMINI NANO BANANA (#simulador)
-            ========================================================================= */}
-        <SimulatorSection onOpenWhatsApp={onOpenWhatsApp} />
-
       </div>
     </div>
   );

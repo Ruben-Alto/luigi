@@ -1,4 +1,4 @@
-export type ActiveTab = 'inicio' | 'servicios' | 'proyectos' | 'blog' | 'contacto';
+export type ActiveTab = 'inicio' | 'servicios' | 'proyectos' | 'blog' | 'contacto' | 'legal';
 
 export type ServiceId = 
   | 'lacado-armarios-empotrados-madrid'

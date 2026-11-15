@@ -332,47 +332,36 @@ export const REAL_PROJECTS: ProjectItem[] = [
 export const REVIEWS_DATA: ReviewItem[] = [
   {
     id: 'rev-1',
-    author: 'Elena R. de la Vega',
-    location: 'Tetuán, Madrid',
-    neighborhood: 'Tetuán',
+    author: 'Manuel Peña Cerezo',
+    location: 'Madrid',
+    neighborhood: 'Madrid',
     rating: 5,
-    date: 'Hace 3 semanas',
-    highlightedItem: 'Armarios empotrados y puertas de paso',
+    date: 'Reseña verificada en Google',
+    highlightedItem: 'Mueble de salón lacado en blanco roto',
     finishType: 'Blanco roto satinado',
-    text: 'Lacaron todos los armarios empotrados y puertas de paso de nuestro piso en Tetuán en un blanco roto satinado. El cambio de luz en la casa ha sido brutal, sin parecer una cocina de alto brillo. Se nota que vienen del oficio del lacado de toda la vida.'
+    text: 'Trabajo excelente, son unos grandes profesionales y muy buenas personas. Muy satisfecho con el trabajo encargado, pedimos que nos transportaran y lacaran en blanco roto el mueble del salón y lo adaptaron al nuevo de forma magistral.'
   },
   {
     id: 'rev-2',
-    author: 'Ignacio M. Santamaría',
-    location: 'Chamberí, Madrid',
-    neighborhood: 'Chamberí',
+    author: 'Margarita López Trascasa',
+    location: 'Madrid',
+    neighborhood: 'Madrid',
     rating: 5,
-    date: 'Hace 1 mes',
-    highlightedItem: 'Boiserie, aparador y librería de salón',
-    finishType: 'Satinado sedoso gris piedra',
-    text: 'En Chamberí nos actualizaron el salón completo: boiserie, aparador y librería en satinado sedoso. Se nota que son auténticos profesionales del lacado, no como pintura rápida a rodillo. Desmontaron todo, nos mantuvieron informados por WhatsApp con fotos del taller y montaron en 1 día.'
+    date: 'Reseña verificada en Google',
+    highlightedItem: 'Restauración de mueble-tocador antiguo',
+    finishType: 'Restauración artesanal',
+    text: 'Trabajan con gran profesionalidad y seriedad. Me han hecho una restauración impecable de un mueble-tocador antiguo con daños por agua y ha quedado muy bien. ¡¡¡Muy recomendable el trabajo de Manuel!!!'
   },
   {
     id: 'rev-3',
-    author: 'Carmen Gómez-Bravo',
-    location: 'Plaza de Castilla, Madrid',
-    neighborhood: 'Plaza de Castilla',
+    author: 'Matías Carbajosa Alonso',
+    location: 'Madrid',
+    neighborhood: 'Madrid',
     rating: 5,
-    date: 'Hace 2 meses',
-    highlightedItem: 'Aparador antiguo y 6 puertas de paso',
-    finishType: 'Barnices y lacas ecológicos satinados',
-    text: 'Vivo en Plaza de Castilla y buscaba alguien que respetara mis muebles de calidad. Restauraron un aparador antiguo y varias puertas con barnices y lacas ecológicos satinados, y parecen nuevos. No desprendieron nada de olor en casa.'
-  },
-  {
-    id: 'rev-4',
-    author: 'Álvaro F. Pardo',
-    location: 'Serrano, Madrid',
-    neighborhood: 'Serrano',
-    rating: 5,
-    date: 'Hace 2 meses',
-    highlightedItem: 'Frentes de vestidor a medida',
-    finishType: 'Satinado tacto sedoso',
-    text: 'Mandé fotos por WhatsApp un domingo por la tarde y el lunes por la mañana ya tenía una estimación transparente. Cumplieron los plazos al milímetro y el tacto de las puertas de armario es increíblemente fino.'
+    date: 'Reseña verificada en Google',
+    highlightedItem: 'Lacado y restauración a medida',
+    finishType: 'Lacado artesanal',
+    text: 'Me gusta mucho como realizan los trabajos, muy buena relación calidad precio, y además Manuel es muy amable. No dudaré en recomendarles y llamarles en próximos trabajos. Muchas gracias por todo.'
   }
 ];
 

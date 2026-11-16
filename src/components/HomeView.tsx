@@ -70,18 +70,19 @@ export const HomeView: React.FC<HomeViewProps> = ({
           ========================================================================= */}
       <section className="relative pt-8 pb-16 md:pt-14 md:pb-24 border-b border-[#E3D9CC] overflow-hidden">
         <img
-          src="/images/armarios-empotrados-bg.webp"
+          src="/images/hero-definitiva.webp"
           alt="Taller de lacado de armarios empotrados en Tetuán Madrid"
           fetchPriority="high"
           decoding="async"
           className="absolute inset-0 w-full h-full object-cover pointer-events-none"
-          style={{ opacity: 0.32, zIndex: 0 }}
+          style={{ opacity: 0.78, zIndex: 0 }}
         />
         <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-[#E3D9CC]/30 blur-3xl pointer-events-none"></div>
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl rounded-xl p-6 sm:p-8 relative overflow-hidden" style={{ position: 'relative', zIndex: 10 }}>
-            {/* Badge de confianza */}
+            <div className="rounded-2xl p-4 sm:p-6 lg:p-8" style={{ backgroundColor: 'rgba(245, 241, 234, 0.88)', backdropFilter: 'blur(8px)' }}>
+              {/* Badge de confianza */}
             <div className="inline-flex items-center space-x-2 bg-[#E3D9CC]/60 border border-[#B08C4F]/40 rounded-full px-3.5 py-1.5 mb-5 text-xs font-semibold text-[#2F4F3A]">
               <span className="w-2 h-2 rounded-full bg-[#2F4F3A] animate-pulse"></span>
               <span>Taller familiar en Tetuán desde 1969 · Especialistas en acabado satinado</span>
@@ -149,6 +150,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
             <p className="text-xs text-[#343434] leading-relaxed">
               <span className="font-semibold text-[#343434]">Sin compromiso:</span> Nos envías fotos por WhatsApp desde Chamberí, Plaza de Castilla, Serrano o cualquier otra zona de Madrid y te respondemos en menos de 24 h con una orientación honesta.
             </p>
+            </div>
           </div>
         </div>
       </section>

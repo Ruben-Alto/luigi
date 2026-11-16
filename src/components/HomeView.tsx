@@ -249,7 +249,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 : isPuertas
                   ? 'url("/images/puertas-paso-bg.webp")'
                   : isSalon
-                    ? 'url("/images/muebles-salon-bg.jpg")'
+                    ? 'url("/images/muebles-salon-bg.webp")'
                     : 'url("/images/restauracion-muebles-bg.jpg")';
               return (
                <article

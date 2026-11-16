@@ -376,7 +376,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '12 de Febrero, 2026',
     readTime: '4 min de lectura',
     excerpt: 'Analizamos un caso real en Chamberí: cómo transformamos frentes de armario empotrados sin obras, eliminando tonos anaranjados mediante lacado artesanal.',
-    image: '/images/projects/project-2.jpeg',
+    image: '/images/blog-armarios-chamberi.jpg',
     content: [
       'En los pisos clásicos de Chamberí es muy habitual encontrar armarios empotrados de madera maciza o chapada de extraordinaria calidad constructiva, pero con barnices anaranjados que oscurecen los dormitorios.',
       'En este proyecto desmontamos las hojas y frentes, numerando cada bisagra y cerradura para su perfecto reensamblaje.',
@@ -414,7 +414,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '15 de Enero, 2026',
     readTime: '5 min de lectura',
     excerpt: 'Explicamos por qué realizamos el 90% del lacado en nuestra cabina de la Calle de los Voluntarios Catalanes, garantizando cero olores y máxima seguridad en dormitorios.',
-    image: '/images/projects/project-1.jpeg',
+    image: '/images/blog-esmaltes-taller.jpg',
     content: [
       'Desde 1969 aplicamos el oficio tradicional de lacado en nuestra cabina de la Calle de los Voluntarios Catalanes en Tetuán. El 90% del proceso (desinsectación de carcoma, consolidación estructural, lijado, imprimación y lacado final) se realiza en taller.',
       'Utilizamos barnices y lacas ecológicos al agua certificados para interiores de dormitorios infantiles y adultos. Esto garantiza cero olores residuales, ausencia de COVs dañinos y máxima seguridad para tu familia.',

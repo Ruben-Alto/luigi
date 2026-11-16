@@ -27,12 +27,17 @@ export const ContactView: React.FC<ContactViewProps> = ({ onOpenWhatsApp }) => {
     privacyAccepted: true
   });
 
+  const EMAIL = 'info@lacadosarribasmartin.es';
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.name || !formData.phone) {
-      alert('Por favor, indica al menos tu nombre y teléfono móvil.');
+    if (!formData.name || !formData.phone || !formData.message) {
+      alert('Por favor, indica tu nombre, teléfono y el mensaje con los detalles de las piezas.');
       return;
     }
+    const texto = `Hola, he rellenado el formulario de la web de Lacados Arribas Martín:\n\nNombre: ${formData.name}\nTeléfono: ${formData.phone}\nBarrio/Zona: ${formData.neighborhood}\nTipo de proyecto: ${formData.projectType}\nMensaje: ${formData.message}\n\nPor favor, enviadme presupuesto orientativo.`;
+    const whatsappUrl = `https://wa.me/${BUSINESS_INFO.whatsappNumber}?text=${encodeURIComponent(texto)}`;
+    window.open(whatsappUrl, '_blank');
     setFormSubmitted(true);
   };
 
@@ -130,6 +135,15 @@ export const ContactView: React.FC<ContactViewProps> = ({ onOpenWhatsApp }) => {
                   <p className="text-sm text-[#343434]">
                     Gracias <strong>{formData.name}</strong>. Un especialista en lacado de nuestro taller de Tetuán revisará tu solicitud para <strong>{formData.neighborhood}</strong> y te llamará al {formData.phone} en menos de 24 horas laborables.
                   </p>
+                  <p className="text-xs text-[#6B6B6B] mb-4">
+                    Se ha abierto WhatsApp con tus datos para que confirmes el presupuesto. Si prefieres email, usa el botón de abajo.
+                  </p>
+                  <a
+                    href={`mailto:${EMAIL}?subject=Presupuesto Lacados Arribas Martín - ${formData.name}&body=${encodeURIComponent(texto)}`}
+                    className="text-xs font-semibold text-[#2F4F3A] underline hover:text-[#243E2E] mt-2 inline-block"
+                  >
+                    Enviar mismos datos por email →
+                  </a>
                   <button
                     onClick={() => {
                       setFormSubmitted(false);

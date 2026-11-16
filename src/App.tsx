@@ -8,7 +8,8 @@ import { ServicesView } from './components/ServicesView';
 import { ProjectsView } from './components/ProjectsView';
 import { BlogView } from './components/BlogView';
 import { ContactView } from './components/ContactView';
-import { LegalView } from './components/LegalView';
+import { CookieConsent } from './components/CookieConsent';
+import { loadAnalytics, trackEvent, trackPageView } from './lib/analytics';
 import { BUSINESS_INFO } from './data/content';
 import { usePageMeta } from './hooks/usePageMeta';
 
@@ -34,6 +35,26 @@ export default function App() {
   const [activeTab, setActiveTab] = useState<ActiveTab>(() => tabFromPath(window.location.pathname));
   const [selectedServiceId, setSelectedServiceId] = useState<ServiceId | null>(null);
   const [legalSection, setLegalSection] = useState<'aviso' | 'privacidad' | 'cookies'>('aviso');
+  const [consent, setConsent] = useState<'pending' | 'analytics' | 'necessary'>(() => {
+    const stored = localStorage.getItem('cookie_consent');
+    return stored === 'analytics' || stored === 'necessary' ? stored : 'pending';
+  });
+
+  const acceptConsent = () => {
+    localStorage.setItem('cookie_consent', 'analytics');
+    setConsent('analytics');
+    loadAnalytics();
+  };
+
+  const declineConsent = () => {
+    localStorage.setItem('cookie_consent', 'necessary');
+    setConsent('necessary');
+  };
+
+  const openCookieSettings = () => {
+    localStorage.removeItem('cookie_consent');
+    setConsent('pending');
+  };
 
   const PAGE_META: Record<ActiveTab, { title: string; description: string }> = {
     inicio: {
@@ -106,6 +127,43 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  useEffect(() => {
+    if (consent === 'analytics') loadAnalytics();
+  }, [consent]);
+
+  useEffect(() => {
+    if (consent === 'analytics') trackPageView(TAB_PATHS[activeTab]);
+  }, [activeTab, consent]);
+
+  useEffect(() => {
+    const onClick = (e: MouseEvent) => {
+      if (consent !== 'analytics') return;
+      const target = e.target as HTMLElement | null;
+      const anchor = target?.closest?.('a') as HTMLAnchorElement | null;
+      if (anchor && anchor.href) {
+        const href = anchor.href;
+        if (href.startsWith('https://wa.me') || href.startsWith('https://whatsapp.com') || /whatsapp/i.test(href)) {
+          trackEvent('click_whatsapp', { page_location: window.location.href });
+        } else if (href.startsWith('tel:')) {
+          trackEvent('click_llamada', { page_location: window.location.href });
+        }
+      }
+      const btn = target?.closest?.('button');
+      if (btn && /whatsapp/i.test((btn as HTMLElement).textContent || '')) {
+        trackEvent('click_whatsapp', { page_location: window.location.href });
+      }
+    };
+    const onSubmit = (e: Event) => {
+      if (consent !== 'analytics') return;
+      trackEvent('envio_formulario', { page_location: window.location.href });
+    };
+    document.addEventListener('click', onClick, true);
+    document.addEventListener('submit', onSubmit, true);
+    return () => {
+      document.removeEventListener('click', onClick, true);
+      document.removeEventListener('submit', onSubmit, true);
+    };
+  }, [consent]);
   useEffect(() => {
     const onPopState = () => {
       setActiveTab(tabFromPath(window.location.pathname));
@@ -186,7 +244,11 @@ export default function App() {
         onSelectService={handleSelectService}
         onOpenWhatsApp={handleOpenWhatsApp}
         onOpenLegal={handleOpenLegal}
+        onOpenCookieSettings={openCookieSettings}
       />
+      {consent === 'pending' && (
+        <CookieConsent onAccept={acceptConsent} onDecline={declineConsent} />
+      )}
     </div>
   );
 }

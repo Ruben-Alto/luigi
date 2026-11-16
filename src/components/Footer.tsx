@@ -8,13 +8,15 @@ interface FooterProps {
   onSelectService: (serviceId: ServiceId) => void;
   onOpenWhatsApp: () => void;
   onOpenLegal: (section: 'aviso' | 'privacidad' | 'cookies') => void;
+  onOpenCookieSettings?: () => void;
 }
 
 export const Footer: React.FC<FooterProps> = ({
   onSelectTab,
   onSelectService,
   onOpenWhatsApp,
-  onOpenLegal
+  onOpenLegal,
+  onOpenCookieSettings
 }) => {
   return (
     <footer id="global-footer" className="bg-[#C2B39A] text-[#343434] border-t border-[#B08C4F]/40 pt-12 pb-8 mt-auto">
@@ -169,6 +171,13 @@ export const Footer: React.FC<FooterProps> = ({
             <span className="hover:text-[#2F4F3A] cursor-pointer" onClick={() => onOpenLegal('cookies')}>
               Cookies
             </span>
+            <span>·</span>
+            <button
+              onClick={onOpenCookieSettings}
+              className="hover:text-[#2F4F3A] cursor-pointer"
+            >
+              Configurar cookies
+            </button>
             <span>·</span>
             <button
               onClick={() => {

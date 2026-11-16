@@ -93,7 +93,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
             </h1>
 
             <p className="text-base sm:text-lg text-[#343434]/90 mb-6 leading-relaxed">
-              Actualizamos armarios empotrados, puertas de paso y muebles de salón en pisos de <strong className="text-[#2F4F3A] font-semibold">Chamberí, Plaza de Castilla, Serrano y en todo Madrid</strong> con un acabado sedoso, uniforme y duradero, sin obras en casa.
+              Actualizamos armarios empotrados, puertas de paso y muebles de salón —y realizamos lacado de muebles a domicilio y restauración de muebles lacados— en pisos de Chamberí, Plaza de Castilla, Serrano y en todo Madrid norte y centro, con un acabado sedoso, uniforme y duradero, sin obras en casa.
             </p>
 
             {/* Bullets diferenciales */}
@@ -162,7 +162,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl font-semibold text-[#343434] mb-3">
-              Por qué elegir un lacado satinado profesional en Madrid norte y centro
+              Taller de barnizado, decapado y lacado de muebles en Madrid — Por qué elegir un lacado satinado profesional en Madrid norte y centro
             </h2>
             <p className="text-sm sm:text-base text-[#343434]">
               Si vives en Chamberí, Plaza de Castilla, Serrano o cualquier otra zona de Madrid, probablemente tus armarios y puertas son de madera de calidad. Nosotros los actualizamos sin obra, con un acabado satinado sedoso que dura años.

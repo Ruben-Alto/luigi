@@ -68,7 +68,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
       {/* =========================================================================
           BLOQUE 1: HERO DE IMPACTO (Claim GEO-Ready + CTAs Directos)
           ========================================================================= */}
-      <section className="relative pt-8 pb-16 md:pt-14 md:pb-24 border-b border-[#E3D9CC] overflow-hidden">
+      <section className="relative pt-28 pb-16 md:pt-32 md:pb-24 border-b border-[#E3D9CC] overflow-hidden">
         <img
           src="/images/hero-definitiva.webp"
           alt="Taller de lacado de armarios empotrados en Tetuán Madrid"
@@ -81,7 +81,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl rounded-xl p-6 sm:p-8 relative overflow-hidden" style={{ position: 'relative', zIndex: 10 }}>
-            <div className="rounded-2xl p-4 sm:p-6 lg:p-8" style={{ backgroundColor: 'rgba(245, 241, 234, 0.88)', backdropFilter: 'blur(8px)' }}>
+            <div className="rounded-2xl p-4 sm:p-6 lg:p-8" style={{ backgroundColor: 'rgba(245, 241, 234, 0.72)', backdropFilter: 'blur(6px)' }}>
               {/* Badge de confianza */}
             <div className="inline-flex items-center space-x-2 bg-[#E3D9CC]/60 border border-[#B08C4F]/40 rounded-full px-3.5 py-1.5 mb-5 text-xs font-semibold text-[#2F4F3A]">
               <span className="w-2 h-2 rounded-full bg-[#2F4F3A] animate-pulse"></span>

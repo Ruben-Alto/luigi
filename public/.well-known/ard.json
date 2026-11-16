@@ -1,34 +1,59 @@
 {
   "entries": [
     {
+      "identifier": "home",
+      "displayName": "Lacados Arribas Martín - Inicio",
       "url": "https://lacadosarribasmartin.es",
-      "title": "Lacados Arribas Martín | Taller de Lacado Madrid",
-      "description": "Taller familiar de lacado artesanal fundado en 1969. Especialistas en acabado satinado para armarios empotrados, puertas de paso y muebles de salón en Chamberí, Plaza de Castilla, Serrano y toda Madrid.",
-      "type": "website"
+      "mediaType": "text/html",
+      "representativeQueries": [
+        "lacado de muebles en madrid",
+        "taller de lacado en chamberi",
+        "lacado de armarios empotrados madrid"
+      ]
     },
     {
+      "identifier": "servicios",
+      "displayName": "Lacados Arribas Martín - Servicios",
       "url": "https://lacadosarribasmartin.es/servicios",
-      "title": "Servicios de Lacado Satinado en Madrid | Arribas Martín",
-      "description": "Lacado profesional de armarios empotrados, puertas de paso y muebles de salón en Chamberí, Plaza de Castilla y Serrano. Acabado sedoso y duradero, sin obras en casa.",
-      "type": "website"
+      "mediaType": "text/html",
+      "representativeQueries": [
+        "lacado de puertas blanco satinado madrid",
+        "lacado de armarios empotrados madrid",
+        "lacado de muebles de salon madrid"
+      ]
     },
     {
+      "identifier": "proyectos",
+      "displayName": "Lacados Arribas Martín - Proyectos",
       "url": "https://lacadosarribasmartin.es/proyectos",
-      "title": "Proyectos de Lacado Satinado Antes y Después | Madrid",
-      "description": "Galería de proyectos reales de lacado satinado en armarios, puertas y muebles en Chamberí, Plaza de Castilla y Serrano. Ve la transformación antes y después.",
-      "type": "website"
+      "mediaType": "text/html",
+      "representativeQueries": [
+        "proyectos de lacado antes y despues madrid",
+        "lacado de puertas de paso madrid",
+        "restauracion de muebles antiguos madrid"
+      ]
     },
     {
+      "identifier": "blog",
+      "displayName": "Lacados Arribas Martín - Blog",
       "url": "https://lacadosarribasmartin.es/blog",
-      "title": "Blog de Lacado Satinado y Carpintería | Arribas Martín",
-      "description": "Artículos, guías y casos reales sobre lacado satinado, restauración y acabados en Chamberí, Plaza de Castilla y Serrano, Madrid.",
-      "type": "website"
+      "mediaType": "text/html",
+      "representativeQueries": [
+        "guia de lacado de muebles en madrid",
+        "lacado artesanal vs pintura a mano",
+        "barnices y lacas ecologicos al agua"
+      ]
     },
     {
+      "identifier": "contacto",
+      "displayName": "Lacados Arribas Martín - Contacto",
       "url": "https://lacadosarribasmartin.es/contacto",
-      "title": "Contacto | Pedir Presupuesto de Lacado en Madrid",
-      "description": "Envíanos fotos de tus armarios o muebles y te orientamos en menos de 24 h. Taller de lacado en Tetuán, sirve Chamberí, Plaza de Castilla y Serrano.",
-      "type": "website"
+      "mediaType": "text/html",
+      "representativeQueries": [
+        "pedir presupuesto de lacado en madrid",
+        "contactar taller de lacado en tetuan",
+        "presupuesto lacado de puertas y armarios"
+      ]
     }
   ]
 }

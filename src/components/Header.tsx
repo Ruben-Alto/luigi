@@ -79,11 +79,11 @@ export const Header: React.FC<HeaderProps> = ({
               onClick={() => handleNavClick('inicio')}
               className="text-left group cursor-pointer focus:outline-none flex items-center gap-2.5 sm:gap-3"
             >
-              <img
-                src="/logo.png"
-                alt="Logo Taller Lacados Arribas Martín"
-                className="h-10 w-10 sm:h-12 sm:w-12 object-contain shrink-0 transition-transform group-hover:scale-105"
-              />
+                <img
+                  src="/logo.webp"
+                  alt="Logo Taller Lacados Arribas Martín"
+                  className="h-10 w-10 sm:h-12 sm:w-12 object-contain shrink-0 transition-transform group-hover:scale-105"
+                />
               <div className="flex flex-col justify-center">
                 <span className="block font-sans font-bold text-lg sm:text-xl tracking-tight text-[#343434] group-hover:text-[#2F4F3A] transition-colors leading-tight">
                   Arribas Martín
@@ -247,7 +247,7 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="flex items-center justify-between pb-6 border-b border-[#E3D9CC]">
             <div className="flex items-center gap-3">
               <img
-                src="/logo.png"
+                src="/logo.webp"
                 alt="Logo Taller Lacados Arribas Martín"
                 className="h-11 w-11 object-contain shrink-0"
               />

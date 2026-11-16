@@ -397,7 +397,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '28 de Enero, 2026',
     readTime: '6 min de lectura',
     excerpt: 'Comparamos la pintura decorativa a mano frente al lacado artesanal en cabina ebanista. Descubre por qué el micraje uniforme aguanta el roce diario en pasillos.',
-    image: '/images/puertas-paso-bg.jpg',
+    image: '/images/projects/project-22.jpeg',
     content: [
       'En el mercado actual existen dos extremos frecuentes que desaconsejamos para un hogar con vida: el alto brillo industrial de fábrica (frío, plástico y que delata cualquier rozadura) y los acabados mate de bricolaje o manualidades (porosos, ásperos y que absorben manchas al menor contacto).',
       'Recibimos con frecuencia clientes en Chamberí, Plaza de Castilla y Serrano cuyas puertas pintadas con chalk paint o acabados mate caseros se han manchado con el roce de la ropa, han absorbido grasa en las zonas de agarre o se han desconchado al limpiarlas.',

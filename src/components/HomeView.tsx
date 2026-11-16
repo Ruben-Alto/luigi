@@ -72,10 +72,10 @@ export const HomeView: React.FC<HomeViewProps> = ({
         <picture>
           <source
             media="(max-width: 768px)"
-            srcSet="/images/armarios-empotrados-bg-mobile.webp"
+            srcSet="/images/armarios-empotrados-bg-mobile.jpg"
           />
           <img
-            src="/images/armarios-empotrados-bg.webp"
+            src="/images/armarios-empotrados-bg.jpg"
             alt="Taller de lacado de armarios empotrados en Tetuán Madrid"
             fetchPriority="high"
             decoding="async"
@@ -132,7 +132,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   <Check className="w-3 h-3 stroke-[3]" />
                 </span>
                 <span>
-                  <strong>Previsualizador con IA (Gemini Nano Banana):</strong> pruébalo en el apartado <strong>Proyectos</strong> subiendo una foto de tu mueble para ver el acabado satinado en tiempo real.
+                  <strong>Taller de lacado en Tetuán ({BUSINESS_INFO.street}):</strong> con barnices y lacas ecológicos certificados pensados para el interior de tu hogar.
                 </span>
               </li>
             </ul>

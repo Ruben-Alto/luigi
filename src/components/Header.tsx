@@ -80,7 +80,7 @@ export const Header: React.FC<HeaderProps> = ({
               className="text-left group cursor-pointer focus:outline-none flex items-center gap-2.5 sm:gap-3"
             >
                 <img
-                  src="/logo.webp"
+                  src="/logo.png"
                   alt="Logo Taller Lacados Arribas Martín"
                   className="h-10 w-10 sm:h-12 sm:w-12 object-contain shrink-0 transition-transform group-hover:scale-105"
                 />

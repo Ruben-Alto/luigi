@@ -69,19 +69,19 @@ export const HomeView: React.FC<HomeViewProps> = ({
           BLOQUE 1: HERO DE IMPACTO (Claim GEO-Ready + CTAs Directos)
           ========================================================================= */}
       <section className="relative bg-[#F5F1EA] pt-8 pb-16 md:pt-14 md:pb-24 border-b border-[#E3D9CC] overflow-hidden">
+        <img
+          src="/images/hero-portada.webp"
+          alt="Taller de lacado de armarios empotrados en Tetuán Madrid"
+          fetchPriority="high"
+          decoding="async"
+          className="absolute inset-0 w-full h-full object-cover -z-10"
+        />
+        <div className="absolute inset-0 bg-[#F5F1EA]/60 -z-9" />
         {/* Adorno sutil de fondo */}
         <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-[#E3D9CC]/30 blur-3xl pointer-events-none"></div>
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl rounded-xl p-6 sm:p-8 relative overflow-hidden">
-            <img
-              src="/images/hero-portada.webp"
-              alt="Taller de lacado de armarios empotrados en Tetuán Madrid"
-              fetchPriority="high"
-              decoding="async"
-              className="absolute inset-0 w-full h-full object-cover -z-10"
-            />
-            <div className="absolute inset-0 bg-[#F5F1EA]/30 -z-9" />
+          <div className="max-w-3xl rounded-xl p-6 sm:p-8 relative overflow-hidden bg-[#F5F1EA]/70 backdrop-blur-sm">
             {/* Badge de confianza */}
             <div className="inline-flex items-center space-x-2 bg-[#E3D9CC]/60 border border-[#B08C4F]/40 rounded-full px-3.5 py-1.5 mb-5 text-xs font-semibold text-[#2F4F3A]">
               <span className="w-2 h-2 rounded-full bg-[#2F4F3A] animate-pulse"></span>

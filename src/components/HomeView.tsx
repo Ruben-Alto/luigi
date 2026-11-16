@@ -81,7 +81,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               decoding="async"
               className="absolute inset-0 w-full h-full object-cover -z-10"
             />
-            <div className="absolute inset-0 bg-[#F5F1EA]/75 -z-9" />
+            <div className="absolute inset-0 bg-[#F5F1EA]/30 -z-9" />
             {/* Badge de confianza */}
             <div className="inline-flex items-center space-x-2 bg-[#E3D9CC]/60 border border-[#B08C4F]/40 rounded-full px-3.5 py-1.5 mb-5 text-xs font-semibold text-[#2F4F3A]">
               <span className="w-2 h-2 rounded-full bg-[#2F4F3A] animate-pulse"></span>

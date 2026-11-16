@@ -69,13 +69,19 @@ export const HomeView: React.FC<HomeViewProps> = ({
           BLOQUE 1: HERO DE IMPACTO (Claim GEO-Ready + CTAs Directos)
           ========================================================================= */}
       <section className="relative bg-[#F5F1EA] pt-8 pb-16 md:pt-14 md:pb-24 border-b border-[#E3D9CC] overflow-hidden">
-        <img
-          src="/images/armarios-empotrados-bg.webp"
-          alt="Taller de lacado de armarios empotrados en Tetuán Madrid"
-          fetchPriority="high"
-          decoding="async"
-          className="absolute inset-0 w-full h-full object-cover -z-10"
-        />
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcSet="/images/armarios-empotrados-bg-mobile.webp"
+          />
+          <img
+            src="/images/armarios-empotrados-bg.webp"
+            alt="Taller de lacado de armarios empotrados en Tetuán Madrid"
+            fetchPriority="high"
+            decoding="async"
+            className="absolute inset-0 w-full h-full object-cover -z-10"
+          />
+        </picture>
         {/* Adorno sutil de fondo */}
         <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-[#E3D9CC]/30 blur-3xl pointer-events-none"></div>
 

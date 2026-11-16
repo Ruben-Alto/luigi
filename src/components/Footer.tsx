@@ -83,7 +83,7 @@ export const Footer: React.FC<FooterProps> = ({
                 <MapPin className="w-4 h-4 text-[#2F4F3A] shrink-0 mt-0.5" />
                 <span>
                   <strong className="block text-[#343434]">{BUSINESS_INFO.street}</strong>
-                  <span className="text-xs text-[#343434]/80">{BUSINESS_INFO.postalCode} {BUSINESS_INFO.district}, {BUSINESS_INFO.city}</span>
+                  <span className="text-xs text-[#343434]">{BUSINESS_INFO.postalCode} {BUSINESS_INFO.district}, {BUSINESS_INFO.city}</span>
                 </span>
               </li>
               <li className="flex items-center space-x-2">
@@ -113,7 +113,7 @@ export const Footer: React.FC<FooterProps> = ({
                   WhatsApp: {BUSINESS_INFO.whatsappDisplay}
                 </button>
               </li>
-              <li className="flex items-start space-x-2 text-xs text-[#343434]/80 pt-1">
+              <li className="flex items-start space-x-2 text-xs text-[#343434] pt-1">
                 <Clock className="w-3.5 h-3.5 text-[#2F4F3A] shrink-0 mt-0.5" />
                 <span>{BUSINESS_INFO.schedule}</span>
               </li>
@@ -133,7 +133,7 @@ export const Footer: React.FC<FooterProps> = ({
               <p className="text-[#343434]/90 leading-relaxed">
                 No realizamos alto brillo industrial de cocina ni producciones en masa de carpintería en serie.
               </p>
-              <p className="text-[#6B6B6B]">
+              <p className="text-[#343434]">
                 Nos diferenciamos tanto del alto brillo industrial como del mate de manualidades, posicionándonos firmemente en el lacado tradicional y el acabado satinado profesional.
               </p>
             </div>
@@ -153,7 +153,7 @@ export const Footer: React.FC<FooterProps> = ({
         </div>
 
         {/* Zona inferior de enlaces legales y copyright */}
-        <div className="pt-6 border-t border-[#B08C4F]/30 flex flex-col sm:flex-row items-center justify-between text-xs text-[#343434]/80 space-y-4 sm:space-y-0">
+        <div className="pt-6 border-t border-[#B08C4F]/30 flex flex-col sm:flex-row items-center justify-between text-xs text-[#343434] space-y-4 sm:space-y-0">
           <p>
             © {new Date().getFullYear()} Lacados Arribas Martín. Todos los derechos reservados.
           </p>

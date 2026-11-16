@@ -70,8 +70,8 @@ export const HomeView: React.FC<HomeViewProps> = ({
           ========================================================================= */}
       <section className="relative bg-[#F5F1EA] pt-8 pb-16 md:pt-14 md:pb-24 border-b border-[#E3D9CC] overflow-hidden">
         <img
-          src="/images/restauracion-muebles-antiguos.webp"
-          alt="Taller de lacado de muebles antiguos en Tetuán Madrid"
+          src="/images/armarios-empotrados-bg.webp"
+          alt="Taller de lacado de armarios empotrados en Tetuán Madrid"
           fetchPriority="high"
           decoding="async"
           className="absolute inset-0 w-full h-full object-cover -z-10"
@@ -154,7 +154,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               </a>
             </div>
 
-            <p className="text-xs text-[#6B6B6B] leading-relaxed">
+            <p className="text-xs text-[#343434] leading-relaxed">
               <span className="font-semibold text-[#343434]">Sin compromiso:</span> Nos envías fotos por WhatsApp desde Chamberí, Plaza de Castilla, Serrano o cualquier otra zona de Madrid y te respondemos en menos de 24 h con una orientación honesta.
             </p>
           </div>
@@ -170,7 +170,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
             <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl font-semibold text-[#343434] mb-3">
               Por qué elegir un lacado satinado profesional en Madrid norte y centro
             </h2>
-            <p className="text-sm sm:text-base text-[#343434]/80">
+            <p className="text-sm sm:text-base text-[#343434]">
               Si vives en Chamberí, Plaza de Castilla, Serrano o cualquier otra zona de Madrid, probablemente tus armarios y puertas son de madera de calidad. Nosotros los actualizamos sin obra, con un acabado satinado sedoso que dura años.
             </p>
           </div>
@@ -240,7 +240,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
             <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl font-semibold text-[#343434] mb-3">
               Especialidades de lacado satinado en Madrid
             </h2>
-            <p className="text-sm sm:text-base text-[#6B6B6B]">
+            <p className="text-sm sm:text-base text-[#343434]">
               Transformamos armarios empotrados, puertas de paso y muebles de salón en pisos de Chamberí, Plaza de Castilla, Serrano y el resto de Madrid con acabados satinados de tacto sedoso, sin brillos agresivos.
             </p>
           </div>
@@ -297,7 +297,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                     {srv.shortDesc}
                   </p>
 
-                   <div className="border-l-2 border-[#A4B3A0] pl-3 py-1 mb-6 text-xs text-[#6B6B6B] font-bold">
+                   <div className="border-l-2 border-[#A4B3A0] pl-3 py-1 mb-6 text-xs text-[#343434] font-bold">
                     {srv.features[0]}
                   </div>
                 </div>
@@ -313,7 +313,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
 
                   <button
                     onClick={() => onOpenWhatsApp(`Hola, quiero pedir presupuesto para el servicio de: ${srv.title}`)}
-                     className="text-xs font-bold text-[#6B6B6B] hover:text-[#2F4F3A] underline"
+                     className="text-xs font-bold text-[#343434] hover:text-[#2F4F3A] underline"
                   >
                     Consultar por WhatsApp
                   </button>
@@ -349,7 +349,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
             <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl font-semibold text-[#343434] mb-3">
               Cómo trabajamos tus armarios, puertas y muebles en nuestro taller de Tetuán
             </h2>
-            <p className="text-sm text-[#6B6B6B]">
+            <p className="text-sm text-[#343434]">
               Nuestro taller familiar lleva décadas especializado en lacado artesanal satinado con control de cada capa para evitar piel de naranja, marcas de rodillo o brillos industriales.
             </p>
           </div>
@@ -426,7 +426,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
             <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl font-semibold text-[#343434] mb-3">
               Ni alto brillo industrial de fábrica ni mate de bricolaje
             </h2>
-            <p className="text-sm sm:text-base text-[#6B6B6B] leading-relaxed">
+            <p className="text-sm sm:text-base text-[#343434] leading-relaxed">
               En <strong className="text-[#343434] font-semibold">Lacados Arribas Martín</strong> nos diferenciamos tanto del alto brillo industrial de fábrica como del mate de manualidades, posicionándonos firmemente en el <strong className="text-[#2F4F3A] font-semibold">lacado tradicional</strong> y el <strong className="text-[#2F4F3A] font-semibold">acabado satinado profesional</strong>.
             </p>
           </div>
@@ -437,17 +437,17 @@ export const HomeView: React.FC<HomeViewProps> = ({
             <div className="bg-[#FFFFFF] rounded-xl p-5 border border-[#E3D9CC] flex flex-col justify-between shadow-xs opacity-90">
               <div>
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-xs uppercase tracking-wider font-bold text-[#6B6B6B]">Fábrica en serie</span>
-                  <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-[#E3D9CC] text-[#6B6B6B]">Descartado</span>
+                  <span className="text-xs uppercase tracking-wider font-bold text-[#343434]">Fábrica en serie</span>
+                  <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-[#E3D9CC] text-[#343434]">Descartado</span>
                 </div>
                 <h3 className="font-sans font-bold text-base text-[#343434] mb-2">
                   Alto brillo industrial
                 </h3>
-                <p className="text-xs text-[#6B6B6B] leading-relaxed">
+                <p className="text-xs text-[#343434] leading-relaxed">
                   Reflejos plásticos deslumbrantes que acusan la menor huella, rayadura o defecto superficial. Aporta frialdad visual y no encaja con la calidez de un hogar.
                 </p>
               </div>
-              <div className="mt-4 pt-3 border-t border-[#E3D9CC] text-[11px] text-[#6B6B6B]">
+              <div className="mt-4 pt-3 border-t border-[#E3D9CC] text-[11px] text-[#343434]">
                 ✕ No lo fabricamos
               </div>
             </div>
@@ -462,7 +462,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 <h3 className="font-sans font-bold text-base text-[#343434] mb-2">
                   Acabados mate de bricolaje
                 </h3>
-                <p className="text-xs text-[#6B6B6B] leading-relaxed">
+                <p className="text-xs text-[#343434] leading-relaxed">
                   Pinturas caseras, tiza o rodillo. Superficie áspera y porosa que absorbe grasa en tiradores, retiene polvo y se desconcha o desgasta al frotar con un trapo.
                 </p>
               </div>
@@ -505,7 +505,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   <th className="p-4 font-semibold text-xs uppercase tracking-wider w-1/5 text-[#B08C4F]">
                     Alto brillo industrial
                   </th>
-                  <th className="p-4 font-semibold text-xs uppercase tracking-wider w-1/5 text-[#6B6B6B]">
+                  <th className="p-4 font-semibold text-xs uppercase tracking-wider w-1/5 text-[#343434]">
                     Acabados mate de bricolaje (manualidades)
                   </th>
                 </tr>
@@ -528,7 +528,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                     <td className="p-4 text-[#B08C4F] leading-relaxed">
                       {row.altoBrilloIndustrial}
                     </td>
-                    <td className="p-4 text-[#6B6B6B] leading-relaxed">
+                    <td className="p-4 text-[#343434] leading-relaxed">
                       {row.diyMatte}
                     </td>
                   </tr>
@@ -559,7 +559,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
             <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl font-semibold text-[#343434] mb-2">
               Reseñas de vecinos en Madrid norte y centro
             </h2>
-            <p className="text-sm text-[#6B6B6B]">
+            <p className="text-sm text-[#343434]">
               Opiniones reales de clientes en Chamberí, Plaza de Castilla, Serrano y en todo Madrid sobre nuestro lacado satinado.
             </p>
 
@@ -594,7 +594,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                         <Star key={i} className="w-4 h-4 fill-[#B08C4F] text-[#B08C4F]" />
                       ))}
                     </div>
-                    <span className="text-[11px] font-medium text-[#6B6B6B]">{review.date}</span>
+                    <span className="text-[11px] font-medium text-[#343434]">{review.date}</span>
                   </div>
 
                   <p className="text-sm text-[#343434] leading-relaxed mb-4 italic">
@@ -608,7 +608,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                     <MapPin className="w-3 h-3" />
                     <span>{review.location}</span>
                   </span>
-                  <span className="block text-[11px] text-[#6B6B6B] mt-1">
+                  <span className="block text-[11px] text-[#343434] mt-1">
                     Piezas: {review.highlightedItem}
                   </span>
                 </div>
@@ -663,7 +663,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               <p>
                 Nuestra vocación es el <strong className="text-[#2F4F3A]">lacado satinado de alta escuela</strong>: ajustar el proceso según la porosidad de la madera, respetar el reposo entre manos y devolver el esplendor a las carpinterías que visten los hogares de Chamberí, Plaza de Castilla, Serrano y en todo Madrid.
               </p>
-              <div className="pt-2 flex items-center space-x-4 text-xs text-[#6B6B6B]">
+              <div className="pt-2 flex items-center space-x-4 text-xs text-[#343434]">
                 <span>✓ Barnices y lacas ecológicos al agua</span>
                 <span>✓ Recogida y entrega propia</span>
                 <span>✓ Trato directo sin intermediarios</span>
@@ -702,7 +702,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   {expandedFaq === index ? (
                     <ChevronUp className="w-5 h-5 text-[#2F4F3A] shrink-0" />
                   ) : (
-                    <ChevronDown className="w-5 h-5 text-[#6B6B6B] shrink-0" />
+                    <ChevronDown className="w-5 h-5 text-[#343434] shrink-0" />
                   )}
                 </button>
 
@@ -727,7 +727,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl font-semibold text-[#343434] mb-3">
                 Estamos en Tetuán, muy cerca de Chamberí, Plaza de Castilla y Serrano
               </h2>
-              <p className="text-sm sm:text-base text-[#343434]/80 leading-relaxed">
+              <p className="text-sm sm:text-base text-[#343434] leading-relaxed">
                 Trabajamos cada día para pisos de Madrid norte y centro: Tetuán, Chamberí, Plaza de Castilla, Serrano y en todo Madrid. Conocemos bien el parque de viviendas de la zona y las necesidades de sus armarios y puertas.
               </p>
             </div>
@@ -742,7 +742,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 <p className="text-sm text-[#2F4F3A] font-semibold mb-2">
                   {BUSINESS_INFO.address}
                 </p>
-                <p className="text-xs text-[#6B6B6B] max-w-md">
+                <p className="text-xs text-[#343434] max-w-md">
                   En el distrito de Tetuán. Visitas con cita previa o envíanos fotos por WhatsApp para ahorrar tiempo.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2 justify-center">

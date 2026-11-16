@@ -26,6 +26,7 @@ export function usePageMeta({ title, description, path = '/' }: PageMeta) {
     };
 
     upsertMeta('description', description);
+    upsertMeta('robots', 'index, follow');
     upsertMeta('og:title', title);
     upsertMeta('og:description', description);
 

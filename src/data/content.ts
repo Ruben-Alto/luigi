@@ -28,7 +28,7 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
     id: 'lacado-armarios-empotrados-madrid',
     title: 'Armarios Empotrados y Frentes',
     subtitle: 'Acabado sedoso y duradero sin obras',
-    shortDesc: 'Actualizamos armarios empotrados de dormitorios y pasillos en tonos blanco roto, grises cálidos y colores piedra con lacado satinado uniforme artesanal.',
+    shortDesc: 'Actualizamos armarios empotrados de dormitorios y pasillos en tonos blanco roto, grises cálidos y colores piedra con lacado satinado uniforme artesanal. Nuestro taller de barnizado y lacado es el referente para lacar muebles en Madrid Norte y Madrid Centro, sin obras en tu vivienda.',
     h1: 'Lacado satinado de armarios empotrados en Madrid norte y centro',
     heroText: 'Sustituimos el barniz anaranjado o la madera oscura de los armarios de tu vivienda por un acabado satinado sedoso y resistente al uso diario, desmontando las hojas y con lacado artesanal en taller.',
     iconName: 'DoorClosed',
@@ -127,7 +127,7 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
       'Tratamiento hidrófugo y anti-manchas en encimeras de mesas de comedor y aparadores',
       'Combinación de tonos: cajas lacadas con tapas en madera natural encerada o viceversa',
       'Respeto por molduras, tallas y herrajes originales en latón o hierro',
-      'Servicio integral de recogida y entrega en domicilio con embalaje de alta protección'
+      'Servicio integral de recogida y entrega en domicilio con embalaje de alta protección, ofreciendo lacado de muebles a domicilio en Madrid Norte y Madrid Centro sin que tengas que desplazarte de casa',
     ],
     processSteps: [
       { title: '1. Recogida en planta', desc: 'Retiramos el mueble con personal propio cualificado y mantas de mudanza acolchadas.' },
@@ -162,7 +162,7 @@ export const SERVICES_DATA: Record<ServiceId, ServiceDetail> = {
     id: 'restauracion-muebles-antiguos-madrid',
     title: 'Restauración de Muebles Antiguos',
     subtitle: 'Oficio artesano, valor sentimental y economía circular',
-    shortDesc: 'Si tienes un aparador, cómoda o mesa antigua con valor sentimental, la restauramos y la llevamos a un satinado suave que respeta la pieza y la integra en interiores actuales.',
+    shortDesc: 'Si tienes un aparador, cómoda o mesa antigua con valor sentimental, la restauramos y la llevamos a un satinado suave que respeta la pieza y la integra en interiores actuales. Especialistas en restaurar muebles lacados que recuperan su belleza original sin perder el alma de la madera.',
     h1: 'Restauración de muebles antiguos en acabado satinado en Madrid',
     heroText: 'Desde 1969 aplicamos el oficio tradicional de lacado: desinsectación de carcoma, consolidación estructural, sustitución de barnices quemados por lacas sedosas y pulido de bronces.',
     iconName: 'Sparkles',

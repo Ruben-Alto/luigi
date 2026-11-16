@@ -152,6 +152,7 @@ export const ServicesView: React.FC<ServicesViewProps> = ({
                 {service.sampleImages.map((img, idx) => (
                   <div key={idx} className="relative rounded-lg overflow-hidden border border-[#E3D9CC] group">
                     <img
+                      loading="lazy"
                       src={img.src}
                       alt={img.label}
                       className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"

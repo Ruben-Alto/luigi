@@ -67,6 +67,7 @@ export const BlogView: React.FC<BlogViewProps> = ({ onOpenWhatsApp }) => {
               <div>
                 <div className="relative h-56 overflow-hidden">
                   <img
+                    loading="lazy"
                     src={post.image}
                     alt={post.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -157,6 +158,7 @@ export const BlogView: React.FC<BlogViewProps> = ({ onOpenWhatsApp }) => {
 
               <div className="rounded-xl overflow-hidden mb-6 h-64">
                 <img
+                  loading="lazy"
                   src={activePost.image}
                   alt={activePost.title}
                   className="w-full h-full object-cover"

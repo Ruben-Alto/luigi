@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ActiveTab, ServiceId } from './types';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
@@ -12,8 +12,26 @@ import { LegalView } from './components/LegalView';
 import { BUSINESS_INFO } from './data/content';
 import { usePageMeta } from './hooks/usePageMeta';
 
+const TAB_PATHS: Record<ActiveTab, string> = {
+  inicio: '/',
+  servicios: '/servicios',
+  proyectos: '/proyectos',
+  blog: '/blog',
+  contacto: '/contacto',
+  legal: '/legal',
+};
+
+const PATH_TABS: Record<string, ActiveTab> = Object.fromEntries(
+  Object.entries(TAB_PATHS).map(([tab, path]) => [path, tab as ActiveTab])
+) as Record<string, ActiveTab>;
+
+const tabFromPath = (path: string): ActiveTab => {
+  const normalized = path.replace(/\/+$/, '') || '/';
+  return PATH_TABS[normalized] ?? 'inicio';
+};
+
 export default function App() {
-  const [activeTab, setActiveTab] = useState<ActiveTab>('inicio');
+  const [activeTab, setActiveTab] = useState<ActiveTab>(() => tabFromPath(window.location.pathname));
   const [selectedServiceId, setSelectedServiceId] = useState<ServiceId | null>(null);
   const [legalSection, setLegalSection] = useState<'aviso' | 'privacidad' | 'cookies'>('aviso');
 
@@ -50,7 +68,7 @@ export default function App() {
     },
   };
 
-  usePageMeta({ ...PAGE_META[activeTab], path: activeTab === 'inicio' ? '/' : `/${activeTab}` });
+  usePageMeta({ ...PAGE_META[activeTab], path: TAB_PATHS[activeTab] });
 
   const handleOpenWhatsApp = (customMessage?: string) => {
     const defaultMsg = 'Hola, he visto vuestra web de Lacados Arribas Martín. Me gustaría pedir orientación y presupuesto para lacar en satinado mis armarios, puertas o muebles en Madrid. Os envío fotos.';
@@ -62,19 +80,48 @@ export default function App() {
   const handleSelectService = (serviceId: ServiceId) => {
     setSelectedServiceId(serviceId);
     setActiveTab('servicios');
+    const path = TAB_PATHS.servicios;
+    if (window.location.pathname !== path) {
+      window.history.pushState({ tab: 'servicios' }, '', path);
+    }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleSelectTab = (tab: ActiveTab) => {
     setActiveTab(tab);
+    const path = TAB_PATHS[tab];
+    if (window.location.pathname !== path) {
+      window.history.pushState({ tab }, '', path);
+    }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleOpenLegal = (section: 'aviso' | 'privacidad' | 'cookies') => {
     setLegalSection(section);
     setActiveTab('legal');
+    const path = TAB_PATHS.legal;
+    if (window.location.pathname !== path) {
+      window.history.pushState({ tab: 'legal' }, '', path);
+    }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  useEffect(() => {
+    const onPopState = () => {
+      setActiveTab(tabFromPath(window.location.pathname));
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+    window.addEventListener('popstate', onPopState);
+    window.scrollTo(0, 0);
+    // Sincroniza la URL inicial si no coincide (ej. entrada directa)
+    const initialPath = TAB_PATHS[tabFromPath(window.location.pathname)];
+    if (window.location.pathname !== initialPath) {
+      window.history.replaceState({ tab: tabFromPath(window.location.pathname) }, '', initialPath);
+    } else {
+      window.history.replaceState({ tab: tabFromPath(window.location.pathname) }, '', window.location.pathname);
+    }
+    return () => window.removeEventListener('popstate', onPopState);
+  }, []);
 
   return (
     <div className="min-h-screen flex flex-col bg-[#F5F1EA] text-[#343434] selection:bg-[#A4B3A0]/30 selection:text-[#2F4F3A]">
@@ -125,7 +172,7 @@ export default function App() {
         {activeTab === 'legal' && (
           <LegalView
             section={legalSection}
-            onClose={() => setActiveTab('inicio')}
+            onClose={() => handleSelectTab('inicio')}
           />
         )}
       </main>

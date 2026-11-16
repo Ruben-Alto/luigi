@@ -70,12 +70,13 @@ export const HomeView: React.FC<HomeViewProps> = ({
           ========================================================================= */}
       <section className="relative bg-[#F5F1EA] pt-8 pb-16 md:pt-14 md:pb-24 border-b border-[#E3D9CC] overflow-hidden">
         <img
-          src="/images/hero-bg.webp"
+          src="/images/hero-portada.webp"
           alt="Taller de lacado de armarios empotrados en Tetuán Madrid"
           fetchPriority="high"
           decoding="async"
           className="absolute inset-0 w-full h-full object-cover -z-10"
         />
+        <div className="absolute inset-0 bg-gradient-to-r from-stone-50/95 via-stone-50/85 to-stone-50/65 -z-9" />
         {/* Adorno sutil de fondo */}
         <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-[#E3D9CC]/30 blur-3xl pointer-events-none"></div>
 

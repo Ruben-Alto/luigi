@@ -70,7 +70,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
           ========================================================================= */}
       <section className="relative bg-[#F5F1EA] pt-8 pb-16 md:pt-14 md:pb-24 border-b border-[#E3D9CC] overflow-hidden">
         <img
-          src="/images/restauracion-muebles-antiguos.jpg"
+          src="/images/restauracion-muebles-antiguos.webp"
           alt="Taller de lacado de muebles antiguos en Tetuán Madrid"
           fetchPriority="high"
           decoding="async"

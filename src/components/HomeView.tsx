@@ -69,19 +69,13 @@ export const HomeView: React.FC<HomeViewProps> = ({
           BLOQUE 1: HERO DE IMPACTO (Claim GEO-Ready + CTAs Directos)
           ========================================================================= */}
       <section className="relative bg-[#F5F1EA] pt-8 pb-16 md:pt-14 md:pb-24 border-b border-[#E3D9CC] overflow-hidden">
-        <picture>
-          <source
-            media="(max-width: 768px)"
-            srcSet="/images/armarios-empotrados-bg-mobile.jpg"
-          />
-          <img
-            src="/images/armarios-empotrados-bg.jpg"
-            alt="Taller de lacado de armarios empotrados en Tetuán Madrid"
-            fetchPriority="high"
-            decoding="async"
-            className="absolute inset-0 w-full h-full object-cover -z-10"
-          />
-        </picture>
+        <img
+          src="/images/hero-bg.webp"
+          alt="Taller de lacado de armarios empotrados en Tetuán Madrid"
+          fetchPriority="high"
+          decoding="async"
+          className="absolute inset-0 w-full h-full object-cover -z-10"
+        />
         {/* Adorno sutil de fondo */}
         <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-[#E3D9CC]/30 blur-3xl pointer-events-none"></div>
 
@@ -117,14 +111,6 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 </span>
                 <span>
                   <strong>Acabado satinado profesional:</strong> nos diferenciamos tanto del alto brillo industrial como del mate de manualidades; nuestro lacado tradicional aguanta el uso diario y la limpieza frecuente.
-                </span>
-              </li>
-              <li className="flex items-start space-x-3">
-                <span className="mt-1 flex items-center justify-center w-5 h-5 rounded-full bg-[#2F4F3A] text-white shrink-0 text-xs">
-                  <Check className="w-3 h-3 stroke-[3]" />
-                </span>
-                <span>
-                  <strong>Taller de lacado en Tetuán ({BUSINESS_INFO.street}):</strong> con barnices y lacas ecológicos certificados pensados para el interior de tu hogar.
                 </span>
               </li>
               <li className="flex items-start space-x-3">
@@ -261,7 +247,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               const bgImage = isArmarios
                 ? 'url("/images/armarios-empotrados-bg.jpg")'
                 : isPuertas
-                  ? 'url("/images/puertas-paso-bg.jpg")'
+                  ? 'url("/images/puertas-paso-bg.webp")'
                   : isSalon
                     ? 'url("/images/muebles-salon-bg.jpg")'
                     : 'url("/images/restauracion-muebles-bg.jpg")';

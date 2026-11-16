@@ -262,9 +262,9 @@ export const ContactView: React.FC<ContactViewProps> = ({ onOpenWhatsApp }) => {
                   <MapPin className="w-4 h-4" />
                   <span>Taller Físico en Madrid</span>
                 </div>
-                <h3 className="font-editorial text-xl font-semibold text-[#343434] mb-1">
-                  Lacados Arribas Martín S.L.
-                </h3>
+                  <h3 className="font-editorial text-xl font-semibold text-[#343434] mb-1">
+                    Lacados Arribas Martín
+                  </h3>
                 <p className="text-xs text-[#6B6B6B] mb-4">
                   Fundado en 1969 en el distrito de Tetuán.
                 </p>

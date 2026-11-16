@@ -45,8 +45,8 @@ export default function App() {
     },
     legal: {
       title: 'Aviso Legal y Privacidad | Lacados Arribas Martín',
-      description:
-        'Aviso legal, política de privacidad y política de cookies de Lacados Arribas Martín S.L. Taller en Tetuán, Manuel Arribas Caballero, Calle de los Voluntarios Catalanes 20B, 28039 Madrid.',
+        description:
+          'Aviso legal, política de privacidad y política de cookies de Lacados Arribas Martín. Taller en Tetuán, Manuel Arribas Caballero, Calle de los Voluntarios Catalanes 20B, 28039 Madrid.',
     },
   };
 

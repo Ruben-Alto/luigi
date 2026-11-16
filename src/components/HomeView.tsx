@@ -736,9 +736,9 @@ export const HomeView: React.FC<HomeViewProps> = ({
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8 items-stretch">
               <div className="lg:col-span-2 bg-white rounded-xl border-2 border-dashed border-[#B08C4F]/50 p-6 flex flex-col items-center justify-center text-center min-h-[260px]">
                 <MapPin className="w-10 h-10 text-[#2F4F3A] mb-3 opacity-70" />
-                <h4 className="font-sans font-bold text-base text-[#343434] mb-1">
+                <h3 className="font-sans font-bold text-base text-[#343434] mb-1">
                   Taller Lacados Arribas Martín
-                </h4>
+                </h3>
                 <p className="text-sm text-[#2F4F3A] font-semibold mb-2">
                   {BUSINESS_INFO.address}
                 </p>
@@ -757,18 +757,18 @@ export const HomeView: React.FC<HomeViewProps> = ({
 
               <div className="bg-white rounded-xl border border-[#E3D9CC] p-6 flex flex-col justify-between">
                 <div>
-                  <h4 className="font-sans font-bold text-sm text-[#2F4F3A] uppercase tracking-wider mb-3">
+                  <h3 className="font-sans font-bold text-sm text-[#2F4F3A] uppercase tracking-wider mb-3">
                     Horario de Atención
-                  </h4>
+                  </h3>
                   <p className="text-xs text-[#343434] mb-1">
                     {BUSINESS_INFO.scheduleWeekdays}
                   </p>
                   <p className="text-xs text-[#343434] mb-4">
                     {BUSINESS_INFO.scheduleSaturdays}
                   </p>
-                  <h4 className="font-sans font-bold text-sm text-[#2F4F3A] uppercase tracking-wider mb-2">
+                  <h3 className="font-sans font-bold text-sm text-[#2F4F3A] uppercase tracking-wider mb-2">
                     Contacto Directo
-                  </h4>
+                  </h3>
                   <p className="text-xs text-[#343434] mb-1">
                     Tel: <a href={`tel:${BUSINESS_INFO.phoneRaw}`} className="text-[#2F4F3A] font-semibold hover:underline">{BUSINESS_INFO.phone}</a>
                   </p>

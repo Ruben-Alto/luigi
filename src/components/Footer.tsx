@@ -96,6 +96,15 @@ export const Footer: React.FC<FooterProps> = ({
                 </a>
               </li>
               <li className="flex items-center space-x-2">
+                <Phone className="w-4 h-4 text-[#2F4F3A] shrink-0" />
+                <a
+                  href="tel:+34917303371"
+                  className="hover:text-[#2F4F3A] font-medium text-sm"
+                >
+                  +34 917 30 33 71 (fijo)
+                </a>
+              </li>
+              <li className="flex items-center space-x-2">
                 <MessageSquare className="w-4 h-4 text-[#2F4F3A] shrink-0" />
                 <button
                   onClick={onOpenWhatsApp}

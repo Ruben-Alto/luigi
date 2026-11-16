@@ -27,7 +27,9 @@ export const ContactView: React.FC<ContactViewProps> = ({ onOpenWhatsApp }) => {
     privacyAccepted: true
   });
 
-  const EMAIL = 'info@lacadosarribasmartin.es';
+  const EMAIL = 'lacadosarribasmartin@gmail.com';
+  const LANDLINE = '+34 917 30 33 71';
+  const LANDLINE_RAW = '+34917303371';
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -37,7 +39,7 @@ export const ContactView: React.FC<ContactViewProps> = ({ onOpenWhatsApp }) => {
     }
     const texto = `Hola, he rellenado el formulario de la web de Lacados Arribas Martín:\n\nNombre: ${formData.name}\nTeléfono: ${formData.phone}\nBarrio/Zona: ${formData.neighborhood}\nTipo de proyecto: ${formData.projectType}\nMensaje: ${formData.message}\n\nPor favor, enviadme presupuesto orientativo.`;
     const whatsappUrl = `https://wa.me/${BUSINESS_INFO.whatsappNumber}?text=${encodeURIComponent(texto)}`;
-    window.open(whatsappUrl, '_blank');
+    window.location.href = whatsappUrl;
     setFormSubmitted(true);
   };
 
@@ -102,6 +104,15 @@ export const ContactView: React.FC<ContactViewProps> = ({ onOpenWhatsApp }) => {
             >
               <Phone className="w-4 h-4 text-white" />
               <span>Llamar ahora: {BUSINESS_INFO.phone}</span>
+            </a>
+
+            <a
+              id="contact-hero-call-landline-btn"
+              href={`tel:${LANDLINE_RAW}`}
+              className="w-full sm:w-auto flex-1 flex items-center justify-center space-x-2 bg-transparent hover:bg-white/10 text-white font-semibold py-4 px-6 rounded-lg border-1.5 border-white transition-colors"
+            >
+              <Phone className="w-4 h-4 text-white" />
+              <span>Llamar fijo: {LANDLINE}</span>
             </a>
           </div>
           <p className="text-[11px] text-white/70 mt-3">
@@ -310,10 +321,10 @@ export const ContactView: React.FC<ContactViewProps> = ({ onOpenWhatsApp }) => {
                     Abrir en Google Maps
                   </a>
                   <a
-                    href={`tel:${BUSINESS_INFO.phoneRaw}`}
+                    href={`tel:${LANDLINE_RAW}`}
                     className="flex-1 text-center py-2.5 px-3 bg-[#2F4F3A] hover:bg-[#243E2E] text-white font-semibold text-xs rounded-lg transition-colors"
                   >
-                    Llamar al taller
+                    Llamar al taller: {LANDLINE}
                   </a>
                 </div>
               </div>

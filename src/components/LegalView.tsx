@@ -10,7 +10,7 @@ interface LegalViewProps {
 const TITULAR = 'Manuel Arribas Caballero (Lacados Arribas Martín)';
 const DIRECCION = `${BUSINESS_INFO.street}, ${BUSINESS_INFO.postalCode} ${BUSINESS_INFO.district}, ${BUSINESS_INFO.city}`;
 const TELEFONO = BUSINESS_INFO.phone;
-const EMAIL = 'info@lacadosarribasmartin.es';
+const EMAIL = 'lacadosarribasmartin@gmail.com';
 
 export const LegalView: React.FC<LegalViewProps> = ({ section, onClose }) => {
   const isAviso = section === 'aviso';

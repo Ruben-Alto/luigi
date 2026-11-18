@@ -39,18 +39,18 @@ export function loadAnalytics(): void {
 }
 
 export function trackEvent(name: string, params?: Record<string, any>): void {
-  if (typeof (window as any).gtag === 'function' && GA_ID) {
-    (window as any).gtag('event', name, params || {});
-  }
+  if (!GA_ID) return;
+  if (typeof (window as any).gtag !== 'function') loadAnalytics();
+  (window as any).gtag?.('event', name, params || {});
 }
 
 export function trackPageView(path: string): void {
-  if (typeof (window as any).gtag === 'function' && GA_ID) {
-    (window as any).gtag('event', 'page_view', {
-      page_location: window.location.href,
-      page_path: path,
-    });
-  }
+  if (!GA_ID) return;
+  if (typeof (window as any).gtag !== 'function') loadAnalytics();
+  (window as any).gtag?.('event', 'page_view', {
+    page_location: window.location.href,
+    page_path: path,
+  });
 }
 
 export const hasGaId = !!GA_ID;

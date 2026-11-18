@@ -1,5 +1,5 @@
-const GA_ID = import.meta.env.VITE_GA_MEASUREMENT_ID as string | undefined;
-const CLARITY_ID = import.meta.env.VITE_CLARITY_PROJECT_ID as string | undefined;
+const GA_ID = import.meta.env.VITE_GA_ID as string | undefined;
+const CLARITY_ID = import.meta.env.VITE_CLARITY_ID as string | undefined;
 
 let gaLoaded = false;
 let clarityLoaded = false;

@@ -4,21 +4,39 @@ const CLARITY_ID = import.meta.env.VITE_CLARITY_ID as string | undefined;
 let gaLoaded = false;
 let clarityLoaded = false;
 
+function ensureGtag(): ((...args: any[]) => void) | null {
+  if (!GA_ID) return null;
+  (window as any).dataLayer = (window as any).dataLayer || [];
+  if (typeof (window as any).gtag !== 'function') {
+    (window as any).gtag = function (...args: any[]) {
+      (window as any).dataLayer.push(args);
+    };
+  }
+  return (window as any).gtag;
+}
+
 export function loadAnalytics(): void {
   if (GA_ID && !gaLoaded) {
     gaLoaded = true;
-    const script = document.createElement('script');
-    script.async = true;
-    script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
-    document.head.appendChild(script);
+    const gtag = ensureGtag();
+    if (gtag) {
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        analytics_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+      });
+      gtag('consent', 'update', { analytics_storage: 'granted' });
+      gtag('js', new Date());
+      gtag('config', GA_ID, { send_page_view: true });
 
-    (window as any).dataLayer = (window as any).dataLayer || [];
-    function gtag(...args: any[]) {
-      (window as any).dataLayer.push(args);
+      if (!document.querySelector(`script[src="https://www.googletagmanager.com/gtag/js?id=${GA_ID}"]`)) {
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+        document.head.appendChild(script);
+      }
     }
-    (window as any).gtag = gtag;
-    gtag('js', new Date());
-    gtag('config', GA_ID, { send_page_view: false });
   }
 
   if (CLARITY_ID && !clarityLoaded) {
@@ -40,14 +58,16 @@ export function loadAnalytics(): void {
 
 export function trackEvent(name: string, params?: Record<string, any>): void {
   if (!GA_ID) return;
-  if (typeof (window as any).gtag !== 'function') loadAnalytics();
-  (window as any).gtag?.('event', name, params || {});
+  const gtag = ensureGtag();
+  if (!gaLoaded) loadAnalytics();
+  gtag?.('event', name, params || {});
 }
 
 export function trackPageView(path: string): void {
   if (!GA_ID) return;
-  if (typeof (window as any).gtag !== 'function') loadAnalytics();
-  (window as any).gtag?.('event', 'page_view', {
+  const gtag = ensureGtag();
+  if (!gaLoaded) loadAnalytics();
+  gtag?.('event', 'page_view', {
     page_location: window.location.href,
     page_path: path,
   });

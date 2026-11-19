@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { ActiveTab, ServiceId } from './types';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
@@ -39,6 +39,7 @@ export default function App() {
     const stored = localStorage.getItem('cookie_consent');
     return stored === 'analytics' || stored === 'necessary' ? stored : 'pending';
   });
+  const initialPageViewHandled = useRef(false);
 
   const acceptConsent = () => {
     localStorage.setItem('cookie_consent', 'analytics');
@@ -132,7 +133,12 @@ export default function App() {
   }, [consent]);
 
   useEffect(() => {
-    if (consent === 'analytics') trackPageView(TAB_PATHS[activeTab]);
+    if (consent !== 'analytics') return;
+    if (!initialPageViewHandled.current) {
+      initialPageViewHandled.current = true;
+      return;
+    }
+    trackPageView(TAB_PATHS[activeTab]);
   }, [activeTab, consent]);
 
   useEffect(() => {

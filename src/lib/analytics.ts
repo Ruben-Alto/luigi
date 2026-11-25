@@ -1,40 +1,10 @@
-const GA_ID = import.meta.env.VITE_GA_ID as string | undefined;
 const CLARITY_ID = import.meta.env.VITE_CLARITY_ID as string | undefined;
 
-let gaLoaded = false;
 let clarityLoaded = false;
 
-function initGtag(): void {
-  (window as any).dataLayer = (window as any).dataLayer || [];
-  if (typeof (window as any).gtag !== 'function') {
-    (window as any).gtag = function () {
-      (window as any).dataLayer.push(arguments);
-    };
-  }
-}
-
 export function loadAnalytics(): void {
-  if (GA_ID && !gaLoaded) {
-    gaLoaded = true;
-
-    initGtag();
-    const gtag = (window as any).gtag;
-
-    gtag('consent', 'update', {
-      analytics_storage: 'granted',
-      ad_storage: 'denied',
-      ad_user_data: 'denied',
-      ad_personalization: 'denied',
-    });
-    gtag('js', new Date());
-    gtag('config', GA_ID, { send_page_view: true });
-
-    if (!document.querySelector(`script[src="https://www.googletagmanager.com/gtag/js?id=${GA_ID}"]`)) {
-      const script = document.createElement('script');
-      script.async = true;
-      script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
-      document.head.appendChild(script);
-    }
+  if (typeof (window as any).gtag === 'function') {
+    (window as any).gtag('consent', 'update', { analytics_storage: 'granted' });
   }
 
   if (CLARITY_ID && !clarityLoaded) {
@@ -55,21 +25,19 @@ export function loadAnalytics(): void {
 }
 
 export function trackEvent(name: string, params?: Record<string, any>): void {
-  if (!GA_ID) return;
-  initGtag();
-  if (!gaLoaded) loadAnalytics();
-  (window as any).gtag('event', name, params || {});
+  if (typeof (window as any).gtag === 'function') {
+    (window as any).gtag('event', name, params || {});
+  }
 }
 
 export function trackPageView(path: string): void {
-  if (!GA_ID) return;
-  initGtag();
-  if (!gaLoaded) loadAnalytics();
-  (window as any).gtag('event', 'page_view', {
-    page_location: window.location.href,
-    page_path: path,
-  });
+  if (typeof (window as any).gtag === 'function') {
+    (window as any).gtag('event', 'page_view', {
+      page_location: window.location.href,
+      page_path: path,
+    });
+  }
 }
 
-export const hasGaId = !!GA_ID;
+export const hasGaId = true;
 export const hasClarityId = !!CLARITY_ID;
